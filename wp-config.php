@@ -2,16 +2,9 @@
 
 if (empty($_ENV['PLATFORM_RELATIONSHIPS'])){
 /*
-You would put here your local configuration for example:
-//define('WP_HOME', "http://localhost");
-//define('WP_SITEURL',"http://localhost");
-//define('DB_NAME', "my_wordpress");
-//define('DB_USER', "user");
-//define('DB_PASSWORD', "a strong password");
-//define('DB_HOST', "127.0.0.1");
-//define('DB_CHARSET', 'utf8');
-//define('DB_COLLATE', '');
+Include your local config here.
 */
+require_once ( ABSPATH . 'local.wp-config.php' );
 
 } else {
     // This is where we get the relationships of our application dynamically
@@ -50,8 +43,13 @@ You would put here your local configuration for example:
     }
 
     // Change site URL per environment.
-    define('WP_HOME', $site_scheme . '://' . $site_host);
+    define('WP_HOME', 'http'. '://' . $site_host);
     define('WP_SITEURL', WP_HOME);
+
+    // define('WP_ALLOW_REPAIR', true);
+
+    define( 'WP_DEBUG', false );
+    define( 'WP_DEBUG_DISPLAY', false );
 }
 // Since you can have multiple installations in one database, you need a unique
 // prefix.
