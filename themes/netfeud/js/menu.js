@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
   $( ".menu-text" ).on("click", function(e) {
     	$( e.target ).toggleClass(  "menu-text"  );
     	$( e.target ).toggleClass(  "menu-close"  );
-    	$( "div.menu-default" ).toggleClass(  "menu"  );
+    	$( ".menu-default" ).toggleClass(  "menu-overlay"  );
     	$( ".pie1" ).toggleClass(  "pie"  );
     	$( ".slice1" ).toggleClass(  "slice"  );
     	$( ".slice-contents1" ).toggleClass(  "slice-contents"  );

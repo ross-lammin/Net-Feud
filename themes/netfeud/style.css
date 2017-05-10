@@ -465,10 +465,11 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+	color: green;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
+	padding-left: 2em;
 }
 
 select {
@@ -491,7 +492,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+	color: green;
 }
 
 textarea {
@@ -986,9 +987,9 @@ p.log-in:hover {
 /***********************************
 ************** menu ****************
 ***********************************/
-/*
-.menu {
-	position: fixed;
+
+.menu-overlay {
+	position: absolute;
     width: 100%;
     height: 100em;
     background: rgba(0,0,0,0.9);
@@ -1000,15 +1001,22 @@ p.log-in:hover {
     transition: all 1s ease-out;
 }
 
+.menu-default {
+	position: absolute;
+	top: 0em;
+}
+
 .pie1 {
 	list-style: none;
 	transition: 1s ease-in-out;
+	 z-index: 1000001;
 }
 
 .label{
 	display: none;
 	 transform: rotate(0deg) skewY(0deg);
 	 transition: 1s ease-in-out;
+	  z-index: 1000001;
 }
 
 .pie {
@@ -1320,7 +1328,7 @@ p.log-in:hover {
 	will-change: transform;
 }
 
-.profile-card {
+/*.profile-card {
 	margin-top: -100em;
 	margin-left: -20em;
 	transition: 0s;
@@ -1621,7 +1629,7 @@ ul li.top-nav-items {
   height: 45em;
   z-index: -1000;
   margin: 0 auto;
-  background-image: url(library/img/space-carousel-background.jpg);
+  background-image: url(img/space-carousel-background.jpg);
   background-repeat: no-repeat;
   background-size: 100%, 100%;
   background-position: center;
@@ -1637,7 +1645,7 @@ ul li.top-nav-items {
 }
 
 .container {
-  padding-top: 4em;
+  padding-top: 7em;
   margin: 0 auto;
   width: 17em;
   height: 5em;
@@ -1675,52 +1683,52 @@ ul li.top-nav-items {
 
 ._1 {
   transform: rotateY(0deg) translateZ(500px);
-  background: url(library/img/new-new-pacman.jpg);
+  background: url(img/new-new-pacman.jpg);
 }
 
 ._2 {
   transform: rotateY(36deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 }
 
 ._3 {
   transform: rotateY(72deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 }
 
 ._4 {
   transform: rotateY(108deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 }
 
 ._5 {
   transform: rotateY(144deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 } 
 
 ._6 {
   transform: rotateY(180deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 }
 
 ._7 {
   transform: rotateY(216deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 }
 
 ._8 {
   transform: rotateY(252deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 }
 
 ._9 {
   transform: rotateY(288deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(img/new-cards.jpg);
 }
 
 ._10 {
   transform: rotateY(324deg) translateZ(500px);
-  background: url(library/img/new-nebula.jpg);
+  background: url(img/new-nebula.jpg);
 }
 
 .no-1, .no-2, .no-3, .no-4, .no-5, .no-6, .no-7, .no-8, .no-9, .no-10 { position: relative; cursor: default; }
@@ -1741,7 +1749,7 @@ ul li.top-nav-items {
 
 .prev, .next {
   color: rgba(11,66,26,1); 
-  margin-top: 27.5em;
+  margin-top: 30em;
   color: #444;
   position: absolute;
   padding: 1.5em 2.5em;

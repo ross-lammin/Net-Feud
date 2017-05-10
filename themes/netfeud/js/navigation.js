@@ -113,7 +113,7 @@ jQuery(document).ready(function() {
   $( ".menu-text" ).on("click", function(e) {
     	$( e.target ).toggleClass(  "menu-text"  );
     	$( e.target ).toggleClass(  "menu-close"  );
-    	$( "div.menu-default" ).toggleClass(  "menu"  );
+    	$( "div.menu-default" ).toggleClass(  "menu-overlay"  );
     	$( ".pie1" ).toggleClass(  "pie"  );
     	$( ".slice1" ).toggleClass(  "slice"  );
     	$( ".slice-contents1" ).toggleClass(  "slice-contents"  );
@@ -148,3 +148,29 @@ jQuery(document).ready(function() {
         $( ".profile-card" ).removeClass(  "avatar-profile-card"  );
       })
 })
+
+jQuery(document).ready(function() {
+
+  var carousel = $(".carousel"),
+      currdeg  = 0;
+   
+
+  $(".next").on("click", { d: "n" }, rotate);
+  $(".prev").on("click", { d: "p" }, rotate);
+
+  function rotate(e){
+    if(e.data.d=="n"){
+      currdeg = currdeg - 36;
+    }
+    if(e.data.d=="p"){
+      currdeg = currdeg + 36;
+    }
+    carousel.css({
+      "-webkit-transform": "rotateY("+currdeg+"deg)",
+      "-moz-transform": "rotateY("+currdeg+"deg)",
+      "-o-transform": "rotateY("+currdeg+"deg)",
+      "transform": "rotateY("+currdeg+"deg)"
+    });
+  }
+
+});
