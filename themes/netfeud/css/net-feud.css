@@ -1,4 +1,4 @@
-
+/*custom stylesheet*/
 
 body{
 	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(11,66,26,1) 20%, rgba(0,0,0,1) 30%, rgba(11,66,26,1) 40%, rgba(0,0,0,1) 50%, rgba(11,66,26,1) 60%, rgba(0,0,0,1) 70%, rgba(11,66,26,1) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
@@ -49,9 +49,9 @@ header {
 
 .sign-up {
 	position: absolute;
-	top: 2em;
+	top: 1em;
 	right: 9.1em;
-	color: rgba(11,150,26,1);
+	color: #000;
 	font-size: 1.4em;
 	display: inline-block;
 	margin-top: 0.5em;
@@ -59,15 +59,15 @@ header {
 }
 
 p.sign-up:hover {
-	color: rgba(11,66,26,0.5);
+	color: green;
 	cursor: pointer;	
 }
 
 .log-in {
 	position: absolute;
-	top: 2em;
+	top: 1em;
 	right: 2em;
-	color: rgba(11,150,26,1);
+	color: #000;
 	font-size: 1.4em;
 	display: inline-block;
 	margin-right: 3.8em;
@@ -75,13 +75,13 @@ p.sign-up:hover {
 }
 
 p.log-in:hover {
-	color: rgba(11,66,26,0.5);
+	color: green;
 	cursor: pointer;
 }
 
 .log-in::before {
 	content: " || ";
-	color: rgba(11,66,26,1);
+	color: #000;
 }
 
 
@@ -89,7 +89,7 @@ p.log-in:hover {
 ************** menu ****************
 ***********************************/
 
-.menu {
+.menu-overlay {
 	position: fixed;
     width: 100%;
     height: 100em;
@@ -102,15 +102,22 @@ p.log-in:hover {
     transition: all 1s ease-out;
 }
 
+.menu-default {
+	position: fixed;
+	top: 0em;
+}
+
 .pie1 {
 	list-style: none;
 	transition: 1s ease-in-out;
+	 z-index: 1000001;
 }
 
 .label{
 	display: none;
 	 transform: rotate(0deg) skewY(0deg);
 	 transition: 1s ease-in-out;
+	  z-index: 1000001;
 }
 
 .pie {
@@ -408,7 +415,7 @@ p.log-in:hover {
 	height: 6.2em;
 	width: 10em;
 	background-color: #404040;
-	top: 7em;
+	top: 5em;
     right: 8em;
     transition: 1s;
     will-change: transform;
@@ -423,6 +430,7 @@ p.log-in:hover {
 }
 
 .profile-card {
+	position: fixed;
 	margin-top: -100em;
 	margin-left: -20em;
 	transition: 0s;
@@ -446,7 +454,6 @@ p.log-in:hover {
 
 .card-avatar-pic {
 	display: block;
-	position: relative;
 	top: 2em;
 	left: 50%;
 	margin-left: -35px;
@@ -461,11 +468,12 @@ p.log-in:hover {
 }
 
 .card-nickname {
+	position: fixed;
 	font-size: 3em;
 	margin-top: 3em;
 	text-align: center;
 }
-
+/*
 .close-card-x {
 	position: relative;
 	top: -21em;
@@ -481,14 +489,14 @@ p.log-in:hover {
 	z-index: 1000000001;
 	cursor: pointer;
 	padding: none;
-}
+}*/
 
 /***********************************
 ************* Search ***************
 ***********************************/
 .search {
 	position: absolute;
-	top: 12em;
+	top: 10.5em;
 	right: 6.6em;
     width: 13em;
     height: 2.1875em;
@@ -505,7 +513,7 @@ p.log-in:hover {
 
 .mag-glass {
 	position: absolute;
-	top: 10.5em;
+	top: 9.3em;
 	right: 15.3em;
 	text-decoration: none;
 	z-index: 100; 
@@ -659,6 +667,10 @@ ul li.top-nav-items {
 	cursor: pointer;
 }
 
+ul li.top-nav-items:hover {
+	color: green;
+}
+
 /***********************************
 ****** navbar media queries ********
 ***********************************/
@@ -723,7 +735,7 @@ ul li.top-nav-items {
   height: 45em;
   z-index: -1000;
   margin: 0 auto;
-  background-image: url(library/img/space-carousel-background.jpg);
+  background-image: url(../img/space-carousel-background.jpg);
   background-repeat: no-repeat;
   background-size: 100%, 100%;
   background-position: center;
@@ -739,7 +751,7 @@ ul li.top-nav-items {
 }
 
 .container {
-  padding-top: 4em;
+  padding-top: 7em;
   margin: 0 auto;
   width: 17em;
   height: 5em;
@@ -777,52 +789,52 @@ ul li.top-nav-items {
 
 ._1 {
   transform: rotateY(0deg) translateZ(500px);
-  background: url(library/img/new-new-pacman.jpg);
+  background: url(../img/new-new-pacman.jpg);
 }
 
 ._2 {
   transform: rotateY(36deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 }
 
 ._3 {
   transform: rotateY(72deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 }
 
 ._4 {
   transform: rotateY(108deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 }
 
 ._5 {
   transform: rotateY(144deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 } 
 
 ._6 {
   transform: rotateY(180deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 }
 
 ._7 {
   transform: rotateY(216deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 }
 
 ._8 {
   transform: rotateY(252deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 }
 
 ._9 {
   transform: rotateY(288deg) translateZ(500px);
-  background: url(library/img/new-cards.jpg);
+  background: url(../img/new-cards.jpg);
 }
 
 ._10 {
   transform: rotateY(324deg) translateZ(500px);
-  background: url(library/img/new-nebula.jpg);
+  background: url(../img/new-nebula.jpg);
 }
 
 .no-1, .no-2, .no-3, .no-4, .no-5, .no-6, .no-7, .no-8, .no-9, .no-10 { position: relative; cursor: default; }
@@ -843,7 +855,7 @@ ul li.top-nav-items {
 
 .prev, .next {
   color: rgba(11,66,26,1); 
-  margin-top: 27.5em;
+  margin-top: 33em;
   color: #444;
   position: absolute;
   padding: 1.5em 2.5em;
@@ -867,20 +879,20 @@ ul li.top-nav-items {
   right: 50%;
 }
 
-.next:active { transform: translate(10px); background-color: rgba(11,66,26,1); color: #fff;}
+.next:active { transform: translate(20px); background-color: rgba(11,66,26,1); color: #fff;}
 
-.prev:active { transform: translate(-10px); background-color: rgba(11,66,26,1); color: #fff;}
+.prev:active { transform: translate(-20px); background-color: rgba(11,66,26,1); color: #fff;}
 
 #top-current-number {
+	width: 100px;
 	position: absolute;
-	left: 50%;
-	padding-top: 3.3em;
-	margin-left: -10px;
+	left: 47.3%;
+	padding-top: 22.2em;
+	margin-left: 1px;
 	text-align: center;
   	margin-top: 14.2em;
-  	font-size: 1.5em;
+  	font-size: 0.9em;
   	color: #fff;
-  	cursor: default;
 }
 
 .next, .prev, .top-current-number {
@@ -901,7 +913,7 @@ ul li.top-nav-items {
 	width: 12em;
 	background-color: #fff;
 	padding-top: 1.25em;
-	margin-top: 1em;
+	margin-top: 50em;
 	margin-bottom: 1.25em;
 	text-align: center;
 	cursor: pointer;
@@ -950,19 +962,55 @@ ul li.top-nav-items {
 }
 
 .games-nav {
-	margin-top: -3em;
+	margin-top: -9em;}
+
+.prev1, .next1 {
+  color: rgba(11,66,26,1); 
+  margin-top: 33em;
+  color: #444;
+  position: absolute;
+  padding: 1.5em 2.5em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
 }
 
+.prev1{
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  margin-left: -107.5px;
+  left: 50%;
+  margin-left: -108px;
+}
+
+.next1 {
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  margin-right: -107.5px;
+  right: 50%;
+}
+
+.next1:active { transform: translate(20px); background-color: rgba(11,66,26,1); color: #fff;}
+
+.prev1:active { transform: translate(-20px); background-color: rgba(11,66,26,1); color: #fff;}
+
 .games-number {
+	width: 100px;
 	position: absolute;
-	left: 50%;
-	padding-top: 3.3em;
-	margin-left: -8px;
+	left: 47.3%;
+	padding-top: 22.2em;
+	margin-left: 1px;
 	text-align: center;
-  	margin-top: 15.8em;
-  	font-size: 1.5em;
+  	margin-top: 14.2em;
+  	font-size: 0.9em;
   	color: #fff;
-  	cursor: default;
+}
+
+.next1, .prev1, .games-number {
+  -webkit-user-select: none;  
+  -moz-user-select: none;     
+  -ms-user-select: none;    
+  user-select: none; 
 }
 
 /***********************************
@@ -999,6 +1047,7 @@ footer {
 
 .footer-nav-items {
 	display: inline-block;
+	margin-left: 2em;
 }
 
 .footer-nav-items h1 {
@@ -1022,4 +1071,3 @@ footer {
 	margin-right: 14em;
 	text-align: center;
 }
-

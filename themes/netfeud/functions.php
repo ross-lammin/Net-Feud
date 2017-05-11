@@ -141,3 +141,43 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+?>
+
+
+<?php 
+
+// function register_theme_menus() {
+// 	register_nav_menus( 
+// 		array(
+// 			'top-menu' => __('top menu'),
+// 			)
+// 	);
+// }
+// add_action('init', 'register_theme_menus');
+
+?>
+
+<?php
+function wpn_theme_styles() {
+	wp_enqueue_style( 'cutom_css', get_template_directory_uri() . '/css/net-feud.css' );
+}
+add_action( 'wp_enqueue_scripts', 'wpn_theme_styles' );
+?>
+
+<?php 
+function theme_scripts() {
+  wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'theme_scripts');
+?>
+
+<?php
+function wpn_theme_js() {
+	wp_enqueue_script( 'menu_js', get_template_directory_uri() . '/js/custom-js/menu.js', array('jquery'), '', true ); 
+	wp_enqueue_script( 'carousel_js', get_template_directory_uri() . '/js/custom-js/carousel.js', array('jquery'), '', true );
+}
+add_action('wp_enqueue_scripts', 'wpn_theme_js');
+?>
+
+
+

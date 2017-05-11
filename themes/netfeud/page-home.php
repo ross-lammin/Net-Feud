@@ -27,13 +27,35 @@
 		  		</div>
 			</div class="game-nav">
 			<div class="next">Next</div>
-			<div id="top-current-number"></div>
+			<div id="top-current-number"><h1 class="topNumber"></h1></div>
 			<div class="prev">Prev</div>
 		</div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.js"
- integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
- crossorigin="anonymous"></script>
-<script type="text/javascript" src=" <?php echo get_template_directory_uri(); ?>/library/js/carousel.js"></script>
-<script type="text/javascript" src=" <?php echo get_template_directory_uri(); ?>/library/js/menu.js"></script>
+		<div class="flex-games">
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+			<div class="front-page-games"></div>
+
+		
+			<div class= "games-nav">
+				<div class="next1">Next</div>
+				<div class="games-number"><h1 class="gamesNumberId"></h1></div>
+				<div class="prev1">Prev</div>
+			</div>
+		</div>
+
+
 <?php get_footer() ?>
