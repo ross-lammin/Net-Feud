@@ -55,7 +55,7 @@
 
 <header>
 
-			<a href="http://netfeud.dev/"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
+			<a href="http://netfeud.dev/"><img class="logo pointer-cursor" src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
 			<img class="title" src="<?php echo get_template_directory_uri(); ?>/img/final-title.png">
 			<div class="login-box">
 				<p class="log-in">Log In</p>
