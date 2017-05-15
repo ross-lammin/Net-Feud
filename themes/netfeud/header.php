@@ -48,22 +48,31 @@
   		<li class='slice5'>
     		<div class='slice-contents5'><h1 class="label label5">Contact</h1></div>
   		</li>
-  		<img class="logo-overlay1" src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
+  		<img class="logo-overlay1" src="<?php echo get_template_directory_uri(); ?>/library/img/logo.png">
 	</ul>
+</div>
+
+
+<div class="h hidden"></div>
+<div class="profile-card">
+	<img src="<?php echo get_template_directory_uri(); ?>/library/img/blank-profile-picture.jpg" class="card-avatar-pic">
+	<h1 class="card-close">&#x2718</h1>
+	<h1 class="card-nickname">Nickname</h1>
+	<div class="card-description">description</div>
 </div>
 
 
 <header>
 
-			<a href="http://netfeud.dev/"><img class="logo pointer-cursor" src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
-			<img class="title" src="<?php echo get_template_directory_uri(); ?>/img/final-title.png">
+			<a href="http://netfeud.dev/"><img class="logo pointer-cursor" src="<?php echo get_template_directory_uri(); ?>/library/img/logo.png"></a>
+			<img class="title" src="<?php echo get_template_directory_uri(); ?>/library/img/final-title.png">
 			<div class="login-box">
 				<p class="log-in">Log In</p>
 				<p class="sign-up">Sign Up</p>
 			</div>
 			<div class="avatar-nest">
 				<h1 class="dropdown-arrow">&#9665;</h1>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/blank-profile-picture.jpg" class="avatar">
+				<img src="<?php echo get_template_directory_uri(); ?>/library/img/blank-profile-picture.jpg" class="avatar">
 				<!-- <div class="profile-card">
 					<img src="<?php //echo get_template_directory_uri(); ?>/img/blank-profile-picture.jpg" class="card-avatar-pic">
 					<h1 class="card-nickname">Nickname</h1>
@@ -74,16 +83,6 @@
 			<input class="search" placeholder="Search..." type="search" name="search">		 
 		</header>
 
-		<?php 
-		
-		 // $defaults = array(
-		 // 	'container' => true, 
-			// 'theme_location' => 'top-menu',
-			// 'menu_class' => 'top-nav',
-		 // 	);
-
-		 // wp_nav_menu( $defaults );
-		?>
 		
 		<ul class="top-nav">
 			<a href="http://netfeud.dev/"><li class="top-nav-items">Home</li></a>

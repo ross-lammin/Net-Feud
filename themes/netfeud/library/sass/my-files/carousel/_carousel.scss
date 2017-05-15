@@ -1,0 +1,168 @@
+.full-box {
+  width: 90%;
+  height: 45em;
+  z-index: -1000;
+  margin: 0 auto;
+  background: url(../img/space-carousel-background.jpg);
+  padding-bottom: 48em;
+}
+
+.whats-hot {
+	font-size: 5em;
+	text-align: center;
+	margin:0;
+	padding: 0;
+    color: #d91414;
+}
+
+.container {
+  padding-top: 7em;
+  margin: 0 auto;
+  width: 17em;
+  height: 5em;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+}
+
+.item {
+  right:0;
+  left: 0;
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 3.4em;
+  height: 2.5em;
+  line-height: 40px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 2;
+  border-radius: 10px;
+  transform-style: preserve-3d; 
+  cursor: pointer;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+}
+
+._1 {
+  transform: rotateY(0deg) translateZ(500px);
+  background: url(../img/new-new-pacman.jpg);
+}
+
+._2 {
+  transform: rotateY(36deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+}
+
+._3 {
+  transform: rotateY(72deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+}
+
+._4 {
+  transform: rotateY(108deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+}
+
+._5 {
+  transform: rotateY(144deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+} 
+
+._6 {
+  transform: rotateY(180deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+}
+
+._7 {
+  transform: rotateY(216deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+}
+
+._8 {
+  transform: rotateY(252deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+}
+
+._9 {
+  transform: rotateY(288deg) translateZ(500px);
+  background: url(../img/new-cards.jpg);
+}
+
+._10 {
+  transform: rotateY(324deg) translateZ(500px);
+  background: url(../img/new-nebula.jpg);
+}
+
+.no-1, .no-2, .no-3, .no-4, .no-5, .no-6, .no-7, .no-8, .no-9, .no-10 { 
+	position: relative; cursor: default; -webkit-text-stroke: 2px black;
+ }
+
+.item::after  {
+	content: '';
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: black;
+    -webkit-transform: rotateY( 180deg );
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    cursor: default;
+}
+
+.prev, .next {
+  color: rgba(11,66,26,1); 
+  margin-top: 33em;
+  color: #444;
+  position: absolute;
+  padding: 1.5em 2.5em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.prev{
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  margin-left: -107.5px;
+  left: 50%;
+  margin-left: -108px;
+}
+
+.next {
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  margin-right: -107.5px;
+  right: 50%;
+} 
+
+.next:active { transform: translate(20px); background-color: rgba(11,66,26,1); color: #fff;}
+
+.prev:active { transform: translate(-20px); background-color: rgba(11,66,26,1); color: #fff;}
+
+#top-current-number {
+  width: 70px;
+  position: absolute;
+  right: 50%;
+  margin-right: -34px;
+  padding-top: 22.2em;
+  margin-left: 1px; 
+  text-align: center;
+	margin-top: 0em;
+	font-size: 0.9em;
+	color: #fff;
+	z-index: 1;
+      padding-top: 0px;
+    top: 81.5em;
+}

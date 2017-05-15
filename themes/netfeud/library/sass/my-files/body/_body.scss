@@ -1,0 +1,10 @@
+body {
+	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(11,66,26,1) 20%, rgba(0,0,0,1) 30%, rgba(11,66,26,1) 40%, rgba(0,0,0,1) 50%, rgba(11,66,26,1) 60%, rgba(0,0,0,1) 70%, rgba(11,66,26,1) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(10%, rgba(0,0,0,1)), color-stop(20%, rgba(11,66,26,1)), color-stop(30%, rgba(0,0,0,1)), color-stop(40%, rgba(11,66,26,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(60%, rgba(11,66,26,1)), color-stop(70%, rgba(0,0,0,1)), color-stop(80%, rgba(11,66,26,1)), color-stop(90%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(11,66,26,1) 20%, rgba(0,0,0,1) 30%, rgba(11,66,26,1) 40%, rgba(0,0,0,1) 50%, rgba(11,66,26,1) 60%, rgba(0,0,0,1) 70%, rgba(11,66,26,1) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}

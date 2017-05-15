@@ -31,6 +31,8 @@
 			<div class="prev">Prev</div>
 		</div>
 
+		<h1 class="hot-games">Whats Hot</h1>
+
 		<div class="flex-games">
 			<div class="front-page-games"></div>
 			<div class="front-page-games"></div>

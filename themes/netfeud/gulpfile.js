@@ -1,13 +1,19 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp     = require('gulp');
+var sass     = require('gulp-sass');
+
+
 
 gulp.task('styles', function() {
-    gulp.src('sass/**/*.scss')
+    gulp.src('library/sass/**/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css/'))
+        .pipe(gulp.dest('library/css'))
 });
 
-//Watch task
-gulp.task('default',function() {
-    gulp.watch('sass/**/*.scss',['styles']);
+//Watch task css
+gulp.task('dev',function() {
+    gulp.watch('library/sass/my-files/**/*.scss',['styles']);
+    gulp.watch('library/sass/pre-files/**/*.scss',['styles']);
+    gulp.watch('library/sass/normalize.scss',['styles']);
 });
+
+
