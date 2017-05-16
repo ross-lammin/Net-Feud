@@ -48,7 +48,7 @@ require_once ( ABSPATH . 'local.wp-config.php' );
 
     // define('WP_ALLOW_REPAIR', true);
 
-    define( 'WP_DEBUG', false );
+    define( 'WP_DEBUG', true );
     define( 'WP_DEBUG_DISPLAY', false );
 }
 // Since you can have multiple installations in one database, you need a unique

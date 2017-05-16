@@ -1,0 +1,163 @@
+/***********************************
+****** Header media queries ********
+***********************************/
+
+@media screen and (min-width: 400px) {
+	header {
+		width: 95%;
+		margin: 0 auto;
+		height: 12em;
+	}
+	.menu-text, .menu-close {
+		display: none;
+	}
+	.logo {
+		transform: scale(0.4)
+	}
+	.title {
+		display: block;
+		margin: 0 auto;
+		margin-top: -2.5em; 
+		width: 18.75em;
+	}
+	.avatar-nest {
+		display: none;
+	}
+	.log-in {
+		display: inline;
+		float: right;
+		margin: 0;
+		margin-right: 0.3em;
+	}
+	.sign-up {
+		display: inline;
+		float: right;
+		margin: 0;
+	}
+	.search {
+		display: none;
+	}
+	.mag-glass {
+		display: inline;
+		background-color: black;
+		border: 1px solid gray;
+		margin-right: 0.5em;
+		margin-top: 0.5em;
+		float: right;
+	}
+	.pie1, .menu-default, .profile-card {display: none;}
+}
+
+/***********************************
+****** navbar media queries ********
+***********************************/
+
+@media screen and (min-width: 400px){
+	ul.top-nav {
+		display: block;
+	    padding-left: 0px;
+	    width: 60%;	
+		margin: 1em auto;
+	}
+	ul li.top-nav-items {
+		display: block;
+		font-size: 1em;
+		margin: 0.5em auto;
+		padding: 0.3em;
+	}
+	.top-nav-items {
+		margin: 0 auto;
+	}
+	a {
+		color: #fff;
+	}
+	a:hover {
+		color: green;
+	}
+
+}
+
+/***********************************
+************* side ads *************
+***********************************/
+
+.ads-temp-left, .ads-temp-right{
+	display: none;
+}
+
+/***********************************
+****** carousel media queries ******
+***********************************/
+
+@media screen and (min-width: 400px){
+	.full-box, .hot-games, .container, .carousel, .item {
+		display: none;
+	}
+}
+
+/***********************************
+******** games media queries *******
+***********************************/
+@media screen and (min-width: 400px) {
+	.flex-games {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.front-page-games {
+		height: 6em;
+		width: 6em;
+	}
+	.games-nav {
+		margin-bottom: 1em;
+
+	}
+}
+
+
+/***********************************
+******* footer media queries *******
+***********************************/
+@media screen and (min-width: 400px) {
+	.footer-nav {
+		display: inline;
+		width: 100%;
+	}
+	.footer-nav-items h1 {
+		display: inline-block;
+		border: none;
+		margin: 0;
+		padding: 0;
+		background: none;
+		cursor: pointer;
+		font-size: 1em;
+			}
+		.footer-nav-items::after {
+			content: " |";
+			color: #fff;
+		}
+		a:last-child .footer-nav-items::after {
+			content: "";
+		}
+	
+	ul {
+		margin: 0 auto;
+	}
+	.footer-logo {
+		display: block;
+		transform: scale(0.3);
+		margin: 0em auto;
+		margin-top: 0em;
+	}
+	.facebook-icon {
+		display: block;
+		top: 4em;
+		margin: 1em auto;
+
+	}
+}
+
+
+
+
+
+

@@ -50,14 +50,14 @@
 			<div class="front-page-games"></div>
 			<div class="front-page-games"></div>
 			<div class="front-page-games"></div>
+		</div>
 
 		
 			<div class= "games-nav">
 				<div class="next1">Next</div>
-				<div class="games-number"><h1 class="gamesNumberId"></h1></div>
 				<div class="prev1">Prev</div>
+				<div class="games-number"><h1 class="gamesNumberId"></h1></div>
 			</div>
-		</div>
 
 
 <?php get_footer() ?>

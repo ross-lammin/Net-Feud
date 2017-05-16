@@ -20,10 +20,8 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-@import "my-files/my-files";
+@import "normalize";
 
 @import "pre-files/pre-files";
 
-@import "normalize";
-
-
+@import "my-files/my-files";

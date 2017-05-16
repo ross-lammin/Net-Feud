@@ -218,43 +218,6 @@ ul li.top-nav-items:hover {
 	color: green;
 }
 
-/***********************************
-****** navbar media queries ********
-***********************************/
-
-@media screen and (max-width: 1352px){
-	ul li.top-nav-items {
-		font-size: 1.4em;
-	}
-}
-
-@media screen and (max-width: 1061px){
-	ul li.top-nav-items {
-		font-size: 1.2em;
-	}
-}
-
-@media screen and (max-width: 918px){
-	ul li.top-nav-items {
-		font-size: 1em;
-	}
-}
-
-@media screen and (max-width: 918px){
-	ul.top-nav {
-		display: block;
-	}
-	ul li.top-nav-items {
-		display: block;
-		font-size: 0.8em;
-		width:50%;
-		margin: 0.5em auto;
-		padding-top: 0.3em;
-		padding-bottom: 0.3em;
-		text-align: center;
-		font-size: 1em;
-	}
-}
 
 
 
