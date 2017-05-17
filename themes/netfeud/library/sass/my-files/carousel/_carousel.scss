@@ -3,7 +3,8 @@
   height: 45em;
   z-index: -1000;
   margin: 0 auto;
-  background: url(../img/space-carousel-background.jpg);
+  background: url(../img/space-carousel-background.jpg) no-repeat center;
+  background-size: cover;
   padding-bottom: 48em;
 }
 

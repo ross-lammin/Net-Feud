@@ -24,12 +24,31 @@
 				    <div class="item _8"><span class="no-8"> # 8 </span></div>
 				    <div class="item _9"><span class="no-9"> # 9 </span></div>
 				    <div class="item _10"><span class="no-10"> # 10 </span></div>
+				    <div class="dodec">
+						<div class='poly'>
+							<div class='poly-i1'>
+								<div class='poly-i2'></div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="panel1"></div>
+						<div class="panel2"></div>
+						<div class="panel3"></div>
+						<div class="panel4"></div>
+						<div class="panel5"></div>
+						<div class="panel6"></div>
+						<div class="panel7"></div>
+						<div class="panel8"></div>
+						<div class="panel9"></div>
+						<div class="panel10"></div>
+					</div>
 		  		</div>
 			</div class="game-nav">
 			<div class="next">Next</div>
 			<div id="top-current-number"><h1 class="topNumber"></h1></div>
 			<div class="prev">Prev</div>
-		</div>
+</div>
 
 		<h1 class="hot-games">Whats Hot</h1>
 
