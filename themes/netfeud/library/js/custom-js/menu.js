@@ -45,56 +45,32 @@ jQuery(document).ready(function($){
 
 
 
-// $(function(){
-//     var stickyHeaderTop = $('.ads-temp-left').offset().top;
 
-//     $(window).scroll(function(){
-//             if( $(window).scrollTop() >= stickyHeaderTop ) {
-//                     $('.ads-temp-left').css({position: 'fixed', top: '40px', marginTop: '0em'});
-
-//             } else {
-//                     $('.ads-temp-left').css({position: 'absolute', marginTop: '80em'});
-
-//             }
-//     });
+// $(document).scroll(function() {
+//     var y = $(document).scrollTop(), 
+//         header = $(".ads-temp-left"); 
+//     if(y >= 304 && y <= 1442)  {
+//         header.css({position: "fixed", "top" : "0em", "left" : "0"});
+//     } else {
+//         header.css({position: "absolute", top: '19em' });
+//     }
+//     if (y >= 1442) {
+//       header.css({position: "absolute", "top" : "1442px", "left" : "0"});
+//     }
 // });
 
-
-
-// $(function(){
-//     var stickyHeaderTop = $('.ads-temp-right').offset().top;
-
-//     $(window).scroll(function(){
-//             if( $(window).scrollTop() >= stickyHeaderTop ) {
-//                     $('.ads-temp-right').css({position: 'fixed', top: '40px', marginTop: '0em'});
-
-//             } else {
-//                     $('.ads-temp-right').css({position: 'absolute', marginTop: '80em'});
-
-//             }
-//     });
+// $(document).scroll(function() {
+//     var y = $(document).scrollTop(), 
+//         header = $(".ads-temp-right"); 
+//     if(y >= 304 && y <= 1442)  {
+//         header.css({position: "fixed", "top" : "0em", "right" : "0"});
+//     } else {
+//         header.css({position: "absolute", top: '19em' });
+//     }
+//     if (y >= 1442) {
+//       header.css({position: "absolute", "top" : "1442px", "right" : "0"});
+//     }
 // });
-
-
-$(document).scroll(function() {
-    var y = $(document).scrollTop(), //get page y value 
-        header = $(".ads-temp-left"); // your div id
-    if(y >= 1319)  {
-        header.css({position: "fixed", "top" : "-40em", "left" : "0"});
-    } else {
-        header.css({position: "absolute", top: '42em' });
-    }
-});
-
-$(document).scroll(function() {
-    var y = $(document).scrollTop(), //get page y value 
-        header = $(".ads-temp-right"); // your div id
-    if(y >= 1319)  {
-        header.css({position: "fixed", "top" : "-40em", "right" : "0"});
-    } else {
-        header.css({position: "absolute", top: '42em' });
-    }
-});
 
 
 

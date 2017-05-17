@@ -29,6 +29,7 @@
   cursor: pointer;
   background: #CCC;
   border-radius: 5px;
+  z-index: 1;
 }
 
 .prev1{
@@ -57,7 +58,8 @@
 	font-size: 0.9em;
   top: 1em;
  	color: #fff;
-  z-index: 1001;
+  z-index: 0;
+  cursor: default;
 }
 
 .hot-games {

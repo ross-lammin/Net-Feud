@@ -179,12 +179,6 @@
 	content:'\2630'; 
 }
 
-@media screen and ( max-width: 700px ) {
-	.menu-default .menu-close {
-		display: none;
-	}
-}
-
 /***********************************
 ************ nav bar ***************
 ***********************************/
@@ -212,6 +206,7 @@ ul li.top-nav-items {
 	cursor: pointer;
 	text-decoration: none;
 	margin: 0 0.5em;
+  text-align: center;
 }
 
 ul li.top-nav-items:hover {

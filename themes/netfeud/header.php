@@ -63,19 +63,21 @@
 
 
 <header>
+<div>
 	<img class="logo pointer-cursor" src="<?php echo get_template_directory_uri(); ?>/library/img/logo.png">
-	
+	<img class="title" src="<?php echo get_template_directory_uri(); ?>/library/img/final-title.png">
+</div>
 		<p class="log-in">Log In</p>
 		<p class="sign-up">Sign Up</p>
-	
-	<img class="title" src="<?php echo get_template_directory_uri(); ?>/library/img/final-title.png">
 	
 	<div class="avatar-nest">
 		<h1 class="dropdown-arrow">&#9665;</h1>
 		<img src="<?php echo get_template_directory_uri(); ?>/library/img/blank-profile-picture.jpg" class="avatar">
 	</div>
-	 <a class="mag-glass" href="#">&#x1f50e;</a>
-	<input class="search" placeholder="Search..." type="search" name="search">		 
+	<div>
+		 <a class="mag-glass" href="#">&#x1f50e;</a>
+		<input class="search" placeholder="Search..." type="search" name="search">	
+	</div>	 
 </header>
 
 		
