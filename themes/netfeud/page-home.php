@@ -32,16 +32,16 @@
 						</div>
 					</div>
 					<div>
-						<div class="panel1"></div>
-						<div class="panel2"></div>
-						<div class="panel3"></div>
-						<div class="panel4"></div>
-						<div class="panel5"></div>
-						<div class="panel6"></div>
-						<div class="panel7"></div>
-						<div class="panel8"></div>
-						<div class="panel9"></div>
-						<div class="panel10"></div>
+						<div class="panel panel1"></div>
+						<div class="panel panel2"></div>
+						<div class="panel panel3"></div>
+						<div class="panel panel4"></div>
+						<div class="panel panel5"></div>
+						<div class="panel panel6"></div>
+						<div class="panel panel7"></div>
+						<div class="panel panel8"></div>
+						<div class="panel panel9"></div>
+						<div class="panel panel10"></div>
 					</div>
 		  		</div>
 			</div class="game-nav">

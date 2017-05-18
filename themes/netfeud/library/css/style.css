@@ -1149,6 +1149,74 @@ ul li.top-nav-items:hover {
   top: 81.8em;
   cursor: default; }
 
+.dodec {
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateY(0px) translateZ(0px) translateX(0px) scale(0.8); }
+
+.poly, .poly *, .poly *:before {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10em;
+  width: 20em;
+  height: 20em;
+  transform: translateX(30em); }
+
+.poly {
+  transform: skewX(18deg) scaleY(0.95); }
+
+.poly * {
+  transform: scaleY(1.05) skewX(-18deg) rotate(144deg) skewX(18deg) scaleY(0.95); }
+
+.poly-i2 {
+  color: red;
+  cursor: pointer; }
+
+.poly-i2:before {
+  transform: scaleY(1.05) skewX(-18deg);
+  background-color: green;
+  content: ''; }
+
+.panel {
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  background-color: gray;
+  z-index: 100000;
+  transform-style: preserve-3d;
+  will-change: trasform;
+  transform: translateY(100px); }
+
+.panel1 {
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(121px) translateX(93px); }
+
+.panel2 {
+  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(175px) translateX(77px); }
+
+.panel3 {
+  transform: rotateY(72deg) rotateX(0deg) rotateZ(0deg) translateZ(213px) translateX(30px); }
+
+.panel4 {
+  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(210px) translateX(-30px); }
+
+.panel5 {
+  transform: rotateY(140deg) rotateX(0deg) rotateZ(0deg) translateZ(180px) translateX(-65px); }
+
+.panel6 {
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(-120px) translateX(95px); }
+
+.panel7 {
+  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(-63px) translateX(80px); }
+
+.panel8 {
+  transform: rotateY(70deg) rotateX(0deg) rotateZ(0deg) translateZ(-30px) translateX(30px); }
+
+.panel9 {
+  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(-29px) translateX(-28px); }
+
+.panel10 {
+  transform: rotateY(142deg) rotateX(0deg) rotateZ(0deg) translateZ(-62px) translateX(-79px); }
+
 /***********************************
 ******** Top advertisement *********
 ***********************************/
@@ -1266,140 +1334,6 @@ ul li.top-nav-items:hover {
 
 .hot-games::before {
   content: "\01F525"; }
-
-.dodec {
-  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateY(0px) translateZ(0px) translateX(0px) scale(0.8); }
-
-.poly, .poly *, .poly *:before {
-  /**/
-  overflow: hidden;
-  /**/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -10em;
-  /**
-  outline: solid 1px blue; /**/
-  width: 20em;
-  height: 20em; }
-
-.poly {
-  transform: skewX(18deg) scaleY(0.95); }
-
-.poly * {
-  /**
-  outline: solid 1px; /**/
-  transform: scaleY(1.05) skewX(-18deg) rotate(144deg) skewX(18deg) scaleY(0.95); }
-
-.poly-i2 {
-  color: red;
-  cursor: pointer; }
-
-.poly-i2:before {
-  transform: scaleY(1.05) skewX(-18deg);
-  /**/
-  background-color: green;
-  content: ''; }
-
-.panel1 {
-  position: absolute;
-  height: 100px;
-  width: 80px;
-  background-color: black;
-  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(121px) translateY(0px) translateX(93px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel2 {
-  position: absolute;
-  height: 100px;
-  width: 80px;
-  background-color: black;
-  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(175px) translateY(0px) translateX(77px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel3 {
-  position: absolute;
-  height: 100px;
-  width: 75px;
-  background-color: black;
-  transform: rotateY(72deg) rotateX(0deg) rotateZ(0deg) translateZ(213px) translateY(0px) translateX(30px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel4 {
-  position: absolute;
-  height: 100px;
-  width: 80px;
-  background-color: black;
-  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(210px) translateY(0px) translateX(-30px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel5 {
-  position: absolute;
-  height: 100px;
-  width: 80px;
-  background-color: black;
-  transform: rotateY(140deg) rotateX(0deg) rotateZ(0deg) translateZ(180px) translateY(0px) translateX(-65px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel6 {
-  position: absolute;
-  height: 100px;
-  width: 80px;
-  background-color: black;
-  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(-120px) translateY(0px) translateX(95px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel7 {
-  position: absolute;
-  height: 100px;
-  width: 77px;
-  background-color: black;
-  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(-63px) translateY(0px) translateX(80px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel8 {
-  position: absolute;
-  height: 100px;
-  width: 80px;
-  background-color: black;
-  transform: rotateY(70deg) rotateX(0deg) rotateZ(0deg) translateZ(-30px) translateY(0px) translateX(30px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel9 {
-  position: absolute;
-  height: 100px;
-  width: 80px;
-  background-color: black;
-  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(-29px) translateY(0px) translateX(-28px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
-
-.panel10 {
-  position: absolute;
-  height: 100px;
-  width: 77px;
-  background-color: black;
-  transform: rotateY(142deg) rotateX(0deg) rotateZ(0deg) translateZ(-62px) translateY(0px) translateX(-79px);
-  z-index: 100000;
-  transform-style: preserve-3d;
-  will-change: trasform; }
 
 footer {
   background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 62%, black 89%, #2b2b2b 100%);
