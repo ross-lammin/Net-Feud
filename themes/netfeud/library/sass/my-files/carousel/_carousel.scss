@@ -2,7 +2,7 @@
   width: 90%;
   height: 45em;
   z-index: -1000;
-  margin: 0 auto;
+  margin: 3.5em auto;
   background: url(../img/space-carousel-background.jpg) no-repeat center;
   background-size: cover;
   padding-bottom: 48em;
@@ -13,7 +13,7 @@
 	text-align: center;
 	margin:0;
 	padding: 0;
-    color: #d91414;
+  color: #d91414;
 }
 
 .container {
@@ -130,7 +130,7 @@
   cursor: pointer;
   background: #CCC;
   border-radius: 5px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .prev{
@@ -157,15 +157,15 @@
   position: absolute;
   right: 50%;
   margin-right: -34px;
-  padding-top: 22.2em;
+  padding-top: 25.2em;
   margin-left: 1px; 
   text-align: center;
 	margin-top: 0em;
 	font-size: 0.9em;
 	color: #fff;
-	z-index: 1;
+	z-index: 0;
   padding-top: 0px;
-  top: 81.8em;
+  top: 84.1em;
   cursor: default;
 }
 
@@ -174,7 +174,7 @@
 
 
 .dodec {
-  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateY(0px) translateZ(0px) translateX(0px) scale(0.8);
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateY(0px) translateZ(-30px) translateX(0px) scale(0.8);
 }
 .poly, .poly *, .poly *:before {
   
@@ -213,34 +213,65 @@
   transform-style: preserve-3d;
   will-change: trasform;
   transform: translateY(100px);
+  border: 4px solid green;
 }
 .panel1 {
-  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(121px)  translateX(93px);
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(121px)  translateX(93px) translateY(30px);
 }
 .panel2 {
-  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(175px)  translateX(77px);
+  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(175px)  translateX(77px) translateY(30px);
 }
 .panel3 {
-  transform: rotateY(72deg) rotateX(0deg) rotateZ(0deg) translateZ(213px)  translateX(30px);
+  transform: rotateY(72deg) rotateX(0deg) rotateZ(0deg) translateZ(213px)  translateX(30px) translateY(30px);
 }
 .panel4 {
-  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(210px)  translateX(-30px);
+  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(210px)  translateX(-30px) translateY(30px);
 }
 .panel5 {
-  transform: rotateY(140deg) rotateX(0deg) rotateZ(0deg) translateZ(180px)  translateX(-65px);
+  transform: rotateY(140deg) rotateX(0deg) rotateZ(0deg) translateZ(180px)  translateX(-65px) translateY(30px);
 }
 .panel6 {
-  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(-120px)  translateX(95px);
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(-120px)  translateX(95px) translateY(30px);
 }
 .panel7 {
-  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(-63px)  translateX(80px);
+  transform: rotateY(36deg) rotateX(0deg) rotateZ(0deg) translateZ(-63px)  translateX(80px) translateY(30px);
 }
 .panel8 {
-  transform: rotateY(70deg) rotateX(0deg) rotateZ(0deg) translateZ(-30px)  translateX(30px);
+  transform: rotateY(70deg) rotateX(0deg) rotateZ(0deg) translateZ(-30px)  translateX(30px) translateY(30px);
 }
 .panel9 {
-  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(-29px)  translateX(-28px);
+  transform: rotateY(108deg) rotateX(0deg) rotateZ(0deg) translateZ(-29px)  translateX(-28px) translateY(30px);
 }
 .panel10 {
-  transform: rotateY(142deg) rotateX(0deg) rotateZ(0deg) translateZ(-62px)  translateX(-79px);
+  transform: rotateY(142deg) rotateX(0deg) rotateZ(0deg) translateZ(-62px)  translateX(-79px) translateY(30px);
 }
+.bar { 
+  position: absolute;
+  background-color: green;
+  height: 20px;
+  width: 990px;
+  z-index: 50;
+  border-radius: 10px;
+  will-change: transform;
+  border: 3px solid gray;
+}
+.bar1 {
+  transform: rotateY(90deg) translateZ(-360px) translateX(2px) translateY(50px);
+}
+.bar2 {
+  transform: rotateY(126deg) translateZ(-300px) translateX(215px) translateY(50px);
+}
+.bar3 {
+  transform: rotateY(162deg) translateZ(-100px) translateX(347px) translateY(50px);
+}
+.bar4 {
+  transform: rotateY(198deg) translateZ(100px) translateX(346px) translateY(50px);
+}
+.bar5 {
+  transform: rotateY(234deg) translateZ(300px) translateX(214px) translateY(50px);
+}
+
+
+
+
+

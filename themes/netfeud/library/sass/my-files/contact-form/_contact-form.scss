@@ -1,0 +1,133 @@
+input, select, textarea {outline-color: green;}
+input {padding-left: 0.8em;}
+.form-layout {
+	display: flex;
+	justify-content: center;
+}
+#contact-form {
+	display: flex;
+	width: 35em;
+	margin-bottom: 2em;
+	margin-right: 4em;
+}
+#contact-title {
+	text-align: center;
+	font-size: 4em;
+	color: white;
+}
+label {
+	color: #fff;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	font-size: 1.5em;
+}
+.field-set {
+	display: flex;
+	justify-content: center;
+	margin: 2em;
+}
+#form-first-name, #form-last-name, #form-email, #form-account-name, #form-number, #comments {
+	width: 15em;
+	height: 2.5em;
+}
+#selection {
+	width: 10em;
+	display: block;
+	margin: 1em auto;
+}
+#comments {
+	display: flex;
+	width: 25em;
+	height: 7em;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	padding: 0.5em 0.7em;
+	resize: none;
+}
+#buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+#submit, #cancel {
+	font-size: 1.5em;
+	width: 6em;
+	border: 1px solid #000;
+	box-shadow: 3px 4px 0px #888;
+}
+#submit:active, #cancel:active {
+	transition: 0s;
+	transform: translateY(4px) translateX(3px);
+	box-shadow: 0px 0px 0px #888;
+}
+#submit {
+	background-color: green;
+	margin-right: 2em;
+}
+#cancel {
+	background-color: red;
+}
+button {
+	outline: none;
+}
+
+
+.form-description {
+	width: 35em;
+	p, h1, h3 {
+		color: #fff;
+	}
+	u {
+		color: red;
+	}
+	h1, h3 {
+		text-align: center;
+	}
+	h3 {
+		color: red;
+	}
+	p {
+		font-size: 1.2em;
+		text-align: inherit;
+	}
+	li {
+		color: #bbb;
+		margin-top: -1em;
+		margin-left: 2em;
+		margin-bottom: 0.5em;
+		list-style: square;
+	}
+}
+
+
+
+.sucssess-box {
+	position: absolute;
+	display: block;
+	z-index: 10000000;
+	top: 20vh;
+	left: 50%;
+	margin-left: -400px;
+	text-align: center;
+	background-color: black;
+	width: 50em;
+	border: 5px solid green;
+}
+.box-head, .box-foot {
+	height: 6.2em;
+	width: 49.5em;
+	background-color: green;
+	padding-top: 10px;
+}
+.sucssess-text {
+	color: green;
+	font-size: 2em;
+	padding: 4em 0;
+}
+
+
+
+
+
+
+

@@ -19,12 +19,12 @@
 	}
 	.log-in {
 		position: absolute;
-		top: 2.5em;
+		top: 1.2em;
 		right: -1.5em;
 	}
 	.sign-up {
 		position: absolute;
-		top: 2.5em;
+		top: 1.2em;
 		right: 5.6em;
 	}
 	.mag-glass {
@@ -46,17 +46,17 @@
 		display: inline;
 	}
 	.log-in {
-		top: 2em;
+		top: 1.2em;
 		right: 2.4em;
 	}
 	.sign-up {
-		top: 2em;
-		right: 10em;
+		top: 1.2em;
+		right: 9.5em;
 	}
 	.avatar-nest {
 		position: absolute;
 		display: inline-block;
-		top: 6em;
+		top: 6.5em;
 		right: 8.5em;
 		z-index: 5;
 	}
@@ -66,7 +66,7 @@
 	}
 	.mag-glass {
 		position: absolute;
-		top: 9.2em;
+		top: 9.5em;
 		right: 12.5em;
 		border: none;
 		background: none;
@@ -74,7 +74,7 @@
 	}
 	.search {
 		position: absolute;
-		top: 11em;
+		top: 11.3em;
 		right: 6.9em;
 		width: 10em;
 	}
@@ -99,6 +99,12 @@
 	.title {
 		top: -8em;
 		width: 40em;
+	}
+	.log-in {
+		top: 1.2em;
+	}
+	.sign-up {
+		top: 1.2em;
 	}
 }
 

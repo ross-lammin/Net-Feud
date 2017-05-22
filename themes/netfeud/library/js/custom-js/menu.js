@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
     	$( ".pie1" ).toggleClass(  "pie"  );
     	$( ".slice1" ).toggleClass(  "slice"  );
     	$( ".slice-contents1" ).toggleClass(  "slice-contents"  );
-    	$( ".slice2" ).toggleClass(  "slice"  );
+    	$( ".slice2" ).toggleClass(  "slice"  ); 
     	$( ".slice-contents2" ).toggleClass(  "slice-contents"  );
     	$( ".slice3" ).toggleClass(  "slice"  );
     	$( ".slice-contents3" ).toggleClass(  "slice-contents"  );
@@ -72,7 +72,9 @@ jQuery(document).ready(function($){
 //     }
 // });
 
-
+$("submit").on("click", function(e) {
+    alert("hello");
+  })
 
 });
 

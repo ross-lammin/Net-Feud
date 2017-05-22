@@ -52,27 +52,31 @@ $( ".prev" ).on("click", function(e) {
 
 
 
-$(".gamesNumberId").html(number);
+var number1 = 1;
+var lowerNumber1 = 1;
+var topNumber1 = 10;
+
+$(".gamesNumberId").html(number1);
 
 
 $( ".next1" ).on("click", function(e) {
-      if(number === topNumber) {
-        number -= topNumber;
+      if(number1 === topNumber1) {
+        number1 -= topNumber1;
       }
 
-      number +=  1;
+      number1 +=  1;
 
-      $(".gamesNumberId").html(number);
+      $(".gamesNumberId").html(number1);
    })
 
 $( ".prev1" ).on("click", function(e) {
-      if(number === lowerNumber) {
-        number +=  topNumber;
+      if(number1 === lowerNumber1) {
+        number1 +=  topNumber1;
       }
 
-      number -= 1;
+      number1 -= 1;
 
-      $(".gamesNumberId").html(number);
+      $(".gamesNumberId").html(number1);
 
    })
 

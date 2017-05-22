@@ -5,7 +5,8 @@
 .top-ad-temp {
 	display: block;
 	clear:both;
-	margin: 1em auto;
+	margin: 0 auto;
+	margin-bottom: 0.5em;
 	background-color: #fff;
 	width: 70%;
 	text-align: center;
@@ -18,35 +19,35 @@
 ************* side ads *************
 ***********************************/
 
-.ads-temp-left, .ads-temp-right{
-	height: 40em;
-	width: 10%;
-	background-color: #fff;
-	padding-top: 1.25em;
-	margin-top: 0em;
-	margin-bottom: 0em;
-	text-align: center;
-	cursor: pointer;
-	position: absolute;
-	will-change: transform;
-	top: 86em;
-}
+// .ads-temp-left, .ads-temp-right{
+// 	height: 40em;
+// 	width: 10%;
+// 	background-color: #fff;
+// 	padding-top: 1.25em;
+// 	margin-top: 0em;
+// 	margin-bottom: 0em;
+// 	text-align: center;
+// 	cursor: pointer;
+// 	position: absolute;
+// 	will-change: transform;
+// 	top: 86em;
+// }
 
-.ads-temp-left {
-	left: 0%;
-}
+// .ads-temp-left {
+// 	left: 0%;
+// }
 
-.ads-temp-right {
-	right: 0%;
-}
+// .ads-temp-right {
+// 	right: 0%;
+// }
 
-.vertical-text-left {
-	transform: rotate(270deg);
-	margin-top: 360px;
+// .vertical-text-left {
+// 	transform: rotate(270deg);
+// 	margin-top: 360px;
 
-}
+// }
 
-.vertical-text-right {
-	transform: rotate(90deg);
-	margin-top: 240px;
-}
+// .vertical-text-right {
+// 	transform: rotate(90deg);
+// 	margin-top: 240px;
+// }

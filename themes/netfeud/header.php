@@ -93,8 +93,8 @@
 
 
 		<div class="top-ad-temp"><h1>ADVERTISEMENT</h1></div>
-		<div class="ads-temp-left"><h1 class="vertical-text-left">ADVERTISEMENT</h1></div>
-		<div class="ads-temp-right"><h1 class="vertical-text-right">ADVERTISEMENT</h1></div>
+		<!-- <div class="ads-temp-left"><h1 class="vertical-text-left">ADVERTISEMENT</h1></div>
+		<div class="ads-temp-right"><h1 class="vertical-text-right">ADVERTISEMENT</h1></div> -->
 
 
 

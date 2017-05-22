@@ -7,15 +7,20 @@
 	margin: 0 auto;
 	margin-bottom: 2em;
 }
+.games-box{
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: gray;
+}
 
-.front-page-games {
+.front-games {
 	display: flex;
 	margin: 1em;
-	height: 20em;
-	width: 20em;
 	border-radius: 10px;
-	background-color: gray;
 }
+
 
 .games-nav {
   height: 100px;

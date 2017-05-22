@@ -176,6 +176,7 @@ add_action('wp_enqueue_scripts', 'theme_scripts');
 function wpn_theme_js() {
 	wp_enqueue_script( 'menu_js', get_template_directory_uri() . '/library/js/custom-js/menu.js', array('jquery'), '', true ); 
 	wp_enqueue_script( 'carousel_js', get_template_directory_uri() . '/library/js/custom-js/carousel.js', array('jquery'), '', true );
+	wp_enqueue_script( 'contact-form_js', get_template_directory_uri() . '/library/js/custom-js/contact-form.js', array('jquery'), '', true );
 }
 add_action('wp_enqueue_scripts', 'wpn_theme_js');
 ?>
