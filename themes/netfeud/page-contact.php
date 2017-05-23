@@ -12,21 +12,27 @@
 	<fieldset id="contact-form">
 		<legend id="contact-title">Contact Us</legend>
 		<div class="field-set">
-			<input id="form-first-name" placeholder="First Name..." type="text" name="first-name">
+		<label for="first-name">*</label>
+			<input id="form-first-name" class="required" placeholder="First Name..." type="text" name="first-name">
 		</div>
 		<div class="field-set">
-			<input id="form-last-name" type="text" placeholder="Last Name..." name="last-name">
+			<label for="last-name">*</label>
+			<input id="form-last-name" class="required type="text" placeholder="Last Name..." name="last-name">
 		</div>
 		<div class="field-set" >
-			<input id="form-email" type="email" placeholder="Email..." name="email">
+			<label for="email">*</label>
+			<input id="form-email" class="required" type="email" placeholder="Email..." name="email">
 		</div>
 		<div class="field-set">
-			<input id="form-account-name" type="text" placeholder="Account Name..." name="account-name">
+			<label for="account-name">*</label>
+			<input id="form-account-name" class="required type="text" placeholder="Account Name..." name="account-name">
 		</div>
 		<div class="field-set">
+		<label for="contact-number">  </label>
 			<input id="form-number" type="tel" placeholder="Tel..." name="contact-number">
 		</div>
-		<select id="selection">
+		<label class="label-drop" for="dropdown">*</label>
+		<select id="selection" class="required" name="dropdown">
 			<option disabled selected>-----select one------</option>
 			<optgroup label="You'r Opinion">
 				<option>Feedback</option>
@@ -43,10 +49,11 @@
 				<option>Other</option>
 			</optgroup>
 		</select>
-		<textarea id="comments" placeholder="Comments..."></textarea>
+		<label class="label-text" for="comments">*</label>
+		<textarea id="comments" class="required" name="comments" placeholder="Comments..."></textarea>
 		<div id="buttons">
 			<button id="submit">Send</button>
-			<button id="cancel">Cancel</button>
+			<button id="cancel">Clear</button>
 		</div>
 	</fieldset>
 	<div class="form-description">
@@ -73,13 +80,14 @@
 
 
 
-
-<div class="hidden ">
-	<div class="box-head"><h1>Message Sent successfully</h1></div>
-	<p class="sucssess-text">Thank you for your form submition we will get back to you as soon as we can &#128512;</p>
-	<div class="box-foot"></div>
+<div class="suc7 suc17 success-overlay">
+	<div class="suc1 suc11">
+		<p class="success-box-x">&#x2718;</p>
+		<div class="suc2 suc12 "><h1 class="suc3 suc13">Message Sent successfully</h1></div>
+		<p class="suc4 suc14">Thank you for your form submition we will get back to you as soon as we can &#128512;</p>
+		<div class="suc5 suc15"></div>
+	</div>
 </div>
-
 
 
 

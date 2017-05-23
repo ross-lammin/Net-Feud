@@ -16,7 +16,7 @@ input {padding-left: 0.8em;}
 	color: white;
 }
 label {
-	color: #fff;
+	color: red;
 	margin-right: 0.5em;
 	margin-left: 0.5em;
 	font-size: 1.5em;
@@ -44,6 +44,7 @@ label {
 	padding: 0.5em 0.7em;
 	resize: none;
 }
+
 #buttons {
 	display: flex;
 	justify-content: center;
@@ -70,8 +71,14 @@ label {
 button {
 	outline: none;
 }
-
-
+.label-drop {
+	position: absolute;
+	left: 11.5em;
+}
+.label-text {
+	position: absolute;
+	left: 7em;
+}
 .form-description {
 	width: 35em;
 	p, h1, h3 {
@@ -99,32 +106,59 @@ button {
 	}
 }
 
+.suc11, .suc12, .suc13, .suc14, .suc15, .suc16, .suc17 {
+	display: none;
+}
 
-
-.sucssess-box {
-	position: absolute;
+.success-box {
+	position: fixed;
 	display: block;
-	z-index: 10000000;
-	top: 20vh;
+	z-index: 1000000000000;
+	top: 15vh;
 	left: 50%;
 	margin-left: -400px;
 	text-align: center;
 	background-color: black;
 	width: 50em;
 	border: 5px solid green;
+	h1 {
+		padding-top: 0.3em;
+	}
+}
+.success-box-x {
+	position: absolute;
+	top: -1.33em;
+	right: 0;
+	color: red;
+	font-size: 7em; 
+	z-index: 1000000000004;
+	cursor: pointer;
 }
 .box-head, .box-foot {
 	height: 6.2em;
 	width: 49.5em;
 	background-color: green;
 	padding-top: 10px;
+	z-index: 1000000000000;
 }
-.sucssess-text {
+.box-head {
+	margin-top: 0em;
+}
+.success-text {
 	color: green;
 	font-size: 2em;
 	padding: 4em 0;
+	z-index: 1000000000000;
 }
-
+.success-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.1);
+	z-index: 99999999999;
+}
 
 
 
