@@ -332,12 +332,6 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
 
-select {
-  border: 1px solid #ccc; }
-
-textarea {
-  width: 100%; }
-
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -637,7 +631,7 @@ header {
   color: #fff;
   display: inline-block;
   font-size: 1.4em;
-  margin-top: 1.7em; }
+  margin-top: 0em; }
 
 .sign-up {
   right: 9.1em;
@@ -720,7 +714,7 @@ p.sign-up:hover, p.log-in:hover {
   position: fixed;
   height: 40em;
   width: 40em;
-  top: -100%;
+  top: -100em;
   left: 50%;
   margin-left: -325px;
   transition: 1s ease-in-out;
@@ -1442,7 +1436,7 @@ li.footer-nav-items h1 {
   .avatar-nest {
     position: absolute;
     display: inline-block;
-    top: 6.5em;
+    top: 4em;
     right: 8.5em;
     z-index: 5; }
   .avatar-nest-full {
@@ -1450,14 +1444,14 @@ li.footer-nav-items h1 {
     z-index: 100; }
   .mag-glass {
     position: absolute;
-    top: 9.5em;
+    top: 7.9em;
     right: 12.5em;
     border: none;
     background: none;
     z-index: 1; }
   .search {
     position: absolute;
-    top: 11.3em;
+    top: 9.5em;
     right: 6.9em;
     width: 10em; } }
 
@@ -1478,9 +1472,9 @@ li.footer-nav-items h1 {
     top: -8em;
     width: 40em; }
   .log-in {
-    top: 1.2em; }
+    top: 1em; }
   .sign-up {
-    top: 1.2em; } }
+    top: 1em; } }
 
 @media screen and (min-width: 1518px) {
   .title {
@@ -1618,6 +1612,10 @@ li.footer-nav-items h1 {
     top: 4em;
     margin: 1em auto; } }
 
+@media screen and (max-width: 484px) {
+  ul.footer-nav {
+    font-size: 0.8em; } }
+
 input, select, textarea {
   outline-color: green; }
 
@@ -1632,18 +1630,19 @@ input {
   display: flex;
   width: 35em;
   margin-bottom: 2em;
-  margin-right: 4em; }
+  margin-left: 2em;
+  max-height: 52em; }
 
 #contact-title {
   text-align: center;
   font-size: 4em;
-  color: white; }
+  color: #fff; }
 
 label {
+  display: inline;
   color: red;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-right: 10px; }
 
 .field-set {
   display: flex;
@@ -1654,16 +1653,18 @@ label {
   width: 15em;
   height: 2.5em; }
 
+#form-number {
+  margin-left: 20px; }
+
 #selection {
   width: 10em;
-  display: block;
-  margin: 1em auto; }
+  display: inline-block;
+  margin: 1em 0; }
 
 #comments {
-  display: flex;
+  display: inline-flex;
   width: 25em;
   height: 7em;
-  margin: 0 auto;
   margin-bottom: 2em;
   padding: 0.5em 0.7em;
   resize: none; }
@@ -1695,15 +1696,15 @@ button {
   outline: none; }
 
 .label-drop {
-  position: absolute;
-  left: 11.5em; }
+  display: inline-block;
+  vertical-align: center; }
 
 .label-text {
-  position: absolute;
-  left: 7em; }
+  display: inline-block; }
 
 .form-description {
-  width: 35em; }
+  width: 35em;
+  margin-right: 2em; }
   .form-description p, .form-description h1, .form-description h3 {
     color: #fff; }
   .form-description u {
@@ -1717,10 +1718,11 @@ button {
     text-align: inherit; }
   .form-description li {
     color: #bbb;
-    margin-top: -1em;
+    margin-top: 0.3em;
     margin-left: 2em;
     margin-bottom: 0.5em;
-    list-style: square; }
+    list-style: square;
+    line-height: 17px; }
 
 .suc11, .suc12, .suc13, .suc14, .suc15, .suc16, .suc17 {
   display: none; }
@@ -1772,3 +1774,41 @@ button {
   left: 0;
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 99999999999; }
+
+@media screen and (min-width: 1056px) {
+  #contact-form {
+    width: 35em;
+    margin-bottom: 2em;
+    margin-right: 2.5em; } }
+
+@media screen and (max-width: 1056px) {
+  .form-layout {
+    flex-direction: column; }
+  #contact-form {
+    order: 1;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 80%; }
+  .form-description {
+    order: 0;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 80%; } }
+
+@media screen and (max-width: 600px) {
+  #contact-title {
+    font-size: 3em; }
+  .form-description p {
+    font-size: 0.9em; }
+  .field-set {
+    margin: 1em; }
+  #comments {
+    margin-bottom: 0.8em; } }
+
+@media screen and (max-width: 500px) {
+  #form-first-name, #form-last-name, #form-email, #form-account-name, #form-number {
+    width: 11em;
+    height: 2.5em; }
+  #comments {
+    width: 15em;
+    height: 4em; } }

@@ -17,7 +17,7 @@
 	<ul class="footer-nav">
 		<a href="http://netfeud.dev/"><li class="footer-nav-items"><h1>Home</h1></li></a>
 		<a href="http://netfeud.dev/?page_id=18"><li class="footer-nav-items"><h1>Catagories</h1></li></a>
-		<a href="http://netfeud.dev/?page_id=30"><li class="footer-nav-items"><h1>Events</h1></li></a>
+		<a href="http://netfeud.dev/?page_id=30"><li class="footer-nav-items"><h1>Profile</h1></li></a>
 		<a href="http://netfeud.dev/?page_id=20"><li class="footer-nav-items"><h1>Contact</h1></li></a>
 	</ul>
 	<p class="footer-description">description about site</p>

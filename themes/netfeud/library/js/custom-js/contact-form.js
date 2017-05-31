@@ -44,9 +44,21 @@ jQuery(document).ready(function($){
         $('select').val('-----select one------');
     });
 
+    $('#submit').click(
+    function(){
+        $('input').val('');
+    });
 
-    if (!isset(input) ) {
-    	$("#submit") = false;
-    }
+    $('#submit').click(
+    function(){
+        $('textarea').val('');
+    });
+
+    $('#submit').click(
+    function(){
+        $('select').val('-----select one------');
+    });
+
+    
 
 });

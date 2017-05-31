@@ -8,7 +8,7 @@
 
 ?>
 
-<?php get_header() ?>
+<?php get_header(); ?>
 
 
 <div class="full-box">
@@ -61,30 +61,10 @@
 
 <h1 class="hot-games">Whats Hot</h1>
 
-<div class="flex-games">
-	<?php 
-		$images = get_field('games');
-		
-		if( $images ): ?>
-		    <ul class="flex-games">
-		        <?php foreach( $images as $image ): ?>
-		            <div class="games-box"><li class="front-games">
-		                <a href="<?php echo $image['url']; ?>">
-		                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" />
-		                </a>
-		            </li></div>
-		        <?php endforeach; ?>
-		    </ul>
-	<?php endif; ?>
-
-</div>
-
-		
-<div class= "games-nav">
-	<div class="next1">Next</div>
-	<div class="prev1">Prev</div>
-	<div class="games-number"><h1 class="gamesNumberId"></h1></div>
-</div>
 
 
-<?php get_footer() ?>
+
+
+
+
+<?php get_footer(); ?>

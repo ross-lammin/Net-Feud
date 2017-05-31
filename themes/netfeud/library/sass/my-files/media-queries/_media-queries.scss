@@ -56,7 +56,7 @@
 	.avatar-nest {
 		position: absolute;
 		display: inline-block;
-		top: 6.5em;
+		top: 4em;
 		right: 8.5em;
 		z-index: 5;
 	}
@@ -66,7 +66,7 @@
 	}
 	.mag-glass {
 		position: absolute;
-		top: 9.5em;
+		top: 7.9em;
 		right: 12.5em;
 		border: none;
 		background: none;
@@ -74,7 +74,7 @@
 	}
 	.search {
 		position: absolute;
-		top: 11.3em;
+		top: 9.5em;
 		right: 6.9em;
 		width: 10em;
 	}
@@ -101,10 +101,10 @@
 		width: 40em;
 	}
 	.log-in {
-		top: 1.2em;
+		top: 1em;
 	}
 	.sign-up {
-		top: 1.2em;
+		top: 1em;
 	}
 }
 
@@ -292,8 +292,9 @@
 }
 
 
-@media screen and (min-width: 830px){
-
+@media screen and (max-width: 484px){
+	ul.footer-nav {
+		font-size: 0.8em;}
 }
 
 

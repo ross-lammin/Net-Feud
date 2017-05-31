@@ -68,7 +68,7 @@
 	<img class="title" src="<?php echo get_template_directory_uri(); ?>/library/img/final-title.png">
 </div>
 		<p class="log-in">Log In</p>
-		<p class="sign-up">Sign Up</p>
+		<a href="http://netfeud.dev/?page_id=166"><p class="sign-up">Sign Up</p></a>
 	
 	<div class="avatar-nest">
 		<h1 class="dropdown-arrow">&#9665;</h1>
@@ -84,7 +84,7 @@
 		<ul class="top-nav">
 			<li class="top-nav-items"><a href="http://netfeud.dev/">Home</a></li>
 			<li class="top-nav-items"><a href="http://netfeud.dev/?page_id=18">Catagories</a></li>
-			<li class="top-nav-items"><a href="http://netfeud.dev/?page_id=30">Events</a></li>
+			<li class="top-nav-items"><a href="http://netfeud.dev/?page_id=30">Profile</a></li>
 			<li class="top-nav-items"><a href="http://netfeud.dev/?page_id=20">Contact</a></li>
 		</ul>
 		

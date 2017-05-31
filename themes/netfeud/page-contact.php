@@ -7,7 +7,7 @@
  */
 ?>
 
-<?php get_header() ?>
+<?php get_header(); ?>
 <div class="form-layout">
 	<fieldset id="contact-form">
 		<legend id="contact-title">Contact Us</legend>
@@ -28,29 +28,32 @@
 			<input id="form-account-name" class="required type="text" placeholder="Account Name..." name="account-name">
 		</div>
 		<div class="field-set">
-		<label for="contact-number">  </label>
 			<input id="form-number" type="tel" placeholder="Tel..." name="contact-number">
 		</div>
-		<label class="label-drop" for="dropdown">*</label>
-		<select id="selection" class="required" name="dropdown">
-			<option disabled selected>-----select one------</option>
-			<optgroup label="You'r Opinion">
-				<option>Feedback</option>
-				<option>Improvements</option>
-			</optgroup>
-			<optgroup label="Anything Wrong?">
-				<option>Issues</option>
-				<option>Queries</option>
-			</optgroup>
-			<optgroup label="Your Games">
-				<option>Developers</option>
-			</optgroup>
-			<optgroup label="Other">
-				<option>Other</option>
-			</optgroup>
-		</select>
-		<label class="label-text" for="comments">*</label>
-		<textarea id="comments" class="required" name="comments" placeholder="Comments..."></textarea>
+		<div class="field-set">
+			<label class="label-drop" for="dropdown">*</label>
+			<select id="selection" class="required" name="dropdown">
+				<option disabled selected>-----select one------</option>
+				<optgroup label="You'r Opinion">
+					<option>Feedback</option>
+					<option>Improvements</option>
+				</optgroup>
+				<optgroup label="Anything Wrong?">
+					<option>Issues</option>
+					<option>Queries</option>
+				</optgroup>
+				<optgroup label="Your Games">
+					<option>Developers</option>
+				</optgroup>
+				<optgroup label="Other">
+					<option>Other</option>
+				</optgroup>
+			</select>
+		</div>
+		<div class="field-set">
+			<label class="label-text" for="comments">*</label>
+			<textarea id="comments" class="required" name="comments" placeholder="Comments..."></textarea>
+		</div>
 		<div id="buttons">
 			<button id="submit">Send</button>
 			<button id="cancel">Clear</button>
@@ -92,4 +95,4 @@
 
 
 
-<?php get_footer() ?>
+<?php get_footer(); ?>

@@ -8,18 +8,19 @@ input {padding-left: 0.8em;}
 	display: flex;
 	width: 35em;
 	margin-bottom: 2em;
-	margin-right: 4em;
+	margin-left: 2em; 
+	max-height: 52em;
 }
 #contact-title {
 	text-align: center;
 	font-size: 4em;
-	color: white;
+	color: #fff;
 }
 label {
+	display: inline;
 	color: red;
-	margin-right: 0.5em;
-	margin-left: 0.5em;
 	font-size: 1.5em;
+	margin-right: 10px;
 }
 .field-set {
 	display: flex;
@@ -30,16 +31,18 @@ label {
 	width: 15em;
 	height: 2.5em;
 }
+#form-number {
+	margin-left: 20px;
+}
 #selection {
 	width: 10em;
-	display: block;
-	margin: 1em auto;
+	display: inline-block;
+	margin: 1em 0;
 }
 #comments {
-	display: flex;
+	display: inline-flex;
 	width: 25em;
 	height: 7em;
-	margin: 0 auto;
 	margin-bottom: 2em;
 	padding: 0.5em 0.7em;
 	resize: none;
@@ -72,15 +75,16 @@ button {
 	outline: none;
 }
 .label-drop {
-	position: absolute;
-	left: 11.5em;
+	display: inline-block;
+	vertical-align: center;
 }
 .label-text {
-	position: absolute;
-	left: 7em;
+	display: inline-block;
 }
 .form-description {
 	width: 35em;
+
+	margin-right: 2em;
 	p, h1, h3 {
 		color: #fff;
 	}
@@ -99,10 +103,11 @@ button {
 	}
 	li {
 		color: #bbb;
-		margin-top: -1em;
+		margin-top: 0.3em;
 		margin-left: 2em;
 		margin-bottom: 0.5em;
 		list-style: square;
+		line-height: 17px;
 	}
 }
 
@@ -160,8 +165,62 @@ button {
 	z-index: 99999999999;
 }
 
+@media screen and (min-width: 1056px ) {
+	#contact-form {
+		width: 35em;
+		margin-bottom: 2em;
+		margin-right: 2.5em; 
+	}
+}
 
+@media screen and (max-width: 1056px ) {
+	.form-layout {
+		flex-direction: column;
+	}
+	#contact-form  {
+		order: 1;
+		margin: 0 auto;
+		margin-bottom: 2em;
+		width: 80%;
+	}
+	.form-description {
+		order: 0;
+		margin: 0 auto;
+		margin-bottom: 1em;
+		width: 80%;
+	}
 
+}
 
+@media screen and (max-width: 600px ) {
+	#contact-title {
+		font-size: 3em;
+	}
+	#contact-form {
+
+	}
+	.form-description {
+		p{
+			font-size: 0.9em;
+		}
+	}
+	.field-set {
+		margin: 1em;
+	}
+	#comments {
+		margin-bottom: 0.8em;
+	}
+}
+
+@media screen and (max-width: 500px ) {
+	#form-first-name, #form-last-name, #form-email, #form-account-name, #form-number {
+		width: 11em;
+		height: 2.5em;
+	}
+	#comments {
+		width: 15em;
+		height: 4em;
+	}
+}
 
 

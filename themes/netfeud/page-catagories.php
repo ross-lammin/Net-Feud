@@ -7,10 +7,10 @@
  */
 ?>
 
-<?php get_header() ?>
+<?php get_header(); ?>
 
 <h1 style="text-align: center;">Catagories Page</h1>
 
 
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
