@@ -82,10 +82,10 @@
 
 		
 		<ul class="top-nav">
-			<li class="top-nav-items"><a href="http://netfeud.dev/">Home</a></li>
-			<li class="top-nav-items"><a href="http://netfeud.dev/?page_id=18">Catagories</a></li>
-			<li class="top-nav-items"><a href="http://netfeud.dev/?page_id=30">Profile</a></li>
-			<li class="top-nav-items"><a href="http://netfeud.dev/?page_id=20">Contact</a></li>
+			<a href="http://netfeud.dev/"><li class="top-nav-items">Home</li></a>
+			<a href="http://netfeud.dev/?page_id=18"><li class="top-nav-items">Catagories</li></a>
+			<a href="http://netfeud.dev/?page_id=30"><li class="top-nav-items">Profile</li></a>
+			<a href="http://netfeud.dev/?page_id=20"><li class="top-nav-items">Contact</li></a>
 		</ul>
 		
 		
