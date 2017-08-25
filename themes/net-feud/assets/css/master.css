@@ -1,0 +1,30 @@
+/*
+Tables
+
+The table element represents data with more than one dimension, in the form of a table.
+
+The table element takes part in the table model. Tables have rows, columns, and cells given by their descendants. The rows and columns form a grid; a table's cells must completely cover that grid without overlap.
+
+Markup: ../../node_modules/first-ten-theme-sass-base-library/tables/tables.html
+
+Styleguide 4.0
+*/
+table {
+  width: 100%;
+  display: block;
+  border-collapse: collapse;
+}
+
+table thead th {
+  font-weight: 800;
+  background-color: grey;
+}
+
+table td, table th {
+  padding: 1rem;
+  border: 1px solid grey;
+}
+
+table thead + tbody tr td:nth-child(odd) {
+  background-color: grey;
+}
