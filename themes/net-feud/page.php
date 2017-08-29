@@ -1,6 +1,10 @@
 <?php
 /**
+<<<<<<< HEAD
  * The template for displaying all pages.
+=======
+ * The template for displaying all pages
+>>>>>>> release/rc-1.0.0
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -9,13 +13,21 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
+<<<<<<< HEAD
  * @package first10
+=======
+ * @package net-feud
+>>>>>>> release/rc-1.0.0
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+<<<<<<< HEAD
 		<main id="main" class="site-main" role="main">
+=======
+		<main id="main" class="site-main">
+>>>>>>> release/rc-1.0.0
 
 			<?php
 			while ( have_posts() ) : the_post();

@@ -15,3 +15,5 @@ Thumbs.db
 wp/
 node_modules/
 vendor/
+local.wp-config.php
+wp-config.php
