@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
 'use strict';
->>>>>>> develop
+
 (function () {
   const gulp = require('gulp');
   //const debug = require('gulp-debug');
