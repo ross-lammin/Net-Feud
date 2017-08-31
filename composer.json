@@ -22,8 +22,7 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "cp wp-config.php wp/wp-config.php",
-      "cp local.wp-config.php wp/local.wp-config.php"
+      "cp wp-config.php wp/wp-config.php"
     ],
     "setupLocal": "composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader && rm -R wp/wp-content/themes && rm -R wp/wp-content/plugins && rm -R wp/wp-content/mu-plugins && cd wp/wp-content && ln -s ../../themes themes && ln -s ../../plugins plugins && ln -s ../../mu-plugins mu-plugins"
   }
