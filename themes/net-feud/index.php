@@ -1,10 +1,6 @@
 <?php
 /**
-<<<<<<< HEAD
- * The main template file.
-=======
  * The main template file
->>>>>>> release/rc-1.0.0
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -13,21 +9,13 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
-<<<<<<< HEAD
- * @package first10
-=======
- * @package net-feud
->>>>>>> release/rc-1.0.0
+ * @package Net-Feud
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-<<<<<<< HEAD
-		<main id="main" class="site-main" role="main">
-=======
 		<main id="main" class="site-main">
->>>>>>> release/rc-1.0.0
 
 		<?php
 		if ( have_posts() ) :

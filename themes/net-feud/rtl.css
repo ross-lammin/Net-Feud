@@ -1,21 +1,11 @@
 /*
-<<<<<<< HEAD
-Theme Name: first10
-
-Adding support for language written in a Right To Left (RTL) direction is easy -
-it's just a matter of overwriting all the horizontal positioning attributes
-of your CSS stylesheet in a separate stylesheet file named rtl.css.
-
-https://codex.wordpress.org/Right_to_Left_Language_Support
-=======
-Theme Name: net-feud
+Theme Name: Net-Feud
 
 Adding support for languages written in a Right To Left (RTL) direction is easy -
 it's just a matter of overwriting all the horizontal positioning attributes
 of your CSS stylesheet in a separate stylesheet file named rtl.css.
 
 https://codex.wordpress.org/Right-to-Left_Language_Support
->>>>>>> release/rc-1.0.0
 
 */
 

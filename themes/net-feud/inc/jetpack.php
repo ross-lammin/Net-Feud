@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package net-feud
+ * @package Net-Feud
  */
 
 /**

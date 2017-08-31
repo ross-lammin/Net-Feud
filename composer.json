@@ -1,23 +1,30 @@
 {
-    "name": "platform/platform-wordpress",
-    "description": "WordPress for Platform.sh",
-    "license": "GPL-2.0+",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org"
-        }
-    ],
-    "require": {
-        "johnpbloch/wordpress-core-installer": "~0.2",
-        "johnpbloch/wordpress": "~4.7"
-    },
-    "extra": {
-        "wordpress-install-dir": "wp"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "cp wp-config.php wp/wp-config.php"
-        ]
+  "name": "platform/platform-wordpress",
+  "description": "WordPress for Platform.sh",
+  "license": "GPL-2.0+",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
     }
+  ],
+  "require": {
+    "johnpbloch/wordpress-core-installer": "~0.2",
+    "johnpbloch/wordpress": "~4.7.3"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "wp/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+      "wp/wp-content/themes/{$name}": ["type:wordpress-theme"],
+      "wp/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "cp wp-config.php wp/wp-config.php",
+      "cp local.wp-config.php wp/local.wp-config.php"
+    ],
+    "setupLocal": "composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader && rm -R wp/wp-content/themes && rm -R wp/wp-content/plugins && rm -R wp/wp-content/mu-plugins && cd wp/wp-content && ln -s ../../themes themes && ln -s ../../plugins plugins && ln -s ../../mu-plugins mu-plugins"
+  }
 }
