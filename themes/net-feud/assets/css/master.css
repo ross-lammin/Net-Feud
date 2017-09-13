@@ -42,7 +42,7 @@ select {
   padding: .5em;
   border: 1px solid black;
   border-radius: 5px;
-  text-indent: 45;
+  text-indent: 45px;
   -webkit-appearance: button;
   background-color: #D8D8D8;
   width: 10em;
