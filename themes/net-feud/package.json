@@ -1,0 +1,25 @@
+{
+  "name": "first-ten-theme-experimental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/First10/F10-Theme-Experimental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/First10/F10-Theme-Experimental/issues"
+  },
+  "homepage": "https://github.com/First10/F10-Theme-Experimental#readme",
+  "dependencies": {
+    "gulp_first10_frontend-toolbox": "github:first10/gulp_first10_frontend-toolbox#master",
+    "gulp": "github:gulpjs/gulp#4.0"
+  },
+  "devDependencies": {
+  }
+}

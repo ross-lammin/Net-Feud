@@ -1,0 +1,55 @@
+// Global styles 
+
+// Fonts
+* {
+	@include font__roboto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include font__new-rocker;
+	text-align: center;
+}
+
+// Headers
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.7em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+
+// Text
+p {
+	padding: 2em;
+}
+
+// Lists
+ul {
+	list-style: none;
+}
+
+// Links
+a{
+	color: $color__primary--link;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	margin:0 auto;
+}
+
+
+
