@@ -1,0 +1,13 @@
+@mixin button-size--small {
+	width: 7em;
+	height: 2.5em;
+}
+@mixin font__new-rocker{
+	font-family: 'New Rocker', cursive;
+}
+@mixin font__roboto{
+	font-family: 'Roboto', sans-serif;
+}
+
+$button__border-radius: 10px;
+

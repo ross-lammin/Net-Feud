@@ -1,0 +1,15 @@
+button{
+	@include button-size--small;
+}
+button[type='submit'] {
+	background-color: $color__continue--button;
+	border-radius: $button__border-radius;
+}
+button[type='reset'] {
+	background-color: $color__cancel--button;
+	border-radius: $button__border-radius;
+}
+button[type='button'] {
+	background-color: $color__secondary--button;
+	border-radius: $button__border-radius;
+}

@@ -1,0 +1,69 @@
+// form components
+
+legend {
+	text-align: center;
+}
+
+// inputs
+input, input[type='radio']:not, input[type='checkbox']:not, {
+	height: 1em;
+	width: 10em;
+	font-size: 1.5em;
+	padding:0.9em 0;
+	text-indent: 0.5em;
+	border: 1px solid black;
+	background-color: $color__background--input;
+}
+input::placeholder {
+	color: #858585;
+}
+// input buttons
+input[type='submit'], input[type='reset'],input[type='button'] {
+	@include button-size--small;
+	font-size: 11px;
+}
+input[type='submit'] {
+	background-color: $color__continue--button;
+	border-radius: $button__border-radius;
+}
+input[type='reset'] {
+	background-color: $color__cancel--button;
+	border-radius: $button__border-radius;
+}
+input[type='button'] {
+	background-color: $color__secondary--button;
+	border-radius: $button__border-radius;
+}
+//////////////////////////////////////////
+
+ select {
+  font-size: inherit;
+  padding: .5em;	
+  border: 1px solid black;
+  border-radius: 5px;
+  text-indent: 45;
+  -webkit-appearance: button;
+  background-color: $color__background--input;
+  width: 10em;
+
+}
+fieldset span {
+	margin-top: 2em;
+}
+fieldset span::before {
+	position: relative;
+	top: 6px;
+	content: "\25BC";
+  font-size: 1.5em;
+  margin-right: -1.5em; 
+  padding-right: 0.1em;
+  padding-top: 8px;
+  border-right: 1px solid black;
+  pointer-events: none;
+}
+
+textarea {
+	font-size: 1em;
+	padding: 1em;
+}
+
