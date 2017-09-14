@@ -11,6 +11,12 @@
 /**
  * Register the navigation locations.
  */
-register_nav_menus( array(
-	'primary' => esc_html__( 'Primary' ),
-) );
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'primary' => __( 'Primary' ),
+      'footer' => __( 'Footer' )
+    )
+  );
+}
+ add_action( 'init', 'register_my_menus' );
