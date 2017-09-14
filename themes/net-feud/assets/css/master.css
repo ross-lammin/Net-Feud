@@ -174,48 +174,48 @@ img {
   color: black;
 }
 
-.menu-item-40, .menu-item-41, .menu-item-47 {
+.menu-primary-container ul li {
   display: inline;
   margin-right: -15px;
   float: right;
   margin-top: 18px;
 }
 
-.menu-item-47 {
-  margin-top: 22px;
-}
-
-.menu-item-39 {
+.menu-primary-container ul li:first-of-type {
   position: absolute;
   float: left;
-  top: -6px;
+  top: -25px;
   left: 30px;
 }
 
-.menu-item-39::after {
+.menu-primary-container ul li:nth-of-type(4) {
+  margin-top: 22px;
+}
+
+.menu-primary-container li:first-of-type::after {
   position: relative;
   top: -10px;
   left: -45px;
   content: url("../svgs/logo-icon.svg");
 }
 
-.menu-item-40::after {
+.menu-primary-container li:nth-of-type(2)::after {
   position: relative;
   top: -14px;
   left: -48px;
   content: url("../svgs/login-icon.svg");
 }
 
-.menu-item-41::after {
+.menu-primary-container li:nth-of-type(3)::after {
   position: relative;
   top: -14px;
   left: -50px;
   content: url("../svgs/signup-icon.svg");
 }
 
-.menu-item-47::after {
+.menu-primary-container li:nth-of-type(4)::after {
   position: relative;
-  top: -18px;
+  top: -14px;
   left: -50px;
   content: url("../svgs/search-icon.svg");
 }
