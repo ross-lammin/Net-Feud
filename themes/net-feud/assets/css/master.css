@@ -154,3 +154,68 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.menu-primary-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(250, 250, 250, 0.66);
+  height: 5em;
+}
+
+.menu-primary-container ul {
+  position: relative;
+  display: inline;
+  top: 16px;
+}
+
+.menu-primary-container ul a {
+  color: black;
+}
+
+.menu-item-40, .menu-item-41, .menu-item-47 {
+  display: inline;
+  margin-right: -15px;
+  float: right;
+  margin-top: 18px;
+}
+
+.menu-item-47 {
+  margin-top: 22px;
+}
+
+.menu-item-39 {
+  position: absolute;
+  float: left;
+  top: -6px;
+  left: 30px;
+}
+
+.menu-item-39::after {
+  position: relative;
+  top: -10px;
+  left: -45px;
+  content: url("../svgs/logo-icon.svg");
+}
+
+.menu-item-40::after {
+  position: relative;
+  top: -14px;
+  left: -48px;
+  content: url("../svgs/login-icon.svg");
+}
+
+.menu-item-41::after {
+  position: relative;
+  top: -14px;
+  left: -50px;
+  content: url("../svgs/signup-icon.svg");
+}
+
+.menu-item-47::after {
+  position: relative;
+  top: -18px;
+  left: -50px;
+  content: url("../svgs/search-icon.svg");
+}

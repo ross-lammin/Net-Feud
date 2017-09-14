@@ -8,6 +8,11 @@
 @mixin font__roboto{
 	font-family: 'Roboto', sans-serif;
 }
+@mixin clearfix {
+	content: "";
+  display: table;
+  clear: both;
+}
 
 $button__border-radius: 10px;
 
