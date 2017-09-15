@@ -1,37 +1,31 @@
-footer {
-	border-top: 2px solid black;
-	background-color: white;
-}
-.footer__information {
+.footer__information, .footer__image--full {
 	width: 100%;
 	margin: 0 auto;
 }
-
 .footer__image--full {
-	width: 100%;
-	margin: 0 auto;
 	transform: scale(0.5);
 }
-.footer__information .footer__image--full::after {
+.footer__information .footer__image--full::after, #footer-menu, .footer__social-icons, .footer__social-icons--facebook::before, .footer__social-icons--twitter::before {
 	position: relative;
+}
+.footer__information .footer__image--full::after {
 	left: 50%;
 	margin-left: -210px;
 	content: url("../svgs/full-logo-img.svg");
 }
-
-#footer-menu {
-	position: relative;
-	top: -40px;
+.footer__copyright-info, #footer-menu {
 	text-align: center;
+}
+#footer-menu {
+	top: -40px;
 	margin-right: 0;
 	padding: 0px;
-	li {
+	& > li {
 		display: inline-block;
 		margin: 0 3px;
 	}
 }
 .footer__social-icons {
-	position: relative;
 	width: 60%;
 	top: -40px;
 	margin: 0 auto;
@@ -44,21 +38,14 @@ footer {
 		margin-left: -20px;
 	}
 	.footer__social-icons--facebook::before {
-		position: relative;
-		top: 12px;
-		margin-right: 10px;
-		content: url("../svgs/icon-facebook.svg");
+		@include footer__social-icons(12px, 10px, icon-facebook);
 	}
 	.footer__social-icons--twitter::before {
-		position: relative;
-		top: 12px;
-		margin-right: 10px;
-		content: url("../svgs/icon-twitter.svg");
+		@include footer__social-icons(12px, 10px, icon-twitter);
 	}
 }
 .footer__copyright-info {
 	display: block;
-	text-align: center;
 	margin-bottom: 10px;
 }
 
@@ -70,34 +57,18 @@ footer {
 	.footer__image--full {
 		transform: scale(0.6);
 	}
-	#footer-menu {
+	#footer-menu, .footer__social-icons {
 		top: -30px;
 	}
-		.footer__social-icons {
-		top: -30px;
-	}
-	.footer__right-image {
-		width: 25%;
-		height: 1px;
-	}
-	.footer__right-image::after {
-		position: relative;
-		top: -150px;
-		display: block;
-		content: url("../svgs/sonic-img.png");
-		transform: scale(0.7);
-		left: 50%;
-		margin-left: 0px;
-	}
-	.footer__left-image {
+	.footer__left-image, .footer__right-image  {
 		width: 25%
 	}
+	.footer__right-image::after {
+		@include footer-images(relative, -150px, block, sonic-img, 0.7);
+		left: 50%;
+	}
 	.footer__left-image::before {
-		position: relative;
-		top: -150px;
-		display: block;
-		content: url("../svgs/mario-img.png");
-		transform: scale(0.7);
+		@include footer-images(relative, -150px, block, mario-img, 0.7);
 		right: 40%;
 	}
 	.footer__information, .footer__right-image, .footer__left-image {
@@ -109,24 +80,16 @@ footer {
 }
 
 @media screen and (min-width: 1124px) {
-	.footer__image--full {
+	.footer__image--full, .footer__right-image::after, .footer__left-image::before {
 		transform: scale(0.8);
+	}
+	.footer__right-image::after, .footer__left-image::before {
+		top: -130px;
 	}
 	.footer__right-image::after {
-		position: relative;
-		top: -130px;
-		display: block;
-		content: url("../svgs/sonic-img.png");
-		transform: scale(0.8);
 		left: 60%;
-		margin-left: 0px;
 	}
 	.footer__left-image::before {
-		position: relative;
-		top: -130px;
-		display: block;
-		content: url("../svgs/mario-img.png");
-		transform: scale(0.8);
 		right: 20%;
 	}
 	#footer-menu {
@@ -134,12 +97,12 @@ footer {
 		top: -20px;
 		text-align: center;
 		margin-right: 0;
-		padding: 0px;
-		li {
+		padding: 0;
+		& > li {
 			display: inline-block;
 			margin: 0 1em;
 		}
-		a {
+		& > a {
 			font-size: 1em;
 		}
 	}
@@ -149,35 +112,16 @@ footer {
 	.footer__image--full {
 		transform: scale(0.9);
 	}
-	.footer__right-image::after {
-		position: relative;
+	.footer__right-image::after, .footer__left-image::before {
 		top: -120px;
-		display: block;
-		content: url("../svgs/sonic-img.png");
 		transform: scale(0.9);
-		left: 70%;
-		margin-left: 0px;
 	}
-	.footer__left-image::before {
-		position: relative;
-		top: -120px;
-		display: block;
-		content: url("../svgs/mario-img.png");
-		transform: scale(0.9);
-		right: 20%;
+	.footer__right-image::before {
+		left: 70%;
 	}
 	#footer-menu {
-		position: relative;
-		top: -20px;
-		text-align: center;
-		margin-right: 0;
-		padding: 0px;
-		li {
-			display: inline-block;
+		& > li {
 			margin: 0 2em;
-		}
-		a {
-			font-size: 1em;
 		}
 	}
 }
@@ -188,33 +132,18 @@ footer {
 		margin-top: 10px;
 	}
 	.footer__right-image::after {
-		position: relative;
 		top: -130px;
-		display: block;
-		content: url("../svgs/sonic-img.png");
 		transform: scale(1);
 		left: 80%;
-		margin-left: 0px;
 	}
 	.footer__left-image::before {
-		position: relative;
 		top: -130px;
-		display: block;
-		content: url("../svgs/mario-img.png");
 		transform: scale(1);
-		right: 20%;
 	}
 	#footer-menu {
-		position: relative;
 		top: -10px;
-		text-align: center;
-		margin-right: 0;
 		padding: 10px;
-		li {
-			display: inline-block;
-			margin: 0 2em;
-		}
-		a {
+		& > a {
 			font-size: 1.2em;
 		}
 	}

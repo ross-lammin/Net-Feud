@@ -43,7 +43,7 @@ if ( $description || is_customize_preview() ) : ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-bar__primary--list' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
