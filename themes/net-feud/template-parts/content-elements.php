@@ -382,17 +382,5 @@ It is typically distinguished visually using indentation and a different typefac
 </form>
 	<!--  my html close -->
 
-	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'first10' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

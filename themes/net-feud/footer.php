@@ -15,9 +15,40 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'first10' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'first10' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'first10' ), 'first10', '<a href="http://first10.co.uk/" rel="designer">First 10</a>' ); ?>
+
+			<div class="footer__right-image"></div>
+			<div class="footer__information">
+				<div class="footer__image--full"></div>
+
+				<nav id="site-navigation" class="main-navigation" role="navigation">		
+						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
+				</nav>
+
+				<div class="footer__social-icons">
+						<p class="footer__social-icons--facebook">Find us on Facebook</p>
+						<p class="footer__social-icons--twitter">Find us on Twitter</p>
+				</div>
+
+				<small class="footer__copyright-info">
+				<?php 
+				if ( date("Y") > 2017 ) {
+					echo 
+						get_bloginfo()
+					. "<sup>&copy</sup> 2017 - " 
+					. date("Y") 
+					. " | Sitemap | Terms and Conditions";
+				} else {
+
+					echo 
+						get_bloginfo()
+					. "<sup>&copy</sup> 2017 "  
+					. " | Sitemap | Terms and Conditions";
+				}	
+				?>
+				</small>
+
+			</div>	
+			<div class="footer__left-image"></div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
