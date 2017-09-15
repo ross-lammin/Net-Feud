@@ -210,28 +210,28 @@ img {
   margin-top: 22px;
 }
 
-.menu-primary-container li:first-of-type::after {
+.menu-primary-container ul li:first-of-type::after {
   position: relative;
   top: -10px;
   left: -45px;
   content: url("../svgs/logo-icon.svg");
 }
 
-.menu-primary-container li:nth-of-type(2)::after {
+.menu-primary-container ul li:nth-of-type(2)::after {
   position: relative;
   top: -14px;
-  left: -48px;
+  left: -50px;
   content: url("../svgs/login-icon.svg");
 }
 
-.menu-primary-container li:nth-of-type(3)::after {
+.menu-primary-container ul li:nth-of-type(3)::after {
   position: relative;
   top: -14px;
   left: -50px;
   content: url("../svgs/signup-icon.svg");
 }
 
-.menu-primary-container li:nth-of-type(4)::after {
+.menu-primary-container ul li:nth-of-type(4)::after {
   position: relative;
   top: -14px;
   left: -50px;
