@@ -1,58 +1,51 @@
+@mixin menu-item-position ($pos, $top, $left, $filename) {
+	position: $pos;
+	top: $top;
+	left: $left;
+	content: url("../svgs/#{$filename}.svg");
+}
+
 .menu-primary-container {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(250, 250, 250, 0.66);
+	background-color: $color__background--primary-menu;
 	height: 5em;
 	z-index: 100;
-	ul {
+	.nav-bar__primary--list {
 		position: relative;
 		display: inline;
 		top: 16px;
-		a {
-			color: black;
+		& > a {
+			color: $color__Black--pure;
 		}
-		li {
-			display: inline;
-			margin-right: -15px;
-			float: right;
-			margin-top: 18px;
-		}
-		li:first-of-type {
+		.nav-bar__primary--home {
 			position: absolute;
 			float: left;
 			top: -25px;
 			left: 30px;
 		}
-		li:nth-of-type(4) {
+	}
+	.nav-bar__primary--home, .nav-bar__primary--login, .nav-bar__primary--signup, .nav-bar__primary--search {
+		display: inline;
+		margin-right: -15px;
+		float: right;
+		margin-top: 18px;
+	}
+	.nav-bar__primary--search {
 			margin-top: 22px;
-		}
-}
-
-
-li:first-of-type::after   {
-	position: relative;
-	top: -10px;
-	left: -45px;
-	content: url("../svgs/logo-icon.svg");
-}
-li:nth-of-type(2)::after {
-	position: relative;
-	top: -14px;
-	left: -48px;
-	content: url("../svgs/login-icon.svg");
-}
-li:nth-of-type(3)::after {
-	position: relative;
-	top: -14px;
-	left: -50px;
-	content: url("../svgs/signup-icon.svg");
-}
-li:nth-of-type(4)::after {
-	position: relative;
-	top: -14px;
-	left: -50px;
-	content: url("../svgs/search-icon.svg");
-}
+	}
+	.nav-bar__primary--home::after {
+		@include menu-item-position(relative, -10px, -45px, logo-icon);
+	}
+	.nav-bar__primary--login::after {
+		@include menu-item-position(relative, -14px, -50px, login-icon);
+	}
+	.nav-bar__primary--signup::after {
+		@include menu-item-position(relative, -14px, -50px, signup-icon);
+	}
+	.nav-bar__primary--search::after {
+		@include menu-item-position(relative, -14px, -50px, search-icon);
+	}	
 }

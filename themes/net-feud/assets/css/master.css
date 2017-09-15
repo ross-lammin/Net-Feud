@@ -125,6 +125,11 @@ body {
   padding: 0;
 }
 
+footer {
+  border-top: 2px solid black;
+  background-color: white;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'New Rocker', cursive;
   text-align: center;
@@ -182,100 +187,97 @@ img {
   z-index: 100;
 }
 
-.menu-primary-container ul {
+.menu-primary-container .nav-bar__primary--list {
   position: relative;
   display: inline;
   top: 16px;
 }
 
-.menu-primary-container ul a {
-  color: black;
+.menu-primary-container .nav-bar__primary--list > a {
+  color: #000;
 }
 
-.menu-primary-container ul li {
-  display: inline;
-  margin-right: -15px;
-  float: right;
-  margin-top: 18px;
-}
-
-.menu-primary-container ul li:first-of-type {
+.menu-primary-container .nav-bar__primary--list .nav-bar__primary--home {
   position: absolute;
   float: left;
   top: -25px;
   left: 30px;
 }
 
-.menu-primary-container ul li:nth-of-type(4) {
+.menu-primary-container .nav-bar__primary--home, .menu-primary-container .nav-bar__primary--login, .menu-primary-container .nav-bar__primary--signup, .menu-primary-container .nav-bar__primary--search {
+  display: inline;
+  margin-right: -15px;
+  float: right;
+  margin-top: 18px;
+}
+
+.menu-primary-container .nav-bar__primary--search {
   margin-top: 22px;
 }
 
-.menu-primary-container li:first-of-type::after {
+.menu-primary-container .nav-bar__primary--home::after {
   position: relative;
   top: -10px;
   left: -45px;
   content: url("../svgs/logo-icon.svg");
 }
 
-.menu-primary-container li:nth-of-type(2)::after {
+.menu-primary-container .nav-bar__primary--login::after {
   position: relative;
   top: -14px;
-  left: -48px;
+  left: -50px;
   content: url("../svgs/login-icon.svg");
 }
 
-.menu-primary-container li:nth-of-type(3)::after {
+.menu-primary-container .nav-bar__primary--signup::after {
   position: relative;
   top: -14px;
   left: -50px;
   content: url("../svgs/signup-icon.svg");
 }
 
-.menu-primary-container li:nth-of-type(4)::after {
+.menu-primary-container .nav-bar__primary--search::after {
   position: relative;
   top: -14px;
   left: -50px;
   content: url("../svgs/search-icon.svg");
 }
 
-footer {
-  border-top: 2px solid black;
-  background-color: white;
-}
-
-.footer__information {
+.footer__information, .footer__image--full {
   width: 100%;
   margin: 0 auto;
 }
 
 .footer__image--full {
-  width: 100%;
-  margin: 0 auto;
   transform: scale(0.5);
 }
 
-.footer__information .footer__image--full::after {
+.footer__information .footer__image--full::after, #footer-menu, .footer__social-icons, .footer__social-icons--facebook::before, .footer__social-icons--twitter::before {
   position: relative;
+}
+
+.footer__information .footer__image--full::after {
   left: 50%;
   margin-left: -210px;
   content: url("../svgs/full-logo-img.svg");
 }
 
-#footer-menu {
-  position: relative;
-  top: -40px;
+.footer__copyright-info, #footer-menu {
   text-align: center;
+}
+
+#footer-menu {
+  top: -40px;
   margin-right: 0;
   padding: 0px;
 }
 
-#footer-menu li {
+#footer-menu > li {
   display: inline-block;
   margin: 0 3px;
 }
 
 .footer__social-icons {
-  position: relative;
   width: 60%;
   top: -40px;
   margin: 0 auto;
@@ -292,14 +294,12 @@ footer {
 }
 
 .footer__social-icons .footer__social-icons--facebook::before {
-  position: relative;
   top: 12px;
   margin-right: 10px;
   content: url("../svgs/icon-facebook.svg");
 }
 
 .footer__social-icons .footer__social-icons--twitter::before {
-  position: relative;
   top: 12px;
   margin-right: 10px;
   content: url("../svgs/icon-twitter.svg");
@@ -307,7 +307,6 @@ footer {
 
 .footer__copyright-info {
   display: block;
-  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -319,15 +318,11 @@ footer {
   .footer__image--full {
     transform: scale(0.6);
   }
-  #footer-menu {
+  #footer-menu, .footer__social-icons {
     top: -30px;
   }
-  .footer__social-icons {
-    top: -30px;
-  }
-  .footer__right-image {
+  .footer__left-image, .footer__right-image {
     width: 25%;
-    height: 1px;
   }
   .footer__right-image::after {
     position: relative;
@@ -336,10 +331,6 @@ footer {
     content: url("../svgs/sonic-img.png");
     transform: scale(0.7);
     left: 50%;
-    margin-left: 0px;
-  }
-  .footer__left-image {
-    width: 25%;
   }
   .footer__left-image::before {
     position: relative;
@@ -358,24 +349,16 @@ footer {
 }
 
 @media screen and (min-width: 1124px) {
-  .footer__image--full {
+  .footer__image--full, .footer__right-image::after, .footer__left-image::before {
     transform: scale(0.8);
+  }
+  .footer__right-image::after, .footer__left-image::before {
+    top: -130px;
   }
   .footer__right-image::after {
-    position: relative;
-    top: -130px;
-    display: block;
-    content: url("../svgs/sonic-img.png");
-    transform: scale(0.8);
     left: 60%;
-    margin-left: 0px;
   }
   .footer__left-image::before {
-    position: relative;
-    top: -130px;
-    display: block;
-    content: url("../svgs/mario-img.png");
-    transform: scale(0.8);
     right: 20%;
   }
   #footer-menu {
@@ -383,13 +366,13 @@ footer {
     top: -20px;
     text-align: center;
     margin-right: 0;
-    padding: 0px;
+    padding: 0;
   }
-  #footer-menu li {
+  #footer-menu > li {
     display: inline-block;
     margin: 0 1em;
   }
-  #footer-menu a {
+  #footer-menu > a {
     font-size: 1em;
   }
 }
@@ -398,36 +381,15 @@ footer {
   .footer__image--full {
     transform: scale(0.9);
   }
-  .footer__right-image::after {
-    position: relative;
+  .footer__right-image::after, .footer__left-image::before {
     top: -120px;
-    display: block;
-    content: url("../svgs/sonic-img.png");
     transform: scale(0.9);
+  }
+  .footer__right-image::before {
     left: 70%;
-    margin-left: 0px;
   }
-  .footer__left-image::before {
-    position: relative;
-    top: -120px;
-    display: block;
-    content: url("../svgs/mario-img.png");
-    transform: scale(0.9);
-    right: 20%;
-  }
-  #footer-menu {
-    position: relative;
-    top: -20px;
-    text-align: center;
-    margin-right: 0;
-    padding: 0px;
-  }
-  #footer-menu li {
-    display: inline-block;
+  #footer-menu > li {
     margin: 0 2em;
-  }
-  #footer-menu a {
-    font-size: 1em;
   }
 }
 
@@ -437,34 +399,19 @@ footer {
     margin-top: 10px;
   }
   .footer__right-image::after {
-    position: relative;
     top: -130px;
-    display: block;
-    content: url("../svgs/sonic-img.png");
     transform: scale(1);
     left: 80%;
-    margin-left: 0px;
   }
   .footer__left-image::before {
-    position: relative;
     top: -130px;
-    display: block;
-    content: url("../svgs/mario-img.png");
     transform: scale(1);
-    right: 20%;
   }
   #footer-menu {
-    position: relative;
     top: -10px;
-    text-align: center;
-    margin-right: 0;
     padding: 10px;
   }
-  #footer-menu li {
-    display: inline-block;
-    margin: 0 2em;
-  }
-  #footer-menu a {
+  #footer-menu > a {
     font-size: 1.2em;
   }
 }

@@ -13,6 +13,18 @@
   display: table;
   clear: both;
 }
+@mixin footer__social-icons ($top, $mr, $filename) {
+	top: 12px;
+	margin-right: 10px;
+	content: url("../svgs/#{$filename}.svg");
+}
+@mixin footer-images ($pos, $top, $dis, $filename, $scale) {
+	position: $pos;
+	top: $top;
+	display: $dis;
+	content: url("../svgs/#{$filename}.png");
+	transform: scale($scale);
+}
 
 $button__border-radius: 10px;
 
