@@ -1,3 +1,15 @@
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
 legend {
   text-align: center;
 }
@@ -108,6 +120,11 @@ td {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'New Rocker', cursive;
   text-align: center;
@@ -162,6 +179,7 @@ img {
   right: 0;
   background-color: rgba(250, 250, 250, 0.66);
   height: 5em;
+  z-index: 100;
 }
 
 .menu-primary-container ul {
@@ -218,4 +236,235 @@ img {
   top: -14px;
   left: -50px;
   content: url("../svgs/search-icon.svg");
+}
+
+footer {
+  border-top: 2px solid black;
+  background-color: white;
+}
+
+.footer__information {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer__image--full {
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.5);
+}
+
+.footer__information .footer__image--full::after {
+  position: relative;
+  left: 50%;
+  margin-left: -210px;
+  content: url("../svgs/full-logo-img.svg");
+}
+
+#footer-menu {
+  position: relative;
+  top: -40px;
+  text-align: center;
+  margin-right: 0;
+  padding: 0px;
+}
+
+#footer-menu li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.footer__social-icons {
+  position: relative;
+  width: 60%;
+  top: -40px;
+  margin: 0 auto;
+}
+
+.footer__social-icons .footer__social-icons--facebook, .footer__social-icons .footer__social-icons--twitter {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer__social-icons .footer__social-icons--twitter {
+  margin-left: -20px;
+}
+
+.footer__social-icons .footer__social-icons--facebook::before {
+  position: relative;
+  top: 12px;
+  margin-right: 10px;
+  content: url("../svgs/icon-facebook.svg");
+}
+
+.footer__social-icons .footer__social-icons--twitter::before {
+  position: relative;
+  top: 12px;
+  margin-right: 10px;
+  content: url("../svgs/icon-twitter.svg");
+}
+
+.footer__copyright-info {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 880px) {
+  .footer__information {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footer__image--full {
+    transform: scale(0.6);
+  }
+  #footer-menu {
+    top: -30px;
+  }
+  .footer__social-icons {
+    top: -30px;
+  }
+  .footer__right-image {
+    width: 25%;
+    height: 1px;
+  }
+  .footer__right-image::after {
+    position: relative;
+    top: -150px;
+    display: block;
+    content: url("../svgs/sonic-img.png");
+    transform: scale(0.7);
+    left: 50%;
+    margin-left: 0px;
+  }
+  .footer__left-image {
+    width: 25%;
+  }
+  .footer__left-image::before {
+    position: relative;
+    top: -150px;
+    display: block;
+    content: url("../svgs/mario-img.png");
+    transform: scale(0.7);
+    right: 40%;
+  }
+  .footer__information, .footer__right-image, .footer__left-image {
+    float: left;
+  }
+  .footer__right-image, .footer__left-image {
+    height: 1px;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .footer__image--full {
+    transform: scale(0.8);
+  }
+  .footer__right-image::after {
+    position: relative;
+    top: -130px;
+    display: block;
+    content: url("../svgs/sonic-img.png");
+    transform: scale(0.8);
+    left: 60%;
+    margin-left: 0px;
+  }
+  .footer__left-image::before {
+    position: relative;
+    top: -130px;
+    display: block;
+    content: url("../svgs/mario-img.png");
+    transform: scale(0.8);
+    right: 20%;
+  }
+  #footer-menu {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    margin-right: 0;
+    padding: 0px;
+  }
+  #footer-menu li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+  #footer-menu a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .footer__image--full {
+    transform: scale(0.9);
+  }
+  .footer__right-image::after {
+    position: relative;
+    top: -120px;
+    display: block;
+    content: url("../svgs/sonic-img.png");
+    transform: scale(0.9);
+    left: 70%;
+    margin-left: 0px;
+  }
+  .footer__left-image::before {
+    position: relative;
+    top: -120px;
+    display: block;
+    content: url("../svgs/mario-img.png");
+    transform: scale(0.9);
+    right: 20%;
+  }
+  #footer-menu {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    margin-right: 0;
+    padding: 0px;
+  }
+  #footer-menu li {
+    display: inline-block;
+    margin: 0 2em;
+  }
+  #footer-menu a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer__image--full {
+    transform: scale(1);
+    margin-top: 10px;
+  }
+  .footer__right-image::after {
+    position: relative;
+    top: -130px;
+    display: block;
+    content: url("../svgs/sonic-img.png");
+    transform: scale(1);
+    left: 80%;
+    margin-left: 0px;
+  }
+  .footer__left-image::before {
+    position: relative;
+    top: -130px;
+    display: block;
+    content: url("../svgs/mario-img.png");
+    transform: scale(1);
+    right: 20%;
+  }
+  #footer-menu {
+    position: relative;
+    top: -10px;
+    text-align: center;
+    margin-right: 0;
+    padding: 10px;
+  }
+  #footer-menu li {
+    display: inline-block;
+    margin: 0 2em;
+  }
+  #footer-menu a {
+    font-size: 1.2em;
+  }
 }
