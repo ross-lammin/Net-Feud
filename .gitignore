@@ -17,4 +17,4 @@ node_modules/
 vendor/
 local.wp-config.php
 wp-config.php
-side-project/*
+themes/side-project/*
