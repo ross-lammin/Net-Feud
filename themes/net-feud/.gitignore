@@ -17,4 +17,4 @@ node_modules
 # Theme specific
 F10.js
 styleguide
-themes/side-project/**
+themes/side-project
