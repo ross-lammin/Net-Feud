@@ -1,65 +1,12 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Test Page</title>
-  </head>
-  <body>
-    <div id="top" class="page" role="document">
-      <header role="banner">
-        <h1>HTML5 Test Page</h1>
-        <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
-      </header>
-      <nav role="navigation">
-        <ul>
-          <li>
-            <a href="#text">Text</a>
-            <ul>
-              <li><a href="#text__headings">Headings</a></li>
-              <li><a href="#text__paragraphs">Paragraphs</a></li>
-              <li><a href="#text__blockquotes">Blockquotes</a></li>
-              <li><a href="#text__lists">Lists</a></li>
-              <li><a href="#text__hr">Horizontal rules</a></li>
-              <li><a href="#text__tables">Tabular data</a></li>
-              <li><a href="#text__code">Code</a></li>
-              <li><a href="#text__inline">Inline elements</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#embedded">Embedded content</a>
-            <ul>
-              <li><a href="#embedded__images">Images</a></li>
-              <li><a href="#embedded__audio">Audio</a></li>
-              <li><a href="#embedded__video">Video</a></li>
-              <li><a href="#embedded__canvas">Canvas</a></li>
-              <li><a href="#embedded__meter">Meter</a></li>
-              <li><a href="#embedded__progress">Progress</a></li>
-              <li><a href="#embedded__svg">Inline SVG</a></li>
-              <li><a href="#embedded__iframe">IFrames</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#forms">Form elements</a>
-            <ul>
-              <li><a href="#forms__input">Input fields</a></li>
-              <li><a href="#forms__select">Select menus</a></li>
-              <li><a href="#forms__checkbox">Checkboxes</a></li>
-              <li><a href="#forms__radio">Radio buttons</a></li>
-              <li><a href="#forms__textareas">Textareas</a></li>
-              <li><a href="#forms__html5">HTML5 inputs</a></li>
-              <li><a href="#forms__action">Action buttons</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+<?php get_header(); ?>
       <main role="main">
         <section id="text">
-          <header><h1>Text</h1></header>
+          <section>
+         <h1>Text</h1>
           <article id="text__headings">
-            <header>
+            
               <h1>Headings</h1>
-            </header>
+            
             <div>
               <h1>Heading 1</h1>
               <h2>Heading 2</h2>
@@ -68,17 +15,17 @@
               <h5>Heading 5</h5>
               <h6>Heading 6</h6>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__paragraphs">
-            <header><h1>Paragraphs</h1></header>
+            <h1>Paragraphs</h1>
             <div>
               <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__blockquotes">
-            <header><h1>Blockquotes</h1></header>
+            <h1>Blockquotes</h1>
             <div>
               <blockquote>
                 <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
@@ -86,15 +33,22 @@
                 <cite><a href="#!">Said no one, ever.</a></cite>
               </blockquote>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__lists">
-            <header><h1>Lists</h1></header>
+            <h1>Lists</h1>
             <div>
               <h3>Definition list</h3>
               <dl>
-                <dt>Definition List Title</dt>
-                <dd>This is a definition list division.</dd>
+                <dt>#</dt>
+                <dd>Top 10</dd>
+                <dt>A</dt>
+                <dd>Action</dd>
+                <dd>Adventure</dd>
+                <dd>Arcade</dd>
+                <dt>B</dt>
+                <dd>Battle</dd>
+                <dd>Board</dd>
               </dl>
               <h3>Ordered List</h3>
               <ol>
@@ -109,18 +63,18 @@
                 <li>List Item 3</li>
               </ul>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__hr">
-            <header><h1>Horizontal rules</h1></header>
+            <h1>Horizontal rules</h1>
             <div>
               <hr>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__tables">
-            <header><h1>Tabular data</h1></header>
-            <table>
+            <h1>Tabular data</h1>
+            <!-- <table>
               <caption>Table Caption</caption>
               <thead>
                 <tr>
@@ -170,28 +124,29 @@
                   <td>Table Cell 5</td>
                 </tr>
               </tbody>
-            </table>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            </table> -->
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__code">
-            <header><h1>Code</h1></header>
+            <h1>Code</h1>
             <div>
               <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
               <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
               <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
               <h2>Pre-formatted text</h2>
               <pre>P R E F O R M A T T E D T E X T
-  ! " # $ % &amp; ' ( ) * + , - . /
-  0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-  @ A B C D E F G H I J K L M N O
-  P Q R S T U V W X Y Z [ \ ] ^ _
-  ` a b c d e f g h i j k l m n o
-  p q r s t u v w x y z { | } ~ </pre>
+                    ! " # $ % &amp; ' ( ) * + , - . /
+                    0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+                    @ A B C D E F G H I J K L M N O
+                    P Q R S T U V W X Y Z [ \ ] ^ _
+                    ` a b c d e f g h i j k l m n o
+                    p q r s t u v w x y z { | } ~ 
+              </pre>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__inline">
-            <header><h1>Inline elements</h1></header>
+            <h1>Inline elements</h1>
             <div>
               <p><a href="#!">This is a text link</a>.</p>
               <p><strong>Strong is used to indicate strong importance.</strong></p>
@@ -212,17 +167,38 @@
               <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
               <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
         </section>
 
         <section id="embedded">
-          <header><h1>Embedded content</h1></header>
+          <h1>Embedded content</h1>
           <article id="embedded__images">
-            <header><h2>Images</h2></header>
+            <h2>Images</h2>
+              <div>
+                <h3>General Avatars</h3>
+                <img class="test-inline avatar__playercard--large" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline avatar__playercard--medium" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline avatar__playercard--small" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline avatar__header--signed-in" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+              </div>
+              <div>
+                <h3>Online Avatars</h3>
+                <img class="test-inline online avatar__playercard--large" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline online avatar__playercard--medium" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline online avatar__playercard--small" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline online avatar__header--signed-in" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+              </div>
+              <div>
+                <h3>Offline Avatars</h3>
+                <img class="test-inline offline avatar__playercard--large" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline offline avatar__playercard--medium" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline offline avatar__playercard--small" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img class="test-inline offline avatar__header--signed-in" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+              </div>
             <div>
               <h3>No <code>&lt;figure&gt;</code> element</h3>
-              <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
+              <p><img src="http://placekitten.com/420/420" alt="Image alt text"></p>
               <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
               <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
               <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
@@ -231,185 +207,239 @@
                 <figcaption>Here is a caption for this image.</figcaption>
               </figure>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="embedded__audio">
-            <header><h2>Audio</h2></header>
+            <h2>Audio</h2>
             <div><audio controls="">audio</audio></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="embedded__video">
-            <header><h2>Video</h2></header>
+            <h2>Video</h2>
             <div><video controls="">video</video></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="embedded__canvas">
-            <header><h2>Canvas</h2></header>
+            <h2>Canvas</h2>
             <div><canvas>canvas</canvas></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="embedded__meter">
-            <header><h2>Meter</h2></header>
+            <h2>Meter</h2>
             <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="embedded__progress">
-            <header><h2>Progress</h2></header>
+            <h2>Progress</h2>
             <div><progress>progress</progress></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="embedded__svg">
-            <header><h2>Inline SVG</h2></header>
+            <h2>Inline SVG</h2>
             <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <p><a href="#top">[Top]</a></p>
           </article>
           <article id="embedded__iframe">
-            <header><h2>IFrame</h2></header>
-            <div><iframe src="index.html" height="300"></iframe></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <h2>IFrame</h2>
+            <div><iframe src="<?php the_permalink(); ?>" height="300"></iframe></div>
+            <p><a href="#top">[Top]</a></p>
           </article>
         </section>
         <section id="forms">
-          <header><h1>Form elements</h1></header>
+          <h1>Form elements</h1>
           <form>
             <fieldset id="forms__input">
               <legend>Input fields</legend>
-              <p>
-                <label for="input__text">Text Input</label>
-                <input id="input__text" type="text" placeholder="Text Input">
+              <p class="test-p-input">
+                <label class="test-inline" for="input__text">Text Input</label>
+                <input class="test-inline" id="input__text" type="text" placeholder="Text Input">
               </p>
-              <p>
-                <label for="input__password">Password</label>
-                <input id="input__password" type="password" placeholder="Type your Password">
+              <p class="test-p-input">
+                <label class="test-inline" for="input__password">Password</label>
+                <input class="test-inline" id="input__password" type="password" placeholder="Type your Password">
               </p>
-              <p>
-                <label for="input__webaddress">Web Address</label>
-                <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+              <p class="test-p-input">
+                <label class="test-inline" for="input__webaddress">Web Address</label>
+                <input class="test-inline" id="input__webaddress" type="url" placeholder="http://yoursite.com">
               </p>
-              <p>
-                <label for="input__emailaddress">Email Address</label>
-                <input id="input__emailaddress" type="email" placeholder="name@email.com">
+              <p class="test-p-input">
+                <label class="test-inline" for="input__emailaddress">Email Address</label>
+                <input class="test-inline" id="input__emailaddress" type="email" placeholder="name@email.com">
               </p>
-              <p>
-                <label for="input__phone">Phone Number</label>
-                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+              <p class="test-p-input">
+                <label class="test-inline" for="input__phone">Phone Number</label>
+                <input class="test-inline" id="input__phone" type="tel" placeholder="(999) 999-9999">
               </p>
-              <p>
-                <label for="input__search">Search</label>
-                <input id="input__search" type="search" placeholder="Enter Search Term">
+              <p class="test-p-input">
+                <label class="test-inline" for="input__search">Search</label>
+                <input class="test-inline" id="input__search" type="search" placeholder="Search Term">
               </p>
-              <p>
-                <label for="input__text2">Number Input</label>
-                <input id="input__text2" type="number" placeholder="Enter a Number">
+              <p class="test-p-input">
+                <label class="test-inline" for="input__text2">Number Input</label>
+                <input class="test-inline" id="input__text2" type="number" placeholder="Enter a Number">
               </p>
-              <p>
-                <label for="input__text3" class="error">Error</label>
-                <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+              <p class="test-p-input">
+                <label class="test-inline is-error" for="input__text3">Error</label>
+                <input class="test-inline is-error" id="input__text3" type="text" placeholder="Text Input">
               </p>
-              <p>
-                <label for="input__text4" class="valid">Valid</label>
-                <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+              <p class="test-p-input">
+                <label class="test-inline is-valid" for="input__text4">Valid</label>
+                <input class="test-inline is-valid" id="input__text4" type="text" placeholder="Text Input">
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
-            <fieldset id="forms__select">
+            <fieldset class="form__select--container" id="forms__select">
               <legend>Select menus</legend>
-              <p>
-                <label for="select">Select</label>
-                <select id="select">
-                  <optgroup label="Option Group">
-                    <option>Option One</option>
-                    <option>Option Two</option>
-                    <option>Option Three</option>
-                  </optgroup>
-                </select>
-              </p>
+                <span class="custom-dropdown form__general-select">
+                  <span class="arrow">  &#x25BC;</span>
+                    <div>    
+                        <span>Language</span>
+                    </div>
+                </span>
+                <span class="custom-dropdown form__general-select2">
+                  <span class="arrow2">  &#x25BC;</span>
+                    <div>    
+                        <span>Mr</span>
+                    </div>
+                </span>
+                <span class="custom-dropdown form__general-select3">
+                  <span class="arrow3">  &#x25BC;</span>
+                    <div>    
+                        <span>01</span>
+                    </div>
+                </span>
+                <span class="custom-dropdown form__general-select4">
+                  <span class="arrow4">  &#x25BC;</span>
+                    <div>    
+                        <span>JAN</span>
+                    </div>
+                </span>
+                <span class="custom-dropdown form__general-select5">
+                  <span class="arrow5">  &#x25BC;</span>
+                    <div>    
+                        <span>2017</span>
+                    </div>
+                </span>
+                <span class="custom-dropdown form__general-select6 ">
+                  <span class="arrow6">  &#x25BC;</span>
+                    <div class="search">    
+                        <span>Search for</span>
+                    </div>
+                </span>
+                <span class="custom-dropdown form__general-select7">
+                  <span class="arrow7 friends">  &#x25BC;</span>
+                    <div class="friends">    
+                        <span>Friends</span>
+                    </div>
+                </span>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__checkbox">
               <legend>Checkboxes</legend>
-              <ul class="list list--bare">
-                <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-                <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-                <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
-              </ul>
+              <div class="checkbox">
+                <label>
+                   <input type="checkbox" name="" value="">
+                   <i class="helper"></i>Checkbox
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>Checkbox
+                   <input type="checkbox" name="" value="">
+                   <i class="helper"></i>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                   <input type="checkbox" name="" value="">
+                   <i class="helper"></i>Checkbox
+                </label>
+              </div>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__radio">
               <legend>Radio buttons</legend>
-              <ul class="list list--bare">
-                <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
-                <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
-                <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
-              </ul>
+              <ul class="form__radio-button--ul">
+                  <li class="form__radio-button--li">
+                    <input type="radio" id="f-option" name="selector">
+                    <label class="form__radio-button--label" for="f-option">Male</label>
+                    <div class="form__radio-button--check"></div>
+                  </li>
+                <li class="form__radio-button--li">
+                  <input type="radio" id="s-option" name="selector">
+                  <label class="form__radio-button--label" for="s-option">Female</label>
+                  <div class="form__radio-button--check"></div>
+              </li>
+            </ul>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__textareas">
               <legend>Textareas</legend>
               <p>
-                <label for="textarea">Textarea</label>
-                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                <textarea id="textarea" rows="3" cols="20" placeholder="Enter your message here"></textarea>
+              </p>
+              <p>
+                <label class="test-input bio-position bio-label">Bio</label>
+                <textarea id="textarea-bio" class="bio-position" rows="3" cols="20" placeholder="Enter your message here"></textarea>
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__html5">
               <legend>HTML5 inputs</legend>
-              <p>
-                <label for="ic">Color input</label>
-                <input type="color" id="ic" value="#000000">
+              <p class="test-p-input">
+                <label class="test-input" for="ic">Color input</label>
+                <input class="test-input" type="color" id="ic" value="#7ED321">
               </p>
-              <p>
-                <label for="in">Number input</label>
-                <input type="number" id="in" min="0" max="10" value="5">
+              <p class="test-p-input">
+                <label class="test-input" for="in">Number input</label>
+                <input class="test-input" type="number" id="in" min="0" max="10" value="5">
               </p>
-              <p>
-                <label for="ir">Range input</label>
-                <input type="range" id="ir" value="10">
+              <p class="test-p-input">
+                <label class="test-input" for="ir">Range input</label>
+                <input class="test-input" type="range" id="ir" max="10" min="1" value="1">
               </p>
-              <p>
-                <label for="idd">Date input</label>
-                <input type="date" id="idd" value="1970-01-01">
+              <p class="test-p-input">
+                <label class="test-input" for="idd">Date input</label>
+                <input class="test-input" type="date" id="idd" value="1970-01-01">
               </p>
-              <p>
-                <label for="idm">Month input</label>
-                <input type="month" id="idm" value="1970-01">
+              <p class="test-p-input">
+                <label class="test-input" for="idm">Month input</label>
+                <input class="test-input" type="month" id="idm" value="1970-01">
               </p>
-              <p>
-                <label for="idw">Week input</label>
-                <input type="week" id="idw" value="1970-W01">
+              <p class="test-p-input">
+                <label class="test-input" for="idw">Week input</label>
+                <input class="test-input" type="week" id="idw" value="1970-W01">
               </p>
-              <p>
-                <label for="idt">Datetime input</label>
-                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
-              </p>
-              <p>
-                <label for="idtl">Datetime-local input</label>
-                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+              <p class="test-p-input">
+                <label class="test-input" for="idtl">Datetime-local input</label>
+                <input class="test-input" type="datetime-local" id="idtl" value="1970-01-01T00:00">
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__action">
               <legend>Action buttons</legend>
               <p>
-                <input type="submit" value="<input type=submit>">
-                <input type="button" value="<input type=button>">
-                <input type="reset" value="<input type=reset>">
-                <input type="submit" value="<input disabled>" disabled>
+                <h3>Actions</h3>
+                <button class="button__player-card action-button"><span>Player card</span></button>
+                <button class="button__search-bar action-button"></button>
+                <button class="button__chat-arrow action-button"></button>
               </p>
               <p>
-                <button type="submit">&lt;button type=submit&gt;</button>
-                <button type="button">&lt;button type=button&gt;</button>
-                <button type="reset">&lt;button type=reset&gt;</button>
-                <button type="button" disabled>&lt;button disabled&gt;</button>
+                <h3>Input buttons</h3>
+                <input type="submit" value="Submit">
+                <input type="button" value="Button">
+                <input type="reset" value="Reset">
+                <input type="submit" disabled value="Disabled">
+              </p>
+              <p>
+                <h3>Buttons</h3>
+                <button type="submit">Submit</button>
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+                <button type="button" disabled>Disabled</button>
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
           </form>
         </section>
+      </section>
       </main>
-      <footer role="contentinfo">
-        <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
-      </footer>
-    </div>
-  </body>
-</html>
+<?php get_footer(); ?>

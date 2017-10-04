@@ -1,0 +1,31 @@
+@mixin avatar__image-size ($width, $height) {
+	height: $width;
+	width: $height;
+	border-radius: 100%;
+}
+
+
+.test-inline {
+	display: inline-block;
+}
+
+.online {
+	border: 3px solid $color__continue--button;
+}
+
+.offline {
+	border: 3px solid $color__cancel--button
+}
+
+.avatar__playercard--large {
+	@include avatar__image-size(250px, 250px)
+}
+.avatar__playercard--medium {
+	@include avatar__image-size(200px, 200px)
+}
+.avatar__playercard--small {
+	@include avatar__image-size(100px, 100px)
+}
+.avatar__header--signed-in {
+	@include avatar__image-size(50px, 50px)
+}

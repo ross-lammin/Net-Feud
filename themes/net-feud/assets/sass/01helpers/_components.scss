@@ -1,12 +1,16 @@
 @mixin button-size--small {
-	width: 7em;
 	height: 2.5em;
+	width: initial;
+	padding: 0 1rem;
+	font-size: 10px;
+	text-indent: 0;
+	border-radius: $button__border-radius;
 }
 @mixin font__new-rocker{
-	font-family: 'New Rocker', cursive;
+	font-family: 'New Rocker', cursive, Arial;
 }
 @mixin font__roboto{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif, Arial;
 }
 @mixin clearfix {
 	content: "";
@@ -14,9 +18,14 @@
   clear: both;
 }
 @mixin footer__social-icons ($top, $mr, $filename) {
-	top: 12px;
-	margin-right: 10px;
-	content: url("../svgs/#{$filename}.svg");
+	top: $top;
+	height: 30px;
+	width: 30px;
+	display: block;
+	float: left;
+	margin: 0 auto;
+	margin-right: $mr;
+	content: url("../svgs/#{$filename}.png");
 }
 @mixin footer-images ($pos, $top, $dis, $filename, $scale) {
 	position: $pos;

@@ -1,15 +1,68 @@
-button{
+button {
 	@include button-size--small;
 }
 button[type='submit'] {
 	background-color: $color__continue--button;
-	border-radius: $button__border-radius;
 }
 button[type='reset'] {
 	background-color: $color__cancel--button;
-	border-radius: $button__border-radius;
 }
 button[type='button'] {
 	background-color: $color__secondary--button;
-	border-radius: $button__border-radius;
 }
+button[disabled] {
+	background-color: $color__primary--background;
+}
+.action-button {
+	float: left;
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	height: 50px;
+	width: 50px;
+	padding: 0rem;
+	margin-left: 10px;
+	border-radius: 0;
+}
+.button__player-card {
+	@include clearfix;
+	background-color: $color__continue--button;
+	border-radius: 10px; 
+}
+.button__search-bar {
+	background: $color__continue--button url("../svgs/search-icon.svg") no-repeat 8px 8px;
+	background-size: 30px 30px;
+}
+.button__chat-arrow {
+	background: $color__continue--button url("../svgs/icon-chat-arrow.svg") no-repeat 8px 8px;
+	background-size: 30px 30px;
+}
+
+@media screen and (min-width: 425px) {
+	button {
+		font-size: 1.2em;
+	}
+	.button__player-card {
+		font-size: 1em;
+	}
+	.action-button {
+		height: 70px;
+		width: 70px;
+	}
+	.button__chat-arrow, .button__search-bar {
+		background-size: 50px 50px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.button__player-card {
+		font-size: 1.2em;
+	}
+}
+
+
+
+
+
+
+
+

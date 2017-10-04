@@ -40,9 +40,9 @@ location['linting']['sass'] = require('gulp_first10_frontend-toolbox/gulp/resour
 location['linting']['js'] = '';//path.join(__dirname, '../../gulp/resources/.eslintrc');
 
 // Javascript location.
-location['js'] = 'assets/js';
+location['js'] = 'assets/js/scripts/';
 
-location['jsdest'] = 'assets/js/';
+location['jsdest'] = 'assets/js';
 location['jsoutput'] = 'master.js';
 location['jsoutput-min'] = 'master.min.js';
 
@@ -55,7 +55,7 @@ location['js-dependencies'] = ['assets/js/'];
 
 js = {};
 js['requiredJS'] = {}
-js['requiredJS']['functions'] = [];
+js['requiredJS']['functions'] = ['triggerAndTargetClassModifier', 'exampleFunctionObject', 'testtwo'];
 js['requiredJS']['esVersion'] = 'es5'
 
 

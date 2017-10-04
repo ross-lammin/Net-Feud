@@ -20,7 +20,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'first10' ); ?></a>
 
@@ -41,6 +41,15 @@ if ( $description || is_customize_preview() ) : ?>
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
+
+<div class="header__burger-menu--container">
+  <div class="header__burger-menu--bar-1"></div>
+  <div class="header__burger-menu--bar-2"></div>
+  <div class="header__burger-menu--bar-3"></div>
+</div>
+
+
+
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-bar__primary--list' ) ); ?>
