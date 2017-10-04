@@ -25,8 +25,13 @@
 				</nav>
 
 				<div class="footer__social-icons">
-						<p class="footer__social-icons--facebook">Find us on Facebook</p>
-						<p class="footer__social-icons--twitter">Find us on Twitter</p>
+					<div class="footer__social-icons--center">
+						<div title="Facebook" class="footer__social-icons--facebook"></div>
+						<div title="Twitter" class="footer__social-icons--twitter"></div>
+						<div title="Google+" class="footer__social-icons--google"></div>
+						<div title="Youtube" class="footer__social-icons--youtube"></div>
+						<div title="snapchat" class="footer__social-icons--snapchat"></div>
+					</div>
 				</div>
 
 				<small class="footer__copyright-info">

@@ -32,7 +32,7 @@ const sitesettings = require('./gulp_settings');
       }
     }
   };
-
+console.log(sitesettings.watch.js);
 // Tasks
   const tasks = {
     'dev': {
