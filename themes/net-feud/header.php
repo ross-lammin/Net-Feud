@@ -56,4 +56,18 @@ if ( $description || is_customize_preview() ) : ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
+
+<div class="header__searchbar--container">
+	<div class="header__searchbar--inner-container">
+		<button class="button__search-bar action-button header__button--search-bar"></button>
+		<input class="header__searchbar--search-input" id="input__search" type="search" placeholder="Search For..."><div class="header__searchbar--clear"></div>
+		<span class="custom-dropdown form__general-select6 header__searchbar--select">
+    	<span class="arrow6">  &#x25BC;</span>  
+        <span class="header__searchbar--select-text">Search for</span>
+    </span>
+	</div>
+</div>
+
+
+
 	<div id="content" class="site-content">
