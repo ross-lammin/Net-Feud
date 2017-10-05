@@ -43,4 +43,22 @@ document.addEventListener('DOMContentLoaded', function () {
   dropdown7.addEventListener('click', function () {
     arrow7.classList.toggle('flip-arrow');
   });
+
+
+  var search = document.querySelector('.nav-bar__primary--search');
+  var searchBar = document.querySelector('.header__searchbar--container');
+  var searchBarInput = document.querySelector('.header__searchbar--search-input');
+  var searchBarX = document.querySelector('.header__searchbar--clear');
+  var searchBarColor = document.querySelector('.nav-bar__primary--search');
+
+  search.addEventListener('click', function () {
+    searchBar.classList.toggle('display-block2');
+    searchBarColor.classList.toggle('.nav-bar__primary--search--color');
+  });
+
+  searchBarX.addEventListener('click', function () {
+    searchBarInput.value = '';
+  });
+
+
 });

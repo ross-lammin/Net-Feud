@@ -272,7 +272,7 @@
               </p>
               <p class="test-p-input">
                 <label class="test-inline" for="input__search">Search</label>
-                <input class="test-inline" id="input__search" type="search" placeholder="Search Term">
+                <input class="test-inline" id="input__search" type="search" placeholder="Search For...">
               </p>
               <p class="test-p-input">
                 <label class="test-inline" for="input__text2">Number Input</label>
@@ -320,7 +320,7 @@
                         <span>2017</span>
                     </div>
                 </span>
-                <span class="custom-dropdown form__general-select6 ">
+                <span class="custom-dropdown form__general-select6">
                   <span class="arrow6">  &#x25BC;</span>
                     <div class="search">    
                         <span>Search for</span>
@@ -336,24 +336,22 @@
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__checkbox">
               <legend>Checkboxes</legend>
-              <div class="checkbox">
-                <label>
-                   <input type="checkbox" name="" value="">
-                   <i class="helper"></i>Checkbox
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>Checkbox
-                   <input type="checkbox" name="" value="">
-                   <i class="helper"></i>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                   <input type="checkbox" name="" value="">
-                   <i class="helper"></i>Checkbox
-                </label>
-              </div>
+              <label class="container">One
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Two
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Three
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Four
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__radio">
