@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?> 
       <main role="main">
         <section id="text">
           <section>
@@ -74,7 +74,7 @@
           </article>
           <article id="text__tables">
             <h1>Tabular data</h1>
-            <!-- <table>
+            <table>
               <caption>Table Caption</caption>
               <thead>
                 <tr>
@@ -124,7 +124,7 @@
                   <td>Table Cell 5</td>
                 </tr>
               </tbody>
-            </table> -->
+            </table> 
             <p><a href="#top">[Top]</a></p>
           </article>
           <article id="text__code">
@@ -176,25 +176,25 @@
           <article id="embedded__images">
             <h2>Images</h2>
               <div>
-                <h3>General Avatars</h3>
-                <img class="test-inline avatar__playercard--large" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline avatar__playercard--medium" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline avatar__playercard--small" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline avatar__header--signed-in" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <h3>Online Avatars</h3>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline avatar__playercard--large"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline avatar__playercard--medium"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline avatar__playercard--small"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline avatar__header--signed-in"/>
               </div>
               <div>
                 <h3>Online Avatars</h3>
-                <img class="test-inline online avatar__playercard--large" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline online avatar__playercard--medium" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline online avatar__playercard--small" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline online avatar__header--signed-in" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline online avatar__playercard--large"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline online avatar__playercard--medium"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline online avatar__playercard--small"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline online avatar__header--signed-in"/>
               </div>
               <div>
-                <h3>Offline Avatars</h3>
-                <img class="test-inline offline avatar__playercard--large" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline offline avatar__playercard--medium" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline offline avatar__playercard--small" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
-                <img class="test-inline offline avatar__header--signed-in" src="<?php echo get_template_directory_uri() . '/assets/svgs/test-avatar.png' ?> ">
+                <h3>Online Avatars</h3>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline offline avatar__playercard--large"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline offline avatar__playercard--medium"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline offline avatar__playercard--small"/>
+                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/test-avatar.png' ?>" class="test-inline offline avatar__header--signed-in"/>
               </div>
             <div>
               <h3>No <code>&lt;figure&gt;</code> element</h3>
@@ -241,7 +241,7 @@
           </article>
           <article id="embedded__iframe">
             <h2>IFrame</h2>
-            <div><iframe src="<?php the_permalink(); ?>" height="300"></iframe></div>
+            <div class="embed-object"><iframe src="https://www.youtube.com/embed/6T8stXj7Dzg" frameborder="0" allowfullscreen></iframe></div>
             <p><a href="#top">[Top]</a></p>
           </article>
         </section>
@@ -290,48 +290,119 @@
             <p><a href="#top">[Top]</a></p>
             <fieldset class="form__select--container" id="forms__select">
               <legend>Select menus</legend>
-                <span class="custom-dropdown form__general-select">
-                  <span class="arrow">  &#x25BC;</span>
-                    <div>    
-                        <span>Language</span>
-                    </div>
-                </span>
-                <span class="custom-dropdown form__general-select2">
-                  <span class="arrow2">  &#x25BC;</span>
-                    <div>    
-                        <span>Mr</span>
-                    </div>
-                </span>
-                <span class="custom-dropdown form__general-select3">
-                  <span class="arrow3">  &#x25BC;</span>
-                    <div>    
-                        <span>01</span>
-                    </div>
-                </span>
-                <span class="custom-dropdown form__general-select4">
-                  <span class="arrow4">  &#x25BC;</span>
-                    <div>    
-                        <span>JAN</span>
-                    </div>
-                </span>
-                <span class="custom-dropdown form__general-select5">
-                  <span class="arrow5">  &#x25BC;</span>
-                    <div>    
-                        <span>2017</span>
-                    </div>
-                </span>
-                <span class="custom-dropdown form__general-select6">
-                  <span class="arrow6">  &#x25BC;</span>
-                    <div class="search">    
-                        <span>Search for</span>
-                    </div>
-                </span>
-                <span class="custom-dropdown form__general-select7">
-                  <span class="arrow7 friends">  &#x25BC;</span>
-                    <div class="friends">    
-                        <span>Friends</span>
-                    </div>
-                </span>
+
+              <!--//////////////////////////////////
+              /////////// Custom select/////////////
+              ///////////////////////////////////-->
+
+              <div class="form__select-container--title">
+                <ul class="select">
+                  <li>
+                    <input class="select_close select_option" type="radio" name="title" id="title-close" value=""/>
+                    <span class="select_label select_label-placeholder">Title</span>
+                  </li>
+                  <li class="select_items">
+                    <input class="select_expand--form" type="radio" name="title" id="title-opener"/>
+                    <label class="select_closeLabel" for="title-close"></label>
+                    <ul class="select_options">
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="title" id="title-mr"/>
+                        <label class="select_label" for="title-mr">Mr</label>
+                      </li>
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="title" id="title-mrs"/>
+                        <label class="select_label" for="title-mrs">Mrs</label>
+                      </li>
+                    </ul>
+                    <label class="select_expandLabel" for="title-opener"></label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="form__select-container--day">
+                <ul class="select">
+                  <li>
+                    <input class="select_close select_option" type="radio" name="day" id="day-close" value=""/>
+                    <span class="select_label select_label-placeholder">Day</span>
+                  </li>
+                  
+                  <li class="select_items">
+                    <input class="select_expand" type="radio" name="day" id="day-opener"/>
+                    <label class="select_closeLabel" for="day-close"></label>
+                    
+                    <ul class="select_options">
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="day" id="day-mr"/>
+                        <label class="select_label" for="day-mr">01</label>
+                      </li>
+
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="title" id="day-mrs"/>
+                        <label class="select_label" for="day-mrs">02</label>
+                      </li>
+
+                    </ul>
+                    <label class="select_expandLabel" for="day-opener"></label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="form__select-container--month">
+                <ul class="select">
+                  <li>
+                    <input class="select_close select_option" type="radio" name="month" id="month-close" value=""/>
+                    <span class="select_label select_label-placeholder green">Month</span>
+                  </li>
+                  
+                  <li class="select_items">
+                    <input class="select_expand" type="radio" name="month" id="month-opener"/>
+                    <label class="select_closeLabel" for="month-close"></label>
+                    
+                    <ul class="select_options">
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="month" id="month-mr"/>
+                        <label class="select_label green" for="month-mr">January</label>
+                      </li>
+
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="month" id="month-mrs"/>
+                        <label class="select_label green" for="month-mrs">Febuary</label>
+                      </li>
+
+                    </ul>
+                    <label class="select_expandLabel" for="month-opener"></label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="form__select-container--year">
+                <ul class="select">
+                  <li>
+                    <input class="select_close select_option" type="radio" name="year" id="year-close" value=""/>
+                    <span class="select_label-placeholder select_label black">year</span>
+                  </li>
+                  
+                  <li class="select_items">
+                    <input class="select_expand-white" type="radio" name="year" id="year-opener"/>
+                    <label class="select_closeLabel" for="year-close"></label>
+                    
+                    <ul class="select_options">
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="year" id="year-mr"/>
+                        <label class="select_label black" for="year-mr">2016</label>
+                      </li>
+
+                      <li class="select_option">
+                        <input class="select_input" type="radio" name="year" id="year-mrs"/>
+                        <label class="select_label black" for="year-mrs">2017</label>
+                      </li>
+
+                    </ul>
+                    <label class="select_expandLabel" for="year-opener"></label>
+                  </li>
+                </ul>
+              </div>
+
             </fieldset>
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__checkbox">
@@ -358,12 +429,12 @@
               <legend>Radio buttons</legend>
               <ul class="form__radio-button--ul">
                   <li class="form__radio-button--li">
-                    <input type="radio" id="f-option" name="selector">
+                    <input class="form__radio-input" type="radio" id="f-option" name="selector">
                     <label class="form__radio-button--label" for="f-option">Male</label>
                     <div class="form__radio-button--check"></div>
                   </li>
                 <li class="form__radio-button--li">
-                  <input type="radio" id="s-option" name="selector">
+                  <input class="form__radio-input" type="radio" id="s-option" name="selector">
                   <label class="form__radio-button--label" for="s-option">Female</label>
                   <div class="form__radio-button--check"></div>
               </li>
@@ -417,27 +488,74 @@
               <legend>Action buttons</legend>
               <p>
                 <h3>Actions</h3>
-                <button class="button__player-card action-button"><span>Player card</span></button>
-                <button class="button__search-bar action-button"></button>
-                <button class="button__chat-arrow action-button"></button>
+                <div>
+                  <button class="button__player-card action-button__text--large">Player<br/>card</button>
+                  <button class="button__player-card action-button__text--medium">Player<br/>card</button>
+                  <button class="button__player-card action-button__text--small">Player<br/>card</button>
+                </div>
+
+                <div>
+                  <button class="button__search-bar action-button__bg--large"></button>
+                  <button class="button__search-bar action-button__bg--medium"></button>
+                  <button class="button__search-bar action-button__bg--small"></button>
+                </div>
+
+                <div>
+                  <button class="button__chat-arrow action-button__bg--large"></button>
+                  <button class="button__chat-arrow action-button__bg--medium"></button>
+                  <button class="button__chat-arrow action-button__bg--small"></button>
+                </div>
+
               </p>
               <p>
                 <h3>Input buttons</h3>
-                <input type="submit" value="Submit">
-                <input type="button" value="Button">
-                <input type="reset" value="Reset">
-                <input type="submit" disabled value="Disabled">
+                <div>
+                  <input class="button--large" type="submit" value="Submit">
+                  <input class="button--medium"  type="submit" value="Submit">
+                  <input class="button--small"  type="submit" value="Submit">
+                </div>
+                <div>
+                  <input class="button--large"  type="button" value="Button">
+                  <input class="button--medium"  type="button" value="Button">
+                  <input class="button--small"  type="button" value="Button">
+                </div>
+                <div>
+                  <input class="button--large"  type="reset" value="Reset">
+                  <input class="button--medium"  type="reset" value="Reset">
+                  <input class="button--small"  type="reset" value="Reset">
+                </div>
+                <div>
+                  <input class="button--large"  type="submit" disabled value="Disabled">
+                  <input class="button--medium"  type="submit" disabled value="Disabled">
+                  <input class="button--small"  type="submit" disabled value="Disabled">
+                </div>
               </p>
               <p>
                 <h3>Buttons</h3>
-                <button type="submit">Submit</button>
-                <button type="button">Button</button>
-                <button type="reset">Reset</button>
-                <button type="button" disabled>Disabled</button>
+                <div>
+                  <button class="button--large" type="submit">Submit</button>
+                  <button class="button--medium" type="submit">Submit</button>
+                  <button class="button--small" type="submit">Submit</button>
+                </div>
+                <div>
+                  <button class="button--large" type="button">Button</button>
+                  <button class="button--medium" type="button">Button</button>
+                  <button class="button--small" type="button">Button</button>
+                </div>
+                <div> 
+                  <button class="button--large" type="reset">Reset</button>
+                  <button class="button--medium" type="reset">Reset</button>
+                  <button class="button--small" type="reset">Reset</button>
+                </div>
+                <div>
+                  <button class="button--large" type="button" disabled>Disabled</button>
+                  <button class="button--medium" type="button" disabled>Disabled</button>
+                  <button class="button--small" type="button" disabled>Disabled</button>
+                </div>
               </p>
             </fieldset>
           </form>
         </section>
       </section>
-      </main>
+      </main> 
 <?php get_footer(); ?>

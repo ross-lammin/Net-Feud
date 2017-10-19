@@ -3,6 +3,9 @@
 	width: $height;
 	border-radius: 100%;
 }
+@mixin avatar__imgage--import ($filename) {
+	content: url("../svgs/#{$filename}.svg");
+}
 
 
 .test-inline {
@@ -16,6 +19,8 @@
 .offline {
 	border: 3px solid $color__cancel--button
 }
+
+
 
 .avatar__playercard--large {
 	@include avatar__image-size(250px, 250px)

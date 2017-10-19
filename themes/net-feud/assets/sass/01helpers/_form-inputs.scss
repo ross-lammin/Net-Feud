@@ -89,79 +89,7 @@ input[type=range]::-ms-thumb {
   background: $color__continue--button;
   cursor: pointer;
 }
-/////////////////////////////////////
-//////////////selects////////////////
-/////////////////////////////////////
-.custom-dropdown{
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 10px; 
-  text-align: center;
-}
 
-.custom-dropdown div {
-  background-color: $color__background--input;
-  color: black;
-  font-size: inherit;
-  padding: .5em;
-  padding-right: 2.5em; 
-  border: 1px solid black;
-  margin: 0;  
-  text-overflow: '';
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 0;
-  text-align: center;
-  pointer-events: none;
-  span {
-    margin-left: -6px;
-  }
-  span::before {
-    content: '';
-  }
-}
-.form__general-select,
-.form__general-select2,
-.form__general-select3,
-.form__general-select4,
-.form__general-select5,
-.form__general-select6,
-.form__general-select7
- {
-  width: 10em;
-}
-
-
-.arrow,
-.arrow2,
-.arrow3,
-.arrow4,
-.arrow5,
-.arrow6,
-.arrow7
- {
-  position: absolute;
-  height: 1em;
-  font-size: 2em;
-  line-height: 1;
-  right: .15em;
-  top: 50%;
-  margin-top: -.5em;
-  color: black;
-  transition: 1s;
-}
-.flip-arrow {
-  transform: rotateX(180deg);
-  transition: 1s;
-}
-.custom-dropdown > div.friends, .friends {
-  background-color: black;
-  color: white;
-}
-.custom-dropdown > div.search, .search {
-  background-color: $color__continue--button;
-}
 /////////////////////////////////////
 ////////////checkboxes///////////////
 /////////////////////////////////////
@@ -189,15 +117,17 @@ input[type=range]::-ms-thumb {
     background-color: #7ED321;
     border: 3px solid black;
     border-radius: 5px;
-    
+    pointer-events: none;
 }
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
+    pointer-events: none;
 }
 .container input:checked ~ .checkmark::after {
     display: block;
+    pointer-events: none;
 }
 .container .checkmark::after {
     left: 4.5px;
@@ -209,7 +139,10 @@ input[type=range]::-ms-thumb {
     -webkit-transform: rotate(40deg);
     -ms-transform: rotate(40deg);
     transform: rotate(40deg);
+    pointer-events: none;
 }
+
+
 /////////////////////////////////////
 ///////////radio buttons/////////////
 /////////////////////////////////////
@@ -224,8 +157,11 @@ input[type=range]::-ms-thumb {
 
 input[type=radio]{
   position: relative;
-  visibility: hidden;
   width: 0px;
+}
+
+.form__radio-input {
+  visibility: hidden;
 }
 
 .form__radio-button--label{

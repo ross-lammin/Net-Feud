@@ -13,51 +13,38 @@ button[type='button'] {
 button[disabled] {
 	background-color: $color__primary--background;
 }
-.action-button {
-	float: left;
-	-webkit-appearance: none; 
-	-moz-appearance: none; 
-	height: 50px;
-	width: 50px;
-	padding: 0rem;
-	margin-left: 10px;
-	border-radius: 0;
+
+// input buttons
+
+#forms__action {
+	.button--small {width: 80px; font-size: 1rem;}
+	.button--medium {width: 100px; font-size: 1.2rem}
+	.button--large {width: 130px; font-size: 1.4rem}
 }
+
+//action buttons
+
 .button__player-card {
-	@include clearfix;
 	background-color: $color__continue--button;
 	border-radius: 10px; 
 }
 .button__search-bar {
-	background: $color__continue--button url("../svgs/search-icon.svg") no-repeat 8px 8px;
-	background-size: 30px 30px;
+	background: $color__continue--button url("../svgs/search-icon.svg") no-repeat center center;
 }
 .button__chat-arrow {
-	background: $color__continue--button url("../svgs/icon-chat-arrow.svg") no-repeat 8px 8px;
-	background-size: 30px 30px;
+	background: $color__continue--button url("../svgs/icon-chat-arrow.svg") no-repeat center center;
 }
+.action-button__text--small {font-size: 1rem;}
+.action-button__text--medium {font-size: 2rem;}
+.action-button__text--large {font-size: 3rem;}
 
-@media screen and (min-width: 425px) {
-	button {
-		font-size: 1.2em;
-	}
-	.button__player-card {
-		font-size: 1em;
-	}
-	.action-button {
-		height: 45px;
-		width: 45px;
-	}
-	.button__chat-arrow, .button__search-bar {
-		background-size: 30px 30px;
-	}
-}
+.action-button__bg--small {width: 40px; height: 40px; background-size: 30px 30px; }
+.action-button__bg--medium {width: 50px; height: 55px; background-size: 45px 45px;}
+.action-button__bg--large {width: 65px; height: 70px; background-size: 60px 60px;}
 
-@media screen and (min-width: 1000px) {
-	.button__player-card {
-		font-size: 1.2em;
-	}
-}
+
+
+
 
 
 

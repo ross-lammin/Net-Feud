@@ -81,6 +81,12 @@
 			color: $color__Black--pure;
 		}
 	}
+
+.nav-bar__primary--search-color {
+	a {
+		color: darken($color__continue--button, 10);
+	}
+}
 	.nav-bar__primary--home {
 		@include nav-bar-menu-list(10px);
 		left: 30px;
@@ -98,6 +104,7 @@
 	.nav-bar__primary--search {
 		@include nav-bar-menu-list(10px);
 		right: 90px;
+		    height: 0;
 	}
 
 	.nav-bar__primary--home:hover,
@@ -109,7 +116,6 @@
 			color: $color__continue--button;
 		}
 	}
-
 	.nav-bar__primary--home::after {
 		@include menu-item-position(relative, -75px, logo-icon);
 		left: -5px;
@@ -161,11 +167,13 @@
 	z-index: 1000;
 }
 .header__button--search-bar {
+	float: left;
 	margin: 0;
 	height: 70px; 
 	width: 70px;
 	z-index: 1000;
 	background-size: 50px 50px;
+	border-radius: 0;
 }
 .header__searchbar--search-input {
 	-webkit-appearance: none;
@@ -178,7 +186,7 @@
 .header__searchbar--clear {
 	position: absolute;
 	top: 20px;
-	right: 250px;
+	right: 255px;
 	background: $color__background--input url("../svgs/search-bar-x.svg") no-repeat center right;
 	background-size: 50px 50px;
 	height: 60px;
@@ -204,15 +212,10 @@
 	padding-top: 8px;
 	z-index: 1000;
 }
-.nav-bar__primary--search--color > a{
-		color: $color__continue--button;
-}
-.nav-bar__primary--search > a {
-		color: black;
-}
 .display-none {
 	display: none;
 }
+
 @media screen and ( min-width: 805px ) {
 	.menu-primary-container {
 		height: 5em;
@@ -261,6 +264,7 @@
 		top: -75px;
 	}
 }
+
 @media screen and ( max-width: 1013px ) {
 	.header__searchbar--select {
 		display: none;
@@ -276,6 +280,7 @@
 		left: 90%;
 	}
 }
+
 @media screen and ( max-width: 805px ) {
 	.header__button--search-bar {
 		height: 45px; 
@@ -301,7 +306,11 @@
 	.header__searchbar--search-input {
 		padding-right: 20px;
 	}
+	.header__searchbar--search-input {
+		font-size: 1rem;
+	}
 }
+
 @media screen and ( max-width: 470px ) {
 	.header__searchbar--search-input {
 		width: 80%;

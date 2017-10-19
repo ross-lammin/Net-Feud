@@ -25,13 +25,13 @@
 	float: left;
 	margin: 0 auto;
 	margin-right: $mr;
-	content: url("../svgs/#{$filename}.png");
+	content: url("../imgs/#{$filename}.png");
 }
 @mixin footer-images ($pos, $top, $dis, $filename, $scale) {
 	position: $pos;
 	top: $top;
 	display: $dis;
-	content: url("../svgs/#{$filename}.png");
+	content: url("../imgs/#{$filename}.png");
 	transform: scale($scale);
 }
 
