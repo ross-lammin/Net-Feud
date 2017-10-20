@@ -1,0 +1,41 @@
+.social-icon__container {
+  @include clearfix;
+  margin: 0 auto;
+}
+
+.social-icon--facebook {
+  @include general__social-icon(12px, 10px, icon-facebook);
+}
+
+.social-icon--twitter {
+  @include general__social-icon(12px, 10px, icon-twitter);
+}
+
+.social-icon--google {
+  @include general__social-icon(12px, 10px, icon-google);
+}
+
+.social-icon--youtube {
+  @include general__social-icon(12px, 10px, icon-youtube);
+}
+
+.social-icon--snapchat {
+  @include general__social-icon(10px, 10px, icon-snapchat);
+}
+
+@media screen and ( min-width: 880px ) {
+
+  .social-icon__container {
+    top: -30px;
+  }
+
+}
+
+@media screen and (min-width: 1124px) {
+
+  .social-icon__container * {
+    height:50px;
+    width:50px;
+  }
+
+}

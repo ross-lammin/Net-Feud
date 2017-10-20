@@ -16,7 +16,9 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 
-			<div class="footer__right-image"></div>
+			<div class="footer__right--container">
+				<div class="footer__right-image"></div>
+			</div>
 			<div class="footer__information">
 				<div class="footer__image--full"></div>
 
@@ -24,13 +26,13 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
 				</nav>
 
-				<div class="footer__social-icons">
-					<div class="footer__social-icons--center">
-						<div title="Facebook" class="footer__social-icons--facebook"></div>
-						<div title="Twitter" class="footer__social-icons--twitter"></div>
-						<div title="Google+" class="footer__social-icons--google"></div>
-						<div title="Youtube" class="footer__social-icons--youtube"></div>
-						<div title="snapchat" class="footer__social-icons--snapchat"></div>
+				<div class="footer__social-icon--container">
+					<div class="social-icon__container">
+						<div title="Facebook" class="social-icon--facebook"></div>
+						<div title="Twitter" class="social-icon--twitter"></div>
+						<div title="Google+" class="social-icon--google"></div>
+						<div title="Youtube" class="social-icon--youtube"></div>
+						<div title="snapchat" class="social-icon--snapchat"></div>
 					</div>
 				</div>
 
@@ -53,7 +55,11 @@
 				</small>
 
 			</div>	
-			<div class="footer__left-image"></div>
+
+			<div class="footer__left--container">
+				<div class="footer__left-image"></div>
+			</div>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

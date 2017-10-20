@@ -807,6 +807,81 @@ td {
   color: white;
 }
 
+.social-icon__container {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 0 auto;
+}
+
+.social-icon--facebook {
+  top: 12px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-right: 10px;
+  content: url("../imgs/icon-facebook.png");
+}
+
+.social-icon--twitter {
+  top: 12px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-right: 10px;
+  content: url("../imgs/icon-twitter.png");
+}
+
+.social-icon--google {
+  top: 12px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-right: 10px;
+  content: url("../imgs/icon-google.png");
+}
+
+.social-icon--youtube {
+  top: 12px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-right: 10px;
+  content: url("../imgs/icon-youtube.png");
+}
+
+.social-icon--snapchat {
+  top: 10px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-right: 10px;
+  content: url("../imgs/icon-snapchat.png");
+}
+
+@media screen and (min-width: 880px) {
+  .social-icon__container {
+    top: -30px;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .social-icon__container * {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .test-p-input {
   width: 100%;
 }
@@ -1425,7 +1500,8 @@ input[type='color'] {
   }
 }
 
-.footer__information, .footer__image--full {
+.footer__information,
+.footer__image--full {
   width: 100%;
   margin: 0 auto;
 }
@@ -1434,7 +1510,11 @@ input[type='color'] {
   transform: scale(0.5);
 }
 
-.footer__information .footer__image--full::after, #footer-menu, .footer__social-icons, .footer__social-icons--facebook::before, .footer__social-icons--twitter::before {
+.footer__information .footer__image--full::after,
+#footer-menu,
+.footer__social-icons,
+.footer__social-icons--facebook::before,
+.footer__social-icons--twitter::before {
   position: relative;
 }
 
@@ -1448,6 +1528,11 @@ input[type='color'] {
   text-align: center;
 }
 
+.menu-footer-container {
+  margin: 0 auto;
+  height: 0;
+}
+
 #footer-menu {
   top: -40px;
   margin-right: 0;
@@ -1457,78 +1542,17 @@ input[type='color'] {
 #footer-menu > li {
   display: inline-block;
   margin: 0 3px;
+  font-size: 0.8rem;
 }
 
-.footer__social-icons {
+.footer__social-icon--container {
   content: "";
   display: table;
   clear: both;
   width: 60%;
-  top: -40px;
   margin: 0 auto;
-}
-
-.footer__social-icons--center {
-  content: "";
-  display: table;
-  clear: both;
-  margin: 0 auto;
-  margin-top: 25px;
-}
-
-.footer__social-icons--facebook {
-  top: 12px;
-  height: 30px;
-  width: 30px;
-  display: block;
-  float: left;
-  margin: 0 auto;
-  margin-right: 10px;
-  content: url("../imgs/icon-facebook.png");
-}
-
-.footer__social-icons--twitter {
-  top: 12px;
-  height: 30px;
-  width: 30px;
-  display: block;
-  float: left;
-  margin: 0 auto;
-  margin-right: 10px;
-  content: url("../imgs/icon-twitter.png");
-}
-
-.footer__social-icons--google {
-  top: 12px;
-  height: 30px;
-  width: 30px;
-  display: block;
-  float: left;
-  margin: 0 auto;
-  margin-right: 10px;
-  content: url("../imgs/icon-google.png");
-}
-
-.footer__social-icons--youtube {
-  top: 12px;
-  height: 30px;
-  width: 30px;
-  display: block;
-  float: left;
-  margin: 0 auto;
-  margin-right: 10px;
-  content: url("../imgs/icon-youtube.png");
-}
-
-.footer__social-icons--snapchat {
-  top: 10px;
-  height: 30px;
-  width: 30px;
-  display: block;
-  float: left;
-  margin: 0 auto;
-  margin-right: 10px;
-  content: url("../imgs/icon-snapchat.png");
+  margin-top: -15px;
+  margin-bottom: 5px;
 }
 
 .footer__copyright-info {
@@ -1547,64 +1571,50 @@ input[type='color'] {
   .footer__image--full {
     transform: scale(0.6);
   }
-  #footer-menu, .footer__social-icons {
+  #footer-menu {
     top: -30px;
   }
-  .footer__left-image, .footer__right-image {
+  .footer__right--container,
+  .footer__left--container {
     width: 25%;
+    height: 100px;
+    float: left;
+  }
+  .footer__left-image,
+  .footer__right-image {
+    width: 100%;
     height: 1px;
   }
   .footer__right-image::after {
-    position: relative;
-    top: -150px;
     display: block;
     content: url("../imgs/sonic-img.png");
     transform: scale(0.7);
-    left: 50%;
+    margin-top: -120px;
+    float: right;
+    margin-right: -80px;
   }
   .footer__left-image::before {
-    position: relative;
-    top: -150px;
     display: block;
     content: url("../imgs/mario-img.png");
     transform: scale(0.7);
-    right: 40%;
-  }
-  .footer__information, .footer__right-image, .footer__left-image {
+    margin-top: -115px;
     float: left;
+    margin-left: -80px;
+  }
+  .footer__information,
+  .footer__right-image,
+  .footer__left-image {
+    float: left;
+  }
+  .footer__social-icon--container {
+    margin-top: 0px;
+    margin-bottom: 10px;
   }
 }
 
-@media screen and (min-width: 1124px) {
-  .footer__image--full, .footer__right-image::after, .footer__left-image::before {
-    transform: scale(0.8);
-  }
-  .footer__right-image::after, .footer__left-image::before {
-    top: -130px;
-  }
-  .footer__right-image::after {
-    left: 60%;
-  }
-  .footer__left-image::before {
-    right: 20%;
-  }
-  #footer-menu {
-    position: relative;
-    top: -20px;
-    text-align: center;
-    margin-right: 0;
-    padding: 0;
-  }
+@media screen and (min-width: 1000px) {
   #footer-menu > li {
-    display: inline-block;
-    margin: 0 1em;
-  }
-  #footer-menu > a {
-    font-size: 1em;
-  }
-  .footer__social-icons--center * {
-    height: 50px;
-    width: 50px;
+    font-size: 1rem;
   }
 }
 
@@ -1612,15 +1622,24 @@ input[type='color'] {
   .footer__image--full {
     transform: scale(0.9);
   }
-  .footer__right-image::after, .footer__left-image::before {
+  .footer__right-image::after,
+  .footer__left-image::before {
     top: -120px;
     transform: scale(0.9);
   }
   .footer__right-image::before {
     left: 70%;
   }
+  #footer-menu {
+    top: 0px;
+  }
   #footer-menu > li {
     margin: 0 2em;
+    font-size: 1rem;
+  }
+  .footer__social-icon--container {
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1642,7 +1661,7 @@ input[type='color'] {
     top: -10px;
     padding: 10px;
   }
-  #footer-menu > a {
-    font-size: 1.2em;
+  #footer-menu > li {
+    font-size: 1.4em;
   }
 }
