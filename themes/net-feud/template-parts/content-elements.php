@@ -296,109 +296,109 @@
               ///////////////////////////////////-->
 
               <div class="form__select-container--title">
-                <ul class="select">
+                <ul class="select__container">
                   <li>
-                    <input class="select_close select_option" type="radio" name="title" id="title-close" value=""/>
-                    <span class="select_label select_label-placeholder">Title</span>
+                    <input class="select__close select__option" type="radio" name="title" id="title-close" value=""/>
+                    <span class="select__label select__label--placeholder">Title</span>
                   </li>
-                  <li class="select_items">
-                    <input class="select_expand--form" type="radio" name="title" id="title-opener"/>
-                    <label class="select_closeLabel" for="title-close"></label>
-                    <ul class="select_options">
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="title" id="title-mr"/>
-                        <label class="select_label" for="title-mr">Mr</label>
+                  <li class="select__items">
+                    <input class="select__expand--form" type="radio" name="title" id="title-opener"/>
+                    <label class="select__close--label" for="title-close"></label>
+                    <ul class="select__options">
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="title" id="title-mr"/>
+                        <label class="select__label" for="title-mr">Mr</label>
                       </li>
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="title" id="title-mrs"/>
-                        <label class="select_label" for="title-mrs">Mrs</label>
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="title" id="title-mrs"/>
+                        <label class="select__label" for="title-mrs">Mrs</label>
                       </li>
                     </ul>
-                    <label class="select_expandLabel" for="title-opener"></label>
+                    <label class="select__expand--label" for="title-opener"></label>
                   </li>
                 </ul>
               </div>
 
               <div class="form__select-container--day">
-                <ul class="select">
+                <ul class="select__container">
                   <li>
-                    <input class="select_close select_option" type="radio" name="day" id="day-close" value=""/>
-                    <span class="select_label select_label-placeholder">Day</span>
+                    <input class="select__close select__option" type="radio" name="day" id="day-close" value=""/>
+                    <span class="select__label select__label--placeholder">Day</span>
                   </li>
                   
-                  <li class="select_items">
-                    <input class="select_expand" type="radio" name="day" id="day-opener"/>
-                    <label class="select_closeLabel" for="day-close"></label>
+                  <li class="select__items">
+                    <input class="select__expand" type="radio" name="day" id="day-opener"/>
+                    <label class="select__close--label" for="day-close"></label>
                     
-                    <ul class="select_options">
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="day" id="day-mr"/>
-                        <label class="select_label" for="day-mr">01</label>
+                    <ul class="select__options">
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="day" id="day-mr"/>
+                        <label class="select__label" for="day-mr">01</label>
                       </li>
 
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="title" id="day-mrs"/>
-                        <label class="select_label" for="day-mrs">02</label>
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="title" id="day-mrs"/>
+                        <label class="select__label" for="day-mrs">02</label>
                       </li>
 
                     </ul>
-                    <label class="select_expandLabel" for="day-opener"></label>
+                    <label class="select__expand--label" for="day-opener"></label>
                   </li>
                 </ul>
               </div>
 
               <div class="form__select-container--month">
-                <ul class="select">
+                <ul class="select__container">
                   <li>
-                    <input class="select_close select_option" type="radio" name="month" id="month-close" value=""/>
-                    <span class="select_label select_label-placeholder green">Month</span>
+                    <input class="select__close select__option" type="radio" name="month" id="month-close" value=""/>
+                    <span class="select__label select__label--placeholder green">Month</span>
                   </li>
                   
-                  <li class="select_items">
-                    <input class="select_expand" type="radio" name="month" id="month-opener"/>
-                    <label class="select_closeLabel" for="month-close"></label>
+                  <li class="select__items">
+                    <input class="select__expand" type="radio" name="month" id="month-opener"/>
+                    <label class="select__close--label" for="month-close"></label>
                     
-                    <ul class="select_options">
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="month" id="month-mr"/>
-                        <label class="select_label green" for="month-mr">January</label>
+                    <ul class="select__options">
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="month" id="month-mr"/>
+                        <label class="select__label green" for="month-mr">January</label>
                       </li>
 
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="month" id="month-mrs"/>
-                        <label class="select_label green" for="month-mrs">Febuary</label>
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="month" id="month-mrs"/>
+                        <label class="select__label green" for="month-mrs">Febuary</label>
                       </li>
 
                     </ul>
-                    <label class="select_expandLabel" for="month-opener"></label>
+                    <label class="select__expand--label" for="month-opener"></label>
                   </li>
                 </ul>
               </div>
 
               <div class="form__select-container--year">
-                <ul class="select">
+                <ul class="select__container">
                   <li>
-                    <input class="select_close select_option" type="radio" name="year" id="year-close" value=""/>
-                    <span class="select_label-placeholder select_label black">year</span>
+                    <input class="select__close select__option" type="radio" name="year" id="year-close" value=""/>
+                    <span class="select__label--placeholder select__label black">year</span>
                   </li>
                   
-                  <li class="select_items">
-                    <input class="select_expand-white" type="radio" name="year" id="year-opener"/>
-                    <label class="select_closeLabel" for="year-close"></label>
+                  <li class="select__items">
+                    <input class="select__expand--white" type="radio" name="year" id="year-opener"/>
+                    <label class="select__close--label" for="year-close"></label>
                     
-                    <ul class="select_options">
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="year" id="year-mr"/>
-                        <label class="select_label black" for="year-mr">2016</label>
+                    <ul class="select__options">
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="year" id="year-mr"/>
+                        <label class="select__label black" for="year-mr">2016</label>
                       </li>
 
-                      <li class="select_option">
-                        <input class="select_input" type="radio" name="year" id="year-mrs"/>
-                        <label class="select_label black" for="year-mrs">2017</label>
+                      <li class="select__option">
+                        <input class="select__input" type="radio" name="year" id="year-mrs"/>
+                        <label class="select__label black" for="year-mrs">2017</label>
                       </li>
 
                     </ul>
-                    <label class="select_expandLabel" for="year-opener"></label>
+                    <label class="select__expand--label" for="year-opener"></label>
                   </li>
                 </ul>
               </div>

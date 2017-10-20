@@ -412,10 +412,18 @@ td {
   border-radius: 100%;
 }
 
-.form__select-container--title .select,
-.form__select-container--day .select,
-.form__select-container--month .select,
-.form__select-container--year .select {
+.form__select-container--title input[type=radio],
+.form__select-container--day input[type=radio],
+.form__select-container--month input[type=radio],
+.form__select-container--year input[type=radio] {
+  position: relative;
+  width: 0px;
+}
+
+.form__select-container--title .select__container,
+.form__select-container--day .select__container,
+.form__select-container--month .select__container,
+.form__select-container--year .select__container {
   width: 150px;
   cursor: pointer;
   background-color: white;
@@ -425,32 +433,24 @@ td {
   z-index: 100;
 }
 
-.form__select-container--title .select input[type=radio],
-.form__select-container--day .select input[type=radio],
-.form__select-container--month .select input[type=radio],
-.form__select-container--year .select input[type=radio] {
-  position: relative;
-  width: 0px;
-}
-
-.form__select-container--title .select_options,
-.form__select-container--day .select_options,
-.form__select-container--month .select_options,
-.form__select-container--year .select_options {
+.form__select-container--title .select__options,
+.form__select-container--day .select__options,
+.form__select-container--month .select__options,
+.form__select-container--year .select__options {
   padding: 0;
 }
 
-.form__select-container--title .select_options .select_option:first-of-type .select_label,
-.form__select-container--day .select_options .select_option:first-of-type .select_label,
-.form__select-container--month .select_options .select_option:first-of-type .select_label,
-.form__select-container--year .select_options .select_option:first-of-type .select_label {
+.form__select-container--title .select__option:first-of-type .select__label,
+.form__select-container--day .select__option:first-of-type .select__label,
+.form__select-container--month .select__option:first-of-type .select__label,
+.form__select-container--year .select__option:first-of-type .select__label {
   border-top: 1px solid black;
 }
 
-.form__select-container--title .select_expand, .form__select-container--title .select_expand-white, .form__select-container--title .select_expand--form,
-.form__select-container--day .select_expand, .form__select-container--day .select_expand-white, .form__select-container--day .select_expand--form,
-.form__select-container--month .select_expand, .form__select-container--month .select_expand-white, .form__select-container--month .select_expand--form,
-.form__select-container--year .select_expand, .form__select-container--year .select_expand-white, .form__select-container--year .select_expand--form {
+.form__select-container--title .select__expand, .form__select-container--title .select__expand--white, .form__select-container--title .select__expand--form,
+.form__select-container--day .select__expand, .form__select-container--day .select__expand--white, .form__select-container--day .select__expand--form,
+.form__select-container--month .select__expand, .form__select-container--month .select__expand--white, .form__select-container--month .select__expand--form,
+.form__select-container--year .select__expand, .form__select-container--year .select__expand--white, .form__select-container--year .select__expand--form {
   width: 40px;
   height: 34px;
   position: absolute;
@@ -459,10 +459,10 @@ td {
   visibility: hidden;
 }
 
-.form__select-container--title .select_expand::after, .form__select-container--title .select_expand-white::after, .form__select-container--title .select_expand--form::after,
-.form__select-container--day .select_expand::after, .form__select-container--day .select_expand-white::after, .form__select-container--day .select_expand--form::after,
-.form__select-container--month .select_expand::after, .form__select-container--month .select_expand-white::after, .form__select-container--month .select_expand--form::after,
-.form__select-container--year .select_expand::after, .form__select-container--year .select_expand-white::after, .form__select-container--year .select_expand--form::after {
+.form__select-container--title .select__expand::after, .form__select-container--title .select__expand--white::after, .form__select-container--title .select__expand--form::after,
+.form__select-container--day .select__expand::after, .form__select-container--day .select__expand--white::after, .form__select-container--day .select__expand--form::after,
+.form__select-container--month .select__expand::after, .form__select-container--month .select__expand--white::after, .form__select-container--month .select__expand--form::after,
+.form__select-container--year .select__expand::after, .form__select-container--year .select__expand--white::after, .form__select-container--year .select__expand--form::after {
   content: url("../svgs/select-arrow.svg");
   position: absolute;
   display: inline-block;
@@ -476,25 +476,25 @@ td {
   transition: all 250ms ease;
 }
 
-.form__select-container--title .select_expand:checked::after, .form__select-container--title .select_expand-white:checked::after, .form__select-container--title .select_expand--form:checked::after,
-.form__select-container--day .select_expand:checked::after, .form__select-container--day .select_expand-white:checked::after, .form__select-container--day .select_expand--form:checked::after,
-.form__select-container--month .select_expand:checked::after, .form__select-container--month .select_expand-white:checked::after, .form__select-container--month .select_expand--form:checked::after,
-.form__select-container--year .select_expand:checked::after, .form__select-container--year .select_expand-white:checked::after, .form__select-container--year .select_expand--form:checked::after {
+.form__select-container--title .select__expand:checked::after, .form__select-container--title .select__expand--white:checked::after, .form__select-container--title .select__expand--form:checked::after,
+.form__select-container--day .select__expand:checked::after, .form__select-container--day .select__expand--white:checked::after, .form__select-container--day .select__expand--form:checked::after,
+.form__select-container--month .select__expand:checked::after, .form__select-container--month .select__expand--white:checked::after, .form__select-container--month .select__expand--form:checked::after,
+.form__select-container--year .select__expand:checked::after, .form__select-container--year .select__expand--white:checked::after, .form__select-container--year .select__expand--form:checked::after {
   transform: translate(20%, -55%) rotateX(180deg) scale(0.7);
   font-size: 30px;
 }
 
-.form__select-container--title .select_expand-white::after,
-.form__select-container--day .select_expand-white::after,
-.form__select-container--month .select_expand-white::after,
-.form__select-container--year .select_expand-white::after {
+.form__select-container--title .select__expand--white::after,
+.form__select-container--day .select__expand--white::after,
+.form__select-container--month .select__expand--white::after,
+.form__select-container--year .select__expand--white::after {
   content: url("../svgs/select-arrow-white.svg");
 }
 
-.form__select-container--title .select_expand--form::before,
-.form__select-container--day .select_expand--form::before,
-.form__select-container--month .select_expand--form::before,
-.form__select-container--year .select_expand--form::before {
+.form__select-container--title .select__expand--form::before,
+.form__select-container--day .select__expand--form::before,
+.form__select-container--month .select__expand--form::before,
+.form__select-container--year .select__expand--form::before {
   content: "|";
   visibility: visible;
   font-size: 50px;
@@ -503,10 +503,10 @@ td {
   transform: translate(-60px, -15px);
 }
 
-.form__select-container--title .select_expandLabel,
-.form__select-container--day .select_expandLabel,
-.form__select-container--month .select_expandLabel,
-.form__select-container--year .select_expandLabel {
+.form__select-container--title .select__expand--label,
+.form__select-container--day .select__expand--label,
+.form__select-container--month .select__expand--label,
+.form__select-container--year .select__expand--label {
   display: block;
   width: 100%;
   height: 40px;
@@ -517,27 +517,27 @@ td {
   margin-right: 0px;
 }
 
-.form__select-container--title .select_close,
-.form__select-container--day .select_close,
-.form__select-container--month .select_close,
-.form__select-container--year .select_close {
+.form__select-container--title .select__close,
+.form__select-container--day .select__close,
+.form__select-container--month .select__close,
+.form__select-container--year .select__close {
   display: none;
 }
 
-.form__select-container--title .select_closeLabel,
-.form__select-container--day .select_closeLabel,
-.form__select-container--month .select_closeLabel,
-.form__select-container--year .select_closeLabel {
+.form__select-container--title .select__close--label,
+.form__select-container--day .select__close--label,
+.form__select-container--month .select__close--label,
+.form__select-container--year .select__close--label {
   position: fixed;
   top: 0;
   left: 0;
   display: none;
 }
 
-.form__select-container--title .select_items,
-.form__select-container--day .select_items,
-.form__select-container--month .select_items,
-.form__select-container--year .select_items {
+.form__select-container--title .select__items,
+.form__select-container--day .select__items,
+.form__select-container--month .select__items,
+.form__select-container--year .select__items {
   width: 100%;
   position: relative;
   top: -40px;
@@ -547,17 +547,17 @@ td {
   z-index: 1;
 }
 
-.form__select-container--title .select_input,
-.form__select-container--day .select_input,
-.form__select-container--month .select_input,
-.form__select-container--year .select_input {
+.form__select-container--title .select__input,
+.form__select-container--day .select__input,
+.form__select-container--month .select__input,
+.form__select-container--year .select__input {
   display: none;
 }
 
-.form__select-container--title .select_label,
-.form__select-container--day .select_label,
-.form__select-container--month .select_label,
-.form__select-container--year .select_label {
+.form__select-container--title .select__label,
+.form__select-container--day .select__label,
+.form__select-container--month .select__label,
+.form__select-container--year .select__label {
   transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
   display: block;
   height: 0;
@@ -572,10 +572,10 @@ td {
   text-align: left;
 }
 
-.form__select-container--title .select_label-placeholder,
-.form__select-container--day .select_label-placeholder,
-.form__select-container--month .select_label-placeholder,
-.form__select-container--year .select_label-placeholder {
+.form__select-container--title .select__label--placeholder,
+.form__select-container--day .select__label--placeholder,
+.form__select-container--month .select__label--placeholder,
+.form__select-container--year .select__label--placeholder {
   height: 40px;
   vertical-align: middle;
   position: relative;
@@ -584,203 +584,203 @@ td {
   background-color: #D8D8D8;
 }
 
-.form__select-container--title .select_expand:checked + .select_closeLabel, .form__select-container--title .select_expand-white:checked + .select_closeLabel, .form__select-container--title
-.form__select-container--day .select_expand-white:checked + .select_closeLabel, .form__select-container--title
-.form__select-container--month .select_expand-white:checked + .select_closeLabel, .form__select-container--title
-.form__select-container--year .select_expand-white:checked + .select_closeLabel, .form__select-container--title .select_expand--form:checked + .select_closeLabel, .form__select-container--title
-.form__select-container--day .select_expand--form:checked + .select_closeLabel, .form__select-container--title
-.form__select-container--month .select_expand--form:checked + .select_closeLabel, .form__select-container--title
-.form__select-container--year .select_expand--form:checked + .select_closeLabel,
-.form__select-container--day .select_expand:checked + .select_closeLabel,
-.form__select-container--day .form__select-container--title .select_expand-white:checked + .select_closeLabel, .form__select-container--day .select_expand-white:checked + .select_closeLabel,
+.form__select-container--title .select__expand:checked + .select__close--label, .form__select-container--title .select__expand--white:checked + .select__close--label, .form__select-container--title
+.form__select-container--day .select__expand--white:checked + .select__close--label, .form__select-container--title
+.form__select-container--month .select__expand--white:checked + .select__close--label, .form__select-container--title
+.form__select-container--year .select__expand--white:checked + .select__close--label, .form__select-container--title .select__expand--form:checked + .select__close--label, .form__select-container--title
+.form__select-container--day .select__expand--form:checked + .select__close--label, .form__select-container--title
+.form__select-container--month .select__expand--form:checked + .select__close--label, .form__select-container--title
+.form__select-container--year .select__expand--form:checked + .select__close--label,
+.form__select-container--day .select__expand:checked + .select__close--label,
+.form__select-container--day .form__select-container--title .select__expand--white:checked + .select__close--label, .form__select-container--day .select__expand--white:checked + .select__close--label,
 .form__select-container--day
-.form__select-container--month .select_expand-white:checked + .select_closeLabel,
+.form__select-container--month .select__expand--white:checked + .select__close--label,
 .form__select-container--day
-.form__select-container--year .select_expand-white:checked + .select_closeLabel,
-.form__select-container--day .form__select-container--title .select_expand--form:checked + .select_closeLabel, .form__select-container--day .select_expand--form:checked + .select_closeLabel,
+.form__select-container--year .select__expand--white:checked + .select__close--label,
+.form__select-container--day .form__select-container--title .select__expand--form:checked + .select__close--label, .form__select-container--day .select__expand--form:checked + .select__close--label,
 .form__select-container--day
-.form__select-container--month .select_expand--form:checked + .select_closeLabel,
+.form__select-container--month .select__expand--form:checked + .select__close--label,
 .form__select-container--day
-.form__select-container--year .select_expand--form:checked + .select_closeLabel,
-.form__select-container--month .select_expand:checked + .select_closeLabel,
-.form__select-container--month .form__select-container--title .select_expand-white:checked + .select_closeLabel,
+.form__select-container--year .select__expand--form:checked + .select__close--label,
+.form__select-container--month .select__expand:checked + .select__close--label,
+.form__select-container--month .form__select-container--title .select__expand--white:checked + .select__close--label,
 .form__select-container--month
-.form__select-container--day .select_expand-white:checked + .select_closeLabel, .form__select-container--month .select_expand-white:checked + .select_closeLabel,
+.form__select-container--day .select__expand--white:checked + .select__close--label, .form__select-container--month .select__expand--white:checked + .select__close--label,
 .form__select-container--month
-.form__select-container--year .select_expand-white:checked + .select_closeLabel,
-.form__select-container--month .form__select-container--title .select_expand--form:checked + .select_closeLabel,
+.form__select-container--year .select__expand--white:checked + .select__close--label,
+.form__select-container--month .form__select-container--title .select__expand--form:checked + .select__close--label,
 .form__select-container--month
-.form__select-container--day .select_expand--form:checked + .select_closeLabel, .form__select-container--month .select_expand--form:checked + .select_closeLabel,
+.form__select-container--day .select__expand--form:checked + .select__close--label, .form__select-container--month .select__expand--form:checked + .select__close--label,
 .form__select-container--month
-.form__select-container--year .select_expand--form:checked + .select_closeLabel,
-.form__select-container--year .select_expand:checked + .select_closeLabel,
-.form__select-container--year .form__select-container--title .select_expand-white:checked + .select_closeLabel,
+.form__select-container--year .select__expand--form:checked + .select__close--label,
+.form__select-container--year .select__expand:checked + .select__close--label,
+.form__select-container--year .form__select-container--title .select__expand--white:checked + .select__close--label,
 .form__select-container--year
-.form__select-container--day .select_expand-white:checked + .select_closeLabel,
+.form__select-container--day .select__expand--white:checked + .select__close--label,
 .form__select-container--year
-.form__select-container--month .select_expand-white:checked + .select_closeLabel, .form__select-container--year .select_expand-white:checked + .select_closeLabel,
-.form__select-container--year .form__select-container--title .select_expand--form:checked + .select_closeLabel,
+.form__select-container--month .select__expand--white:checked + .select__close--label, .form__select-container--year .select__expand--white:checked + .select__close--label,
+.form__select-container--year .form__select-container--title .select__expand--form:checked + .select__close--label,
 .form__select-container--year
-.form__select-container--day .select_expand--form:checked + .select_closeLabel,
+.form__select-container--day .select__expand--form:checked + .select__close--label,
 .form__select-container--year
-.form__select-container--month .select_expand--form:checked + .select_closeLabel, .form__select-container--year .select_expand--form:checked + .select_closeLabel {
+.form__select-container--month .select__expand--form:checked + .select__close--label, .form__select-container--year .select__expand--form:checked + .select__close--label {
   display: block;
 }
 
-.form__select-container--title .select_expand:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label, .form__select-container--title
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--day .select_expand:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--day .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label, .form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--title .select__expand:checked + .select__close--label + .select__options .select__label, .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label, .form__select-container--title
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label, .form__select-container--title
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label, .form__select-container--title
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label, .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label, .form__select-container--title
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label, .form__select-container--title
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label, .form__select-container--title
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label,
+.form__select-container--day .select__expand:checked + .select__close--label + .select__options .select__label,
+.form__select-container--day .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label, .form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label,
 .form__select-container--day
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label,
 .form__select-container--day
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--day .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label, .form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label,
+.form__select-container--day .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label, .form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label,
 .form__select-container--day
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label,
 .form__select-container--day
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--month .select_expand:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--month .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label,
+.form__select-container--month .select__expand:checked + .select__close--label + .select__options .select__label,
+.form__select-container--month .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label,
 .form__select-container--month
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label, .form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label, .form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label,
 .form__select-container--month
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--month .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label,
+.form__select-container--month .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label,
 .form__select-container--month
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label, .form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label, .form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label,
 .form__select-container--month
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--year .select_expand:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--year .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label,
+.form__select-container--year .select__expand:checked + .select__close--label + .select__options .select__label,
+.form__select-container--year .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label,
 .form__select-container--year
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label,
 .form__select-container--year
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label, .form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--year .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label, .form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label,
+.form__select-container--year .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label,
 .form__select-container--year
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label,
 .form__select-container--year
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label, .form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label {
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label, .form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label {
   height: 40px;
 }
 
-.form__select-container--title .select_expand:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--title
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--day .select_expand:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--day .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--title .select__expand:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--title
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--day .select__expand:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--day .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--day
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--day
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--day .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--day .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--day
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--day
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--month .select_expand:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--month .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--month .select__expand:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--month .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--month
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--month
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--month .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--month .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--month
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--month
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--year .select_expand:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--year .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--year .select__expand:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--year .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--year
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--year
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--year .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--year .select__expand--white:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--year .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--year
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
 .form__select-container--year
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover, .form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover {
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label:hover, .form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label:hover {
   background-color: #b0e971;
 }
 
-.form__select-container--title .select_expand:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--title
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--day .select_expand:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--day .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--title .select__expand:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--title
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--day .select__expand:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--day .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--day .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--day
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--day
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--day .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--day .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--day .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--day
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--day
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--month .select_expand:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--month .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--month .select__expand:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--month .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--month
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--month .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--month
-.form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--month .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--year .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--month .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--month
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--month .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--month
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--year .select_expand:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--year .form__select-container--title .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--year .select__expand:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--year .form__select-container--title .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--year
-.form__select-container--day .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--day .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--year
-.form__select-container--month .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--year .select_expand-white:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--year .form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--month .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--year .select__expand--white:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--year .form__select-container--title .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--year
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
 .form__select-container--year
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel, .form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel {
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label, .form__select-container--year .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label {
   display: none;
 }
 
-.form__select-container--title .select_expand--form:checked + .select_closeLabel,
-.form__select-container--day .select_expand--form:checked + .select_closeLabel,
-.form__select-container--month .select_expand--form:checked + .select_closeLabel,
-.form__select-container--year .select_expand--form:checked + .select_closeLabel {
+.form__select-container--title .select__expand--form:checked + .select__close--label,
+.form__select-container--day .select__expand--form:checked + .select__close--label,
+.form__select-container--month .select__expand--form:checked + .select__close--label,
+.form__select-container--year .select__expand--form:checked + .select__close--label {
   display: block;
 }
 
-.form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label,
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label {
+.form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label,
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label {
   height: 40px;
 }
 
-.form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover,
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options .select_label:hover {
+.form__select-container--title .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options .select__label:hover,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options .select__label:hover {
   background-color: #b0e971;
 }
 
-.form__select-container--title .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--day .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--month .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel,
-.form__select-container--year .select_expand--form:checked + .select_closeLabel + .select_options + .select_expandLabel {
+.form__select-container--title .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--day .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--month .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label,
+.form__select-container--year .select__expand--form:checked + .select__close--label + .select__options + .select__expand--label {
   display: none;
 }
 
