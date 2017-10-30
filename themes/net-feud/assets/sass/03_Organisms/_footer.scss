@@ -1,0 +1,190 @@
+.footer__information, 
+.footer__image--full {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footer__image--full {
+	transform: scale(0.5);
+}
+
+.footer__information 
+.footer__image--full::after, 
+#footer-menu, 
+.footer__social-icons, 
+.footer__social-icons--facebook::before, 
+.footer__social-icons--twitter::before {
+	position: relative;
+}
+
+.footer__information 
+.footer__image--full::after {
+	left: 50%;
+	margin-left: -210px;
+	content: url("../imgs/full-logo-img.png");
+}
+
+.footer__copyright-info, #footer-menu {
+	text-align: center;
+}
+
+.menu-footer-container {
+  margin: 0 auto;
+  height: 0;
+}
+
+#footer-menu {
+	top: -40px;
+	margin-right: 0;
+	padding: 0px;
+
+	& > li {
+		display: inline-block;
+		margin: 0 3px;
+		font-size: 0.8rem;
+	}
+}
+
+.footer__social-icon--container {
+  @include clearfix;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+
+.footer__copyright-info {
+	@include clearfix;
+	display: block;
+	margin-bottom: 10px;
+}
+
+@media screen and ( min-width: 880px ) {
+
+	.footer__information {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.footer__image--full {
+		transform: scale(0.6);
+	}
+
+	#footer-menu{
+		top: -30px;
+	}
+
+	.footer__right--container,
+	.footer__left--container {
+		width: 25%;
+    height: 100px;
+    float: left;
+	}
+
+	.footer__left-image, 
+	.footer__right-image  {
+		width: 100%;
+		height: 1px;
+	}
+
+	.footer__right-image::after {
+		@include footer-images(block, sonic-img, 0.7);
+    margin-top: -120px;
+    float: right;
+    margin-right: -80px;
+	}
+
+	.footer__left-image::before {
+		@include footer-images(block, mario-img, 0.7);
+		margin-top: -115px;
+		float: left;
+		margin-left: -80px;
+	}
+
+	.footer__information, 
+	.footer__right-image, 
+	.footer__left-image {
+		float: left;
+	}
+
+	.footer__social-icon--container {
+	  margin-top: 0px;
+	  margin-bottom: 10px;
+	}
+	
+}
+
+@media screen and (min-width: 1000px) {
+
+	#footer-menu {
+
+		& > li {
+			font-size: 1rem;
+		}
+
+	}
+
+}
+
+@media screen and (min-width: 1444px) {
+
+	.footer__image--full {
+		transform: scale(0.9);
+	}
+
+	.footer__right-image::after, 
+	.footer__left-image::before {
+		top: -120px;
+		transform: scale(0.9);
+	}
+
+	.footer__right-image::before {
+		left: 70%;
+	}
+
+	#footer-menu {
+		top: 0px;
+
+		& > li {
+			margin: 0 2em;
+			font-size: 1rem;
+		}
+
+	}
+
+	.footer__social-icon--container {
+	  margin-top: 50px;
+	  margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (min-width: 1920px) {
+
+	.footer__image--full {
+		transform: scale(1);
+		margin-top: 10px;
+	}
+
+	.footer__right-image::after {
+		top: -130px;
+		transform: scale(1);
+		left: 80%;
+	}
+
+	.footer__left-image::before {
+		top: -130px;
+		transform: scale(1);
+	}
+
+	#footer-menu {
+		top: -10px;
+		padding: 10px;
+
+		& > li {
+			font-size: 1.4em;
+		}
+
+	}
+
+}
