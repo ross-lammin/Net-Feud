@@ -337,7 +337,7 @@
                       </li>
 
                       <li class="select__option">
-                        <input class="select__input" type="radio" name="title" id="day-mrs"/>
+                        <input class="select__input" type="radio" name="day" id="day-mrs"/>
                         <label class="select__label" for="day-mrs">02</label>
                       </li>
 

@@ -3,7 +3,7 @@
 /////////////////////////////////////
 .form__select-container--title,
 .form__select-container--day,
-.form__select-container--search,
+.form__select-container--month,
 .form__select-container--year {
 
 
@@ -20,7 +20,6 @@
     border-radius: 2px;
     padding: 0;
     z-index: 100;
-    margin-top: 0;
   }
 
   .select__options {
@@ -57,13 +56,11 @@
       transition: all 250ms ease;
     }
 
-  }
-
-  .open {
-    &::after {
+    &:checked::after {
       transform: translate(20%, -55%) rotateX(180deg) scale(0.7);
       font-size: 30px;
     }
+
   }
 
   .select__expand--white {
@@ -75,7 +72,7 @@
     }
 
     &:checked::after {
-       @extend .open::after;
+       @extend .select__expand:checked::after;
     }
 
   }
@@ -119,12 +116,11 @@
   .select__items {
     width: 100%;
     position: relative;
-    top: -70px;
+    top: -40px;
     left: 0px;
     border: 2px solid black;
     border-radius: 2px;
     z-index: 1;
-    height: 70px;
   }
   
   .select__input {display: none}
@@ -142,18 +138,15 @@
     padding-left: 20px;
     width: 100%;
     text-align: left;
-    margin-top: 27px;
   }
     
   .select__label--placeholder {
     height: 40px;
     vertical-align: middle;
     position: relative;
-    top: 0;
+    top: 2px;
     left: 0;
     background-color: $color__background--input;
-    height: 70px;
-    margin-top: 0;
   }
 
   .select__expand:checked {
