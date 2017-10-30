@@ -25,4 +25,18 @@ document.addEventListener('DOMContentLoaded', function () {
     searchBarInput.value = '';
   });
 
+  var headDrop = document.querySelector('.select__expand');
+  var headDropcl = document.querySelector('.select__close--label');
+  //  var headDropl = document.querySelector('.select__option');
+
+  headDrop.addEventListener('click', function () {
+    headDrop.classList.add('open');
+    headDropcl.classList.add('display-block');
+  });
+
+  headDropcl.addEventListener('click', function () {
+    headDrop.classList.remove('open');
+    headDropcl.classList.remove('display-block');
+  });
+
 });

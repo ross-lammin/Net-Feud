@@ -61,10 +61,35 @@ if ( $description || is_customize_preview() ) : ?>
 	<div class="header__searchbar--inner-container">
 		<button class="button__search-bar action-button__bg--medium header__button--search-bar"></button>
 		<input class="header__searchbar--search-input" id="input__search" type="search" placeholder="Search For..."><div class="header__searchbar--clear"></div>
-		<span class="custom-dropdown form__general-select6 header__searchbar--select">
-    	<span class="arrow6">  &#x25BC;</span>  
-        <span class="header__searchbar--select-text">Search for</span>
-    </span>
+
+		<div class="form__select-container--search" style="float: left;">
+      <ul class="select__container" style="height:0;">
+        <li>
+          <input class="select__close select__option" type="radio" name="month" id="month-close" value=""/>
+          <span class="select__label select__label--placeholder green">Month</span>
+        </li>
+        
+        <li class="select__items">
+          <input class="select__expand" type="radio" name="month" id="month-opener"/>
+          <label class="select__close--label" for="month-close"></label>
+          
+          <ul class="select__options">
+            <li class="select__option">
+              <input class="select__input" type="radio" name="month" id="month-mr"/>
+              <label class="select__label green" for="month-mr">January</label>
+            </li>
+
+            <li class="select__option">
+              <input class="select__input" type="radio" name="month" id="month-mrs"/>
+              <label class="select__label green" for="month-mrs">Febuary</label>
+            </li>
+
+          </ul>
+          <label class="select__expand--label" for="month-opener"></label>
+        </li>
+      </ul>
+    </div>
+
 	</div>
 </div>
 

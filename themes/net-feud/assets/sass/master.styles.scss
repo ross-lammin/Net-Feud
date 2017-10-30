@@ -1,17 +1,4 @@
-// This will need to be moved to match whatever setting you change the gulp settings.
-//@import "baseFunctions/all-baseFunctions";
-
-
-//@import "generators/all-generators";
-
-// Imports from the F10 base sass library.
-//@import "functions/all-functions";
-//@import "forms/all-forms";
-//@import "icons/all-icons";
-//@import "base/all-base";
-//@import "layout/all-layout";
-//@import "accessibility/all-accessibility";
-
-@import "01helpers/helpers";
+@import "01_Atoms/atoms";
 @import "global-styles";
-@import "02components/components";
+@import "02_Molecules/molecules";
+@import "03_Organisms/organisms";
