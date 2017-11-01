@@ -170,7 +170,7 @@
 	float: left;
 	margin: 0;
 	height: 70px; 
-	width: 70px;
+	width: 10%;
 	z-index: 1000;
 	background-size: 50px 50px;
 	border-radius: 0;
@@ -179,7 +179,7 @@
 	-webkit-appearance: none;
 	height: 100%;
 	float: left;
-	width: 38.4873125rem;
+	width: 65%;
 	font-size: 1.5rem;
 	padding-right: 38px;
 }
@@ -194,26 +194,45 @@
 	z-index: 10000;
 	cursor: pointer;
 }
-.header__searchbar--select {
-	height: 100%;
-	float: left;
-	margin: 0;
-	width: 12rem;
-	padding-top: 0.5em;
-	font-size: 1.4rem;
-	cursor: pointer;
-	z-index: 1000;
-	background-color: $color__continue--button;
-	border: 1px solid black;
-}
-.header__searchbar--select-text {
-	float: left;
-	padding-left: 10px;
-	padding-top: 8px;
-	z-index: 1000;
-}
+
 .display-none {
 	display: none;
+}
+
+.header__searchbar--dropdown {
+	width: 24%;
+	height: 70px;
+	float: left;
+	border: 1px solid black;
+	background-color: $color__continue--button;
+}
+
+.header__searchbar--dropdown::after {
+	content: url("../svgs/select-arrow.svg");
+	position: relative;
+	right: 0px;
+	top: 10px;
+	transition-property: transform;
+  transition-duration: 1s;
+} 
+
+.header__searchbar--dropdown::after:hover {
+    -webkit-animation:spin 1.5s linear infinite;
+    -moz-animation:spin 1.5s linear infinite;
+    animation:spin 1.5s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+.header__searchbar--dropdown-text {
+	display: inline-block;
+	width: 70%;
+	margin: 0;
+	margin-top: 15px;
 }
 
 @media screen and ( min-width: 805px ) {
@@ -266,7 +285,7 @@
 }
 
 @media screen and ( max-width: 1013px ) {
-	.header__searchbar--select {
+	.header__searchbar--dropdown {
 		display: none;
 	}
 	.header__searchbar--search-input {

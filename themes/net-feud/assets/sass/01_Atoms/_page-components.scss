@@ -1,0 +1,26 @@
+.page__background {
+	background-color: $color__primary--background;
+	padding: 5%;
+	padding-bottom: 0;
+}
+
+.page__wrapper {
+	background-color: #fff;
+	margin: 0 auto;
+
+	& h1 {
+		text-align: center;
+		padding: 5rem;
+	}
+
+	.entry-content {
+
+		display: block;
+		margin: 0 auto;
+
+		p {
+			text-align: center;
+		}
+
+	}
+}
