@@ -1,33 +1,46 @@
 {
-  "name": "first10/f10-theme-experimental",
-  "type": "project",
+  "name": "platform/platform-wordpress",
+  "description": "WordPress for Platform.sh",
+  "license": "GPL-2.0+",
   "repositories": [
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "wp-premium/gravityforms",
+          "version": "2.2.5",
+          "type": "wordpress-plugin",
+          "source": {
+              "url": "https://github.com/wp-premium/gravityforms",
+              "type": "git",
+              "reference": "master"
+          }
+      }
     }
   ],
   "require": {
-    "johnpbloch/wordpress-core-installer": "^0.2.1",
-    "johnpbloch/wordpress": "4.7.4.1"
+    "johnpbloch/wordpress-core-installer": "^1.0",
+    "johnpbloch/wordpress": "~4.8.3",
+    "wpackagist-plugin/akismet": "^4.0",
+    "wp-premium/gravityforms": "*"
   },
-  "authors": [
-    {
-      "name": "James Drawneek",
-      "email": "jmdrawneek@googlemail.com"
-    }
-  ],
   "extra": {
     "wordpress-install-dir": "wp",
     "installer-paths": {
-      "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+      "wp/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+      "wp/wp-content/themes/{$name}": ["type:wordpress-theme"],
+      "wp/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
     }
   },
   "scripts": {
     "post-install-cmd": [
-      "cp wp-config.php wp/wp-config.php",
-      "cp local.wp-config.php wp/local.wp-config.php"
-    ]
+      "cp wp-config.php wp/wp-config.php"
+    ],
+    "setupLocal": "composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader && rm -R wp/wp-content/themes && rm -R wp/wp-content/plugins && rm -R wp/wp-content/mu-plugins && cd wp/wp-content && ln -s ../../themes themes && ln -s ../../plugins plugins && ln -s ../../mu-plugins mu-plugins"
   }
 }
+
 

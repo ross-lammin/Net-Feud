@@ -84,7 +84,7 @@
 
 .nav-bar__primary--search-color {
 	a {
-		color: darken($color__continue--button, 10);
+		color: darken($color__continue--button, 10%);
 	}
 }
 	.nav-bar__primary--home {
@@ -113,7 +113,7 @@
 	.nav-bar__primary--search:hover {
 		cursor: pointer;
 		& a {
-			color: $color__continue--button;
+			color: darken($color__continue--button, 10%);
 		}
 	}
 	.nav-bar__primary--home::after {
@@ -233,6 +233,7 @@
 	width: 70%;
 	margin: 0;
 	margin-top: 15px;
+	padding-left: 7px;
 }
 
 @media screen and ( min-width: 805px ) {

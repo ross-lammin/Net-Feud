@@ -299,6 +299,11 @@ ul {
 a {
   color: #7ED321;
   text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #64a71a;
 }
 
 img {
@@ -527,18 +532,25 @@ input[type='color'] {
 
 .page__background {
   background-color: #494949;
-  padding: 5%;
+  padding: 8% 10%;
   padding-bottom: 0;
 }
 
 .page__wrapper {
   background-color: #fff;
   margin: 0 auto;
+  -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+  box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.8), -12px 10px 15px 0px rgba(0, 0, 0, 0.8);
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .page__wrapper h1 {
   text-align: center;
-  padding: 5rem;
+  padding: 6rem;
+  padding-bottom: 2rem;
 }
 
 .page__wrapper .entry-content {
@@ -547,7 +559,8 @@ input[type='color'] {
 }
 
 .page__wrapper .entry-content p {
-  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
 .container {
@@ -1298,7 +1311,7 @@ input[type=range]::-ms-thumb {
 .menu-primary-container .nav-bar__primary--login:hover a,
 .menu-primary-container .nav-bar__primary--signup:hover a,
 .menu-primary-container .nav-bar__primary--search:hover a {
-  color: #7ED321;
+  color: #64a71a;
 }
 
 .menu-primary-container .nav-bar__primary--home::after {
@@ -1443,6 +1456,7 @@ input[type=range]::-ms-thumb {
   width: 70%;
   margin: 0;
   margin-top: 15px;
+  padding-left: 7px;
 }
 
 @media screen and (min-width: 805px) {

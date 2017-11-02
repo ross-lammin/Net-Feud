@@ -1,16 +1,21 @@
 .page__background {
 	background-color: $color__primary--background;
-	padding: 5%;
+	padding: 8% 10%;
 	padding-bottom: 0;
 }
 
 .page__wrapper {
 	background-color: #fff;
 	margin: 0 auto;
+  -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+  box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.8), -12px 10px 15px 0px rgba(0, 0, 0, 0.8);
+  @include clearfix;
 
 	& h1 {
 		text-align: center;
-		padding: 5rem;
+		padding: 6rem;
+		padding-bottom: 2rem;
 	}
 
 	.entry-content {
@@ -19,7 +24,8 @@
 		margin: 0 auto;
 
 		p {
-			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 4rem;
 		}
 
 	}

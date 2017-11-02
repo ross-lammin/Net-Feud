@@ -10,7 +10,7 @@
   ],
   "require": {
     "johnpbloch/wordpress-core-installer": "^1.0",
-    "johnpbloch/wordpress": "~4.8.1",
+    "johnpbloch/wordpress": "~4.8.3",
     "wpackagist-plugin/akismet": "3.3.4"
   },
   "extra": {
