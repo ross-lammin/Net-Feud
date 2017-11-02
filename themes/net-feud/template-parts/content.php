@@ -41,7 +41,5 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php f10_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-## -->

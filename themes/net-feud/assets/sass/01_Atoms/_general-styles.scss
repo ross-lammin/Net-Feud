@@ -20,7 +20,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: grey;
+	background-color: $color__primary--background;
 }
 
 section {
@@ -74,6 +74,11 @@ ul {
 a{
 	color: $color__continue--button;
 	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: darken($color__continue--button, 10%);
 }
 
 img {

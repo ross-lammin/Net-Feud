@@ -6,12 +6,26 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "wp-premium/gravityforms",
+          "version": "2.2.5",
+          "type": "wordpress-plugin",
+          "source": {
+              "url": "https://github.com/wp-premium/gravityforms",
+              "type": "git",
+              "reference": "master"
+          }
+      }
     }
   ],
   "require": {
     "johnpbloch/wordpress-core-installer": "^1.0",
-    "johnpbloch/wordpress": "~4.8.1",
-    "wpackagist-plugin/akismet": "3.3.4"
+    "johnpbloch/wordpress": "~4.8.3",
+    "wpackagist-plugin/akismet": "4.0",
+    "wp-premium/gravityforms": "*"
   },
   "extra": {
     "wordpress-install-dir": "wp",
