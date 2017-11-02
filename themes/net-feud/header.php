@@ -22,25 +22,9 @@
 
 <body>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'first10' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
 
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
 
 <div class="header__burger-menu--container">
   <div class="header__burger-menu--bar-1"></div>
@@ -61,6 +45,9 @@ if ( $description || is_customize_preview() ) : ?>
 	<div class="header__searchbar--inner-container">
 		<button class="button__search-bar action-button__bg--medium header__button--search-bar"></button>
 		<input class="header__searchbar--search-input" id="input__search" type="search" placeholder="Search For..."><div class="header__searchbar--clear"></div>
+		<div class="header__searchbar--dropdown">
+			<h3 class="header__searchbar--dropdown-text">Search for</h3>
+		</div>
 	</div>
 </div>
 
