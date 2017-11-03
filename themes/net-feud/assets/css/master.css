@@ -539,6 +539,7 @@ input[type='color'] {
 .page__wrapper {
   background-color: #fff;
   margin: 0 auto;
+  width: 100%;
   -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
   box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.8), -12px 10px 15px 0px rgba(0, 0, 0, 0.8);
