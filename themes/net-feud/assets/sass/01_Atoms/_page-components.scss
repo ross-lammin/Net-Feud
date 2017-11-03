@@ -7,8 +7,14 @@
 .page__wrapper {
 	background-color: #fff;
 	margin: 0 auto;
+<<<<<<< Updated upstream
   -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+=======
+	width: 100%;
+  -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+>>>>>>> Stashed changes
   box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.8), -12px 10px 15px 0px rgba(0, 0, 0, 0.8);
   @include clearfix;
 
@@ -29,4 +35,13 @@
 		}
 
 	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.page__background {
+		padding: 8% 0%;
+		padding-bottom: 0;
+	}
+
 }
