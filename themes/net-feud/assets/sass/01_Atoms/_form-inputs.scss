@@ -79,6 +79,125 @@ label {
 }
 
 /////////////////////////////////////
+///////////Gform styles//////////////
+/////////////////////////////////////
+.contact__details + article .entry-header {
+	display: none;
+}
+
+.entry-content .gform_wrapper {
+
+	.gfield {
+		display: table;
+    width: 100%;
+	}
+
+	.gfield_label {
+		width: 40% !important;
+    margin-right: 0px;
+    padding-right: 30px;
+    padding-top: 4px;
+    float: left;
+	}
+
+	input.medium {
+		width: 100% !important;
+		height: 2rem !important;
+	}
+
+	.gform_footer input[type="submit"] {
+		display: block;
+		width: auto;
+		font-size: 1.2rem;
+		margin: 0 auto;
+	}
+
+	.gfield_select {
+		margin-left: 1px;
+    background-color: #D8D8D8;
+    border-radius: 0;
+    border-color: black;
+    height: 2rem !important;
+    width: 100% !important;
+    padding: 5px 4px; 
+  }
+
+	.ginput_container {
+    float: left;
+    width: 50%;
+	}
+
+	.charleft {
+    margin-left: 0px;
+	}
+
+	.bumper {
+		padding-bottom: 14px;
+	}
+
+}
+
+.contact__details--button {
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	background-color: yellow;
+	margin-bottom: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 1001px) {
+
+.contact__details--button {
+	display: none;
+}
+
+.page__wrapper .contact__details.display-none {
+			display: block;
+	    width: 50%;
+	    float: right;
+	    text-align: center;
+
+	    p {
+	    	margin: 0 auto;
+	    	width: 90%
+	    }
+
+	    & h3 {
+	    	margin-top: 0;
+	    }
+		}
+
+	.entry-content {
+
+		.gform_wrapper {
+			width: 50%;
+
+			.ginput_container {
+		    width: 60%;
+			}
+
+			.gform_fields {
+		    width: 100%;
+		    float: left;
+			}
+
+			.gform_wrapper 
+			.ginput_container {
+				width: 60% !important;
+			}
+	 
+			.left_label textarea.medium {
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+/////////////////////////////////////
 ///////////Other styles//////////////
 /////////////////////////////////////
 .is-error {
@@ -121,32 +240,5 @@ label {
 		width: 25rem;
 		height:10rem;
 	}
-}
-
-/////////////////////////////////////
-///////////Gform styles//////////////
-/////////////////////////////////////
-.gform_wrapper input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']) {
-    width: 50%;
-}
-
-.gform_wrapper label.gfield_label {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-@media only screen and (max-width: 640px) {
-
-	.gform_wrapper .gform_fields .gfield  {
-
-		& .gfield_label {
-	    float: left;
-	    width: 10%;
-	    padding-right: 16px;
-	    margin-bottom: 40px;
-		}
-
-	}
-
 }
 

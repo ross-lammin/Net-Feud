@@ -39,4 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
   //   headDropcl.classList.remove('display-block');
   // });
 
+  var reset = document.querySelector('.button--reset');
+  var input = document.querySelector('.medium');
+
+  reset.addEventListener('click', function () {
+    input.value = '';
+  });
+
 });

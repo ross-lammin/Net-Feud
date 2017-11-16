@@ -1,6 +1,6 @@
 .page__background {
 	background-color: $color__primary--background;
-	padding: 8% 10%;
+	padding: 10% 5%;
 	padding-bottom: 0;
 }
 
@@ -35,8 +35,12 @@
 @media screen and (max-width: 1000px) {
 
 	.page__background {
-		padding: 8% 0%;
+		padding: 0% 0%;
 		padding-bottom: 0;
+	}
+
+	h1.entry-title {
+		padding: 2rem;
 	}
 
 }
