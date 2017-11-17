@@ -23,8 +23,8 @@
   ],
   "require": {
     "johnpbloch/wordpress-core-installer": "^1.0",
-    "johnpbloch/wordpress": "~4.8.3",
-    "wpackagist-plugin/akismet": "4.0",
+    "johnpbloch/wordpress": "~4.9",
+    "wpackagist-plugin/akismet": "4.0.1",
     "wp-premium/gravityforms": "*"
   },
   "extra": {
