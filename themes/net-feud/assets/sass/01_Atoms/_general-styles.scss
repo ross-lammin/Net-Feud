@@ -130,81 +130,6 @@ mark {
 code {
 	color: $color__cancel--button;
 }
-textarea {
-	font-size: 1em;
-	padding: 0.5em;
-	border: 1px solid black;
-	width: 15rem;
-	resize: none;
-}
-/////////////////////////////////////
-/////////////fieldset////////////////
-/////////////////////////////////////
-fieldset spa {
-	margin-top: 2em;
-}
-
-/////////////////////////////////////
-////////////input buttons////////////
-/////////////////////////////////////
-input[type='submit'], input[type='reset'],input[type='button'] {
-	@include button-size--small;
-}
-input[type='submit'] {
-	background-color: $color__continue--button;
-}
-input[type='reset'] {
-	background-color: $color__cancel--button;
-}
-input[type='button'] {
-	background-color: $color__secondary--button;
-}
-input[disabled] {
-	background-color: $color__primary--background;
-}
-legend {
-	text-align: center;
-	font-size: 2em;
-}
-
-label {
-	display: inline-block;
-  width: 100px;
-  text-align: right;
-  margin-right: 30px;
-}
-
-// inputs
-input {
-	height: 1em;
-	width: 10rem;
-	font-size: 1em;
-	padding:0.9em 0;
-	text-indent: 0.5em;
-	border: 1px solid black;
-	background-color: $color__background--input;
-}
-input[type="date"], 
-input[type="month"], 
-input[type="week"], 
-input[type="datetime-local"] {
-  text-indent: 0.2em;
-  width: 13em;
-}
-textarea:focus, input:focus, select:focus {   
-    border-color: $color__continue--button;
-    box-shadow: 0 1px 1px $color__continue--button inset, 0 0 8px $color__continue--button;
-    outline: 0 none;
-}
-
-input::placeholder {
-	color: #858585;
-}
-
-input[type='color'] {
-	padding: 0;
-	height: 30px;
-}
 
 // embed
 .embed-object {
@@ -222,39 +147,12 @@ input[type='color'] {
     left: 0;
     width: 50%;
     height: 50%;
-}  
-
-.is-error {
-	color: $color__cancel--button;
-	border-color: $color__cancel--button;
-}
-.is-valid {
-	color: $color__continue--button;
-	border-color: $color__continue--button;
 }
 
 /////////////////////////////////////
 ///////////Media Queries/////////////
 /////////////////////////////////////
-@media screen and (min-width: 432px) {
-	textarea {
-		font-size: 1.2em;
-		width: 20rem;
-		height:10rem;
-	}
-	label {
-    font-size: 1.5em;
-    width: 150px;
-  }
-  	input[type='submit'], input[type='reset'],input[type='button'], input[disabled]{
-    font-size: 1.2em;
-  }
-}
 @media screen and (min-width: 768px) {
-  label {
-    font-size: 1.5em;
-    width: 250px;
-  }
   .test-p-input {
     padding: 10px; 
   }
@@ -279,11 +177,6 @@ input[type='color'] {
 	main {
 		padding-left: 4%;
 		padding-right: 4%;
-	}
-	textarea {
-		font-size: 1.2em;
-		width: 25rem;
-		height:10rem;
 	}
 }
 @media screen and (max-width: 400px) {
