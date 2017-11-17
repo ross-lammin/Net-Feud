@@ -1256,6 +1256,7 @@ label {
   float: right;
   text-align: center;
   margin-bottom: 40px;
+  transition: 1s;
 }
 
 .page__wrapper .contact__details em {
@@ -1270,12 +1271,16 @@ label {
 .page__wrapper .contact__details p {
   width: 90%;
   text-align: left;
-  padding: .3rem;
+  padding: .6rem;
   margin: .4rem auto;
 }
 
 .page__wrapper .contact__details h3 {
   margin-top: 0;
+}
+
+.contact__details .social-icon__container {
+  margin-top: 20px;
 }
 
 .contact__details--open {

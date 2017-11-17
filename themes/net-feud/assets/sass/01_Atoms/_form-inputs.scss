@@ -166,6 +166,7 @@ label {
 	    float: right;
 	    text-align: center;
 	    margin-bottom: 40px;
+	    transition: 1s;
 
 	    & em {
 	    	color: red;
@@ -179,14 +180,21 @@ label {
 	    p {
 	    	width: 90%;
 	    	text-align: left;
-	    	padding: .3rem;
+	    	padding: .6rem;
 	    	margin: .4rem auto;
 	    }
 
 	    & h3 {
 	    	margin-top: 0;
 	    }
+
+
 		}
+
+		.contact__details .social-icon__container {
+	    	margin-top: 20px;
+	    }
+
 	.contact__details--open {
 	display: block;
 }
