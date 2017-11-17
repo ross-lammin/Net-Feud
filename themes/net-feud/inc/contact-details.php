@@ -7,8 +7,6 @@
 
 <p>Have you found a problem that needs fixing?</p>
 
-<p>If so, then send us a message by filling in all the relevant information into the contact us form and we will do our best to reply and/or fix the problem.</p>
-
 <p>Do you have a new idea you would like to see?</p>
 
 <p>Any suggestions you have to make your experience better would be highly appriciated.
@@ -26,6 +24,8 @@ Any:</p>
 <p>See your games in light as we can list your game(s) for you, or even have them featured in our top 10 carousel.</p>
 
 <p>Do you want to give us recognition 😀</p>
+
+<p>If so, then send us a message by filling in all the relevant information into the contact us form and we will do our best to reply and/or fix the problem.</p>
 
 <p>You can subscribe, rate, review or like us on Facebook and tell all your friends about us.</p>
 </div>

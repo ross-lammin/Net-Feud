@@ -13,7 +13,8 @@ get_header(); ?>
 				<?php
 				include( 'inc/contact-details.php' );
 				get_template_part( 'template-parts/content', 'page' );
-				
+
+				echo '<em class="form__legal-info">Please note that all information shared with us will be kept strictly confidential and will never be shared with any third party outside this website</em>';
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

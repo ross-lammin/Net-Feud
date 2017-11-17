@@ -93,7 +93,7 @@ label {
 	}
 
 	.gfield_label {
-		width: 40% !important;
+		width: 32% !important;
     margin-right: 0px;
     padding-right: 30px;
     padding-top: 4px;
@@ -104,9 +104,14 @@ label {
 		width: 100% !important;
 		height: 2rem !important;
 	}
+	& textarea.medium {
+		width: 100% !important;
+	}
 
 	.gform_footer {
 		display: table;
+		margin-left: 0 !important;
+		width: 100% !important;
 	}
 
 	.gform_footer input[type="submit"] {
@@ -114,9 +119,7 @@ label {
 		width: auto;
 		font-size: 1.2rem;
 		margin: 0 auto;
-		display: table;
-		width: 100%;
-		margin-top: 20px;
+		width: 50%;
 	}
 
 	.gfield_select {
@@ -135,7 +138,8 @@ label {
 	}
 
 	.charleft {
-    margin-left: 0px;
+    width: auto !important;
+    text-align: right;
 	}
 
 	.bumper {
@@ -145,17 +149,68 @@ label {
 }
 
 .contact__details--button {
-	width: 60%;
+	width: 50%;
 	display: block;
 	margin: 0 auto;
-	background-color: yellow;
+	background-color: $color__secondary--button;
 	margin-bottom: 2rem;
+	font-size: 1rem;
 }
 
-	.entry-content .gform_wrapper .gform_footer {
-				clear: none;
-			}
+.entry-content .gform_wrapper .gform_footer {
+			clear: none;
+		}
 
+.page__wrapper .contact__details {
+	    width: 100%;
+	    float: right;
+	    text-align: center;
+	    margin-bottom: 40px;
+
+	    & em {
+	    	color: red;
+	    }
+
+	    & li {
+	    	list-style: square;
+	    	text-align: left;
+	    }
+
+	    p {
+	    	width: 90%;
+	    	text-align: left;
+	    	padding: .3rem;
+	    	margin: .4rem auto;
+	    }
+
+	    & h3 {
+	    	margin-top: 0;
+	    }
+		}
+	.contact__details--open {
+	display: block;
+}
+
+.form__legal-info {
+	font-size: .7rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+}
+
+@media screen and (min-width: 880px) {
+
+.entry-content .gform_wrapper .gform_footer {
+		margin-bottom: 60px;
+	}
+
+	.form__legal-info {
+	  width: 40%;
+	}
+
+}
 
 @media screen and (min-width: 1001px) {
 
@@ -163,23 +218,22 @@ label {
 	display: none;
 }
 
-.page__wrapper .contact__details.display-none {
+.page__wrapper .gform_footer input[type="submit"] {
+		display: table;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+.page__wrapper .contact__details.display-none, 
+.page__wrapper .contact__details.contact__details--open {
 			display: block;
-	    width: 50%;
-	    float: right;
-	    text-align: center;
-	    margin-bottom: 40px;
+			width: 50%;
 
-	    p {
-	    	margin: 0 auto;
-	    	width: 90%
-	    }
+			p {
+				margin: .4rem 0;
+			}
 
-	    & h3 {
-	    	margin-top: 0;
-	    }
 		}
-
 	.entry-content {
 
 		.gform_wrapper {
@@ -196,7 +250,7 @@ label {
 
 			.gform_wrapper 
 			.ginput_container {
-				width: 60% !important;
+				width: 68% !important;
 			}
 	 
 			.left_label textarea.medium {
@@ -204,7 +258,24 @@ label {
 			}
 		}
 	}
+	.form__legal-info {
+	  width: 45%;
+	}
 
+}
+
+@media screen and (min-width: 1444px) {
+
+	.entry-content .gform_wrapper .gform_footer {
+		margin-bottom: 120px;
+	}
+
+}
+
+@media screen and (min-width: 1444px) {
+	.form__legal-info {
+	  width: 50%;
+	}
 }
 
 /////////////////////////////////////
