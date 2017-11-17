@@ -1,6 +1,6 @@
 .page__background {
 	background-color: $color__primary--background;
-	padding: 8% 10%;
+	padding: 10% 5%;
 	padding-bottom: 0;
 }
 
@@ -8,8 +8,8 @@
 	background-color: #fff;
 	margin: 0 auto;
 	width: 100%;
-  -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
   box-shadow: 12px 10px 15px 0px rgba(0, 0, 0, 0.8), -12px 10px 15px 0px rgba(0, 0, 0, 0.8);
   @include clearfix;
 
@@ -30,4 +30,17 @@
 		}
 
 	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.page__background {
+		padding: 0% 0%;
+		padding-bottom: 0;
+	}
+
+	h1.entry-title {
+		padding: 2rem;
+	}
+
 }
