@@ -8,7 +8,6 @@
  *
  * @package first10
  */
-
 ?>
 
 	</div><!-- #content -->
@@ -38,18 +37,20 @@
 
 				<small class="footer__copyright-info">
 				<?php 
+
 				if ( date("Y") > 2017 ) {
-					echo 
-						get_bloginfo()
-					. "<sup>&copy</sup> 2017 - " 
+
+					echo get_bloginfo()
+					. "<sup>&copy;</sup> 2017 - " 
 					. date("Y") 
 					. " | Sitemap | Terms and Conditions";
+
 				} else {
 
-					echo 
-						get_bloginfo()
-					. "<sup>&copy</sup> 2017 "  
+					echo get_bloginfo()
+					. "<sup>&copy;</sup> 2017 "  
 					. " | Sitemap | Terms and Conditions";
+
 				}	
 				?>
 				</small>

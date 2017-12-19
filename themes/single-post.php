@@ -8,16 +8,12 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area page__background">
+		<main id="main" class="site-main page__wrapper" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
-			the_post_navigation();
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			get_template_part( 'template-parts/content', 'game_page' );
 		endwhile; // End of the loop.
 		?>
 
@@ -25,5 +21,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
