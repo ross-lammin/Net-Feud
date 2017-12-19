@@ -18,3 +18,4 @@ vendor/
 local.wp-config.php
 wp-config.php
 themes/side-project/*
+.lando.yml
