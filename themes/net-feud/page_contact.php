@@ -17,10 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area page__background">
 		<main id="main" class="site-main page__wrapper" role="main">
 			<h1><?php the_title();?></h1>
-			<?php
-
-			while ( have_posts() ) : the_post();
-				?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
 				<button class="contact__details--button">Contact Details</button>
 
@@ -64,7 +61,8 @@ get_header(); ?>
 
 				</div>
 
-<?php
+			<?php
+			
 				get_template_part( 'template-parts/content', 'page' );
 
 			endwhile; // End of the loop.
