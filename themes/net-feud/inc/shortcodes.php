@@ -41,6 +41,13 @@ function my_list_categories_shortcode() {
 	$markup .= '</div>';
 	echo $markup;
 }
+
+
+
+
+
+
+
   // Pagination
 function my_paginate_links() {
     global $wp_rewrite, $wp_query;

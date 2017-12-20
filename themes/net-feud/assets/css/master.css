@@ -1902,3 +1902,140 @@ label {
     font-size: 1.4em;
   }
 }
+
+.category__content--wrapper .categories__sub-header {
+  max-width: 50%;
+  font-size: 4rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.category__content--wrapper .category__list--wrapper {
+  min-width: 50%;
+  padding: 5% 10%;
+  margin-bottom: 3rem;
+}
+
+.category__content--wrapper .category__list--wrapper .category__list--titles {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 4rem;
+}
+
+.category__content--wrapper .category__list--wrapper .category__list--links .category__list--items {
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  list-style: none;
+}
+
+#games-cards {
+  margin: 0;
+}
+
+.category__wrapper--game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.category__wrapper--game .category__container--game {
+  display: flex;
+}
+
+.category__wrapper--game .category__container--game h1 {
+  font-family: 'Roboto', sans-serif, Arial;
+  font-size: 1.7rem;
+  padding: 0;
+  min-height: 70px;
+}
+
+.category__wrapper--game .category__container--game img {
+  margin: 0 auto;
+}
+
+.category__wrapper--game .category__container--game p {
+  width: 100%;
+  padding: 2rem 2rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 806px) {
+  .category__container--game {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .category__container--game {
+    width: 33%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .category__container--game {
+    width: 25%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .category__container--game {
+    width: 20%;
+    float: left;
+  }
+}
+
+.pagination-container {
+  width: 100%;
+}
+
+.pagination-wrapper {
+  display: table;
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+  width: 50%;
+}
+
+.pagination-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pagination-wrapper .page-numbers {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.pagination-wrapper .current {
+  font-size: 2.2rem;
+}
+
+.pagination-wrapper .prev, .pagination-wrapper .next {
+  position: relative;
+  top: 0.8rem;
+  font-size: 6rem;
+}
+
+.pagination-wrapper .next {
+  margin-right: -110px;
+}
+
+.pagination-wrapper .prev {
+  margin-left: -110px;
+}
+
+.game-rpg {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  float: left;
+  margin: 10px;
+}

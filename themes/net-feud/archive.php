@@ -10,9 +10,18 @@ get_header(); ?>
 
 	<div id="primary" class="content-area page__background">
 		<main id="main" class="site-main page__wrapper" role="main">
+			<h1><?php single_cat_title(); ?> </h1>
+			<div class="category__wrapper--game">
 
-		<?php my_list_categories_shortcode(); ?>
+				<?php 
+				while ( have_posts() ) : the_post();
 
+					get_template_part('template-parts/content', 'archive');
+
+				endwhile; // End of the loop.
+				?>
+
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
