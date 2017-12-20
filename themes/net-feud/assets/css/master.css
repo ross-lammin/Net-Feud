@@ -1325,6 +1325,7 @@ label {
   }
   .entry-content .gform_wrapper {
     width: 50%;
+    display: table;
   }
   .entry-content .gform_wrapper .ginput_container {
     width: 60%;
