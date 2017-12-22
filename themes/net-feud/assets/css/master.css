@@ -1936,6 +1936,7 @@ label {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
+  padding-bottom: 5rem;
 }
 
 .page__wrapper .category__wrapper--game .category__container--game {
