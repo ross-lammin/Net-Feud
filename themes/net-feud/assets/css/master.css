@@ -434,8 +434,7 @@ code {
 
 .page__wrapper h1 {
   text-align: center;
-  padding: 6rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .page__wrapper .entry-content {
@@ -2038,4 +2037,86 @@ label {
   background-color: red;
   float: left;
   margin: 10px;
+}
+
+.game-page__wrapper .game-page__screen iframe {
+  width: 100%;
+}
+
+.game-page__wrapper .game-page__screen .single-game__details--container {
+  background-color: #b3b3b3;
+  padding: 1rem;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.game-page__wrapper .game-page__screen .single-game__details--container .single-game__title {
+  text-align: center;
+}
+
+.game-page__wrapper .game-page__screen .single-game__details--container .single-game__description {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.game-page__wrapper .related-posts {
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
+
+.game-page__wrapper .related-posts .related-posts-title {
+  text-align: center;
+}
+
+.game-page__wrapper .related-posts .related-list {
+  padding-left: 0px;
+}
+
+.game-page__wrapper .related-posts .related-list h3 {
+  text-align: center;
+}
+
+.game-page__wrapper .related-posts .related-list .related-list-img img {
+  margin: 0 auto;
+}
+
+.game-page__wrapper .related-posts .related-list p {
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media screen and (min-width: 806px) {
+  .game-page__wrapper .related-posts {
+    margin: 0 auto;
+  }
+  .game-page__wrapper .related-posts .related-list {
+    width: 33%;
+    float: left;
+    padding-left: 0px;
+  }
+  .game-page__wrapper .related-posts .related-list h3 {
+    text-align: center;
+  }
+  .game-page__wrapper .related-posts .related-list .related-list-img img {
+    margin: 0 auto;
+  }
+  .game-page__wrapper .related-posts .related-list p {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 806px) {
+  .game-page__wrapper .related-posts {
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .game-page__wrapper .related-posts {
+    margin-bottom: 6em;
+  }
 }
