@@ -90,6 +90,7 @@
 	.nav-bar__primary--home {
 		@include nav-bar-menu-list(10px);
 		left: 30px;
+		height: 0;
 	}
 	.nav-bar__primary--login {
 		@include nav-bar-menu-list(60px);
