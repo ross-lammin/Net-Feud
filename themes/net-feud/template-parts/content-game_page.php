@@ -13,15 +13,15 @@
 	<h1><?php the_title(); ?></h1>
 	<div class="game-page__screen">
 		<?php echo get_game(); ?>
-			<div class="single-game__details--container">
-				<h3 class="single-game__title">Instructions</h3>
-				<p class="single-game__description"><?php myarcade_description() ?></p>
-			</div>
+		<div class="single-game__details--container">
+			<h3 class="single-game__title">Instructions</h3>
+			<p class="single-game__description"><?php myarcade_description() ?></p>
 		</div>
+	</div>
 
-	<div class="related-posts">
-		<h2 class="related-posts-title">You may also like</h2>
-
+	<h2 class="related-posts-title">You may also like</h2>
+		
+	<div class="category__wrapper--game">
 		<?php
 
 			$args=array(
@@ -38,15 +38,26 @@
 			if( $my_query->have_posts() ) {
 			while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-			 	<ul class="related-list"> 
-				  <li>
-				    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-				    	<h3 class="related-title"><?php the_title() ?></h3>
-				      <div class="related-list-img"><?php myarcade_thumbnail();?></div>
-				      <p><?php myarcade_excerpt( 100 ) ?></p>
-							</a>
-				  </li>
-			  </ul> 
+		<div class="category__container--game">
+			<?php echo '<a href="' . get_permalink() . '">';?>
+				<article id="games-cards post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+					<?php
+					echo '<h1 class="category__container--title">' ;
+					echo myarcade_title();
+					echo '</h1>';
+					echo myarcade_thumbnail();
+					echo '<div>';
+					echo '<p>';
+					echo myarcade_excerpt( 100 );
+					echo '</p>';
+					echo '</div';
+					?>
+
+				</article><!-- #post-## -->
+			</a>
+		</div>
+
 
 			<?php
 			endwhile;

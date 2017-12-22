@@ -17,7 +17,7 @@
 		<article id="games-cards post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<?php
-					echo '<h1>' ;
+					echo '<h1 class="category__container--title">' ;
 					echo myarcade_title();
 					echo '</h1>';
 					echo myarcade_thumbnail();

@@ -38,70 +38,125 @@
 
 }
 
-#games-cards {
-		margin: 0;
-	}
+.page__wrapper {
 
-.category__wrapper--game {
+	.category__wrapper--game {
 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: stretch;
-
-	.category__container--game {
-	
 		display: flex;
-		
-		h1 {
-			@include font__roboto;
-			font-size: 1.7rem;
-			padding: 0;
-			min-height: 70px;
-		}
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
 
-		img {
-			margin: 0 auto;
-		}
+		.category__container--game {
+			display: flex;
+			border: 1px solid black;
+	    background-color: darkslategray;
+	    width: 100%;
 
-		p {
-			width: 100%;
-			padding: 2rem 2rem;
-			font-size: 1rem;
+    	& article {
+				margin: 0;
+				
+				.category__container--title {
+					@include font__roboto;
+					font-size: 2rem;
+					padding: 0;
+				}
+
+				img {
+					margin: 0 auto;
+					height: 10rem;
+					width: 10rem;
+				}
+
+				p {
+					width: 100%;
+					padding: 1rem;
+					font-size: 1rem;
+				}
+
+			}
+		}
+	}
+}
+
+.page__wrapper{
+	.game-page__wrapper {
+
+		& h2 {
+			text-align: center;
+		}
+		.category__wrapper--game {
+
+			.category__container--game {
+				width: 100%;
+
+				& article {
+					width: 100%;
+				}
+
+			}
+		}
+	}
+}
+
+@media screen and ( min-width: 510px ) {
+
+	.page__wrapper {
+		.category__wrapper--game {
+			.category__container--game {
+				width: 50%;
+				float: left;
+			}
 		}
 	}
 }
 
 @media screen and ( min-width: 806px ) {
 
-	.category__container--game {
-		width: 50%;
-		float: left;
+	.page__wrapper {
+		.category__wrapper--game {
+			.category__container--game {
+				width: 33%;
+				float: left;
+			}
+		}
 	}
 
-}
+	.page__wrapper{
+		.game-page__wrapper {
+			.category__wrapper--game {
+				margin-bottom: 5rem;
 
-@media screen and ( min-width: 1000px ) {
+				.category__container--game {
+					width: 33%;
+				}
 
-	.category__container--game {
-		width: 33%;
-		float: left;
+			}
+		}
 	}
 }
 
 @media screen and ( min-width: 1250px ) {
 
-	.category__container--game {
-		width: 25%;
-		float: left;
+	.page__wrapper {
+		.category__wrapper--game {
+			.category__container--game {
+				width: 25%;
+				float: left;
+			}
+		}
 	}
 }
 
 @media screen and ( min-width: 1500px ) {
 
-	.category__container--game {
-		width: 20%;
-		float: left;
+	.page__wrapper {
+		.category__wrapper--game {
+			.category__container--game {
+				width: 20%;
+				float: left;
+			}
+		}
 	}
 }
 
