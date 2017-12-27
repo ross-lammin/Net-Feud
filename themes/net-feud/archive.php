@@ -20,8 +20,8 @@ get_header(); ?>
 
 				endwhile; // End of the loop.
 				?>
-
 			</div>
+			<?php echo my_paginate_links(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -1,0 +1,35 @@
+.pagination__container {
+	
+	.pagination__prev,
+	.pagination__next {
+		font-size: 3em;
+	}
+
+	.pagination__next {
+		padding-left: .2em;
+	}
+
+	& ul {
+		text-align: center;
+		padding: 0;
+
+		& li {
+			font-size: 2em;
+			display: inline-block;
+			position: relative;
+    	top: -5px;
+    }
+
+    	.active {
+    		font-size: 2.5em;
+    		padding: 0 3px;
+
+    		& a {
+    			color: black;
+    		}
+
+    	}
+
+	}
+
+}

@@ -1396,6 +1396,36 @@ label {
   }
 }
 
+.pagination__container .pagination__prev,
+.pagination__container .pagination__next {
+  font-size: 3em;
+}
+
+.pagination__container .pagination__next {
+  padding-left: .2em;
+}
+
+.pagination__container ul {
+  text-align: center;
+  padding: 0;
+}
+
+.pagination__container ul li {
+  font-size: 2em;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+
+.pagination__container ul .active {
+  font-size: 2.5em;
+  padding: 0 3px;
+}
+
+.pagination__container ul .active a {
+  color: black;
+}
+
 .header__burger-menu--container {
   position: fixed;
   top: 0;
@@ -1936,7 +1966,7 @@ label {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  padding-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .page__wrapper .category__wrapper--game .category__container--game {
