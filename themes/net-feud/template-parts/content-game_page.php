@@ -24,7 +24,7 @@
 	<div class="category__wrapper--game">
 		<?php
 
-			$args=array(
+			$args = array(
 			'cat' => 1,
 			'orderby' => 'rand',
 			'post_type' => 'post',

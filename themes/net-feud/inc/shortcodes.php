@@ -43,12 +43,14 @@ function my_list_categories_shortcode() {
 }
 
 
-
-
-
+/**
+ * This creates the [my_pag_link] shortcode and calls the
+ * my_paginate_links() function.
+ */
 add_shortcode( 'my_pag_link', 'my_paginate_links' );
-
-  // Pagination
+/**
+ * Used for paginating the category archive pages.
+ */
 function my_paginate_links() {
 	 if( is_singular() )
         return;
