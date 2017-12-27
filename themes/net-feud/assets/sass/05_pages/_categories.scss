@@ -4,10 +4,11 @@
 .category__content--wrapper {
 
 	.categories__sub-header {
-		max-width: 50%;
-		font-size: 4rem;
+		max-width: 100%;
+		font-size: 3rem;
 		margin: 0 auto;
 		text-align: center;
+		@include font__roboto;
 	}
 
 	.category__list--wrapper {

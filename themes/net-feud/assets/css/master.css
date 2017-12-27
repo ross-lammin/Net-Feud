@@ -1938,10 +1938,11 @@ label {
 }
 
 .category__content--wrapper .categories__sub-header {
-  max-width: 50%;
-  font-size: 4rem;
+  max-width: 100%;
+  font-size: 3rem;
   margin: 0 auto;
   text-align: center;
+  font-family: 'Roboto', sans-serif, Arial;
 }
 
 .category__content--wrapper .category__list--wrapper {
