@@ -1396,34 +1396,38 @@ label {
   }
 }
 
-.pagination__container .pagination__prev,
-.pagination__container .pagination__next {
-  font-size: 3em;
-}
-
-.pagination__container .pagination__next {
-  padding-left: .2em;
-}
-
-.pagination__container ul {
-  text-align: center;
-  padding: 0;
-}
-
-.pagination__container ul li {
-  font-size: 2em;
-  display: inline-block;
-  position: relative;
-  top: -5px;
-}
-
-.pagination__container ul .active {
-  font-size: 2.5em;
-  padding: 0 3px;
-}
-
-.pagination__container ul .active a {
-  color: black;
+@media screen and (min-width: 400px) {
+  .pagination__container .pagination__prev,
+  .pagination__container .pagination__next {
+    font-size: 3rem;
+  }
+  .pagination__container .pagination__prev a,
+  .pagination__container .pagination__next a {
+    font-size: 3rem;
+  }
+  .pagination__container .pagination__next {
+    padding-left: .2em;
+  }
+  .pagination__container ul {
+    text-align: center;
+    padding: 0;
+  }
+  .pagination__container ul li {
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+  }
+  .pagination__container ul li a {
+    font-size: 2rem;
+  }
+  .pagination__container ul .active {
+    padding: 0 3px;
+  }
+  .pagination__container ul .active a {
+    color: black;
+    font-size: 2.5rem;
+  }
 }
 
 .header__burger-menu--container {
