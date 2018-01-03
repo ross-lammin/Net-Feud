@@ -131,6 +131,10 @@ code {
 	color: $color__cancel--button;
 }
 
+button {
+	cursor: pointer;
+}
+
 // embed
 .embed-object {
     position: relative;

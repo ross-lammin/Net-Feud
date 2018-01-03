@@ -46,6 +46,7 @@ textarea:focus, input:focus, select:focus {
 /////////////////////////////////////
 input[type='submit'], input[type='reset'],input[type='button'] {
 	@include button-size--small;
+	cursor: pointer;
 }
 input[type='submit'] {
 	background-color: $color__continue--button;

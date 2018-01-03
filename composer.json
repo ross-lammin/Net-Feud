@@ -25,7 +25,8 @@
     "johnpbloch/wordpress-core-installer": "^1.0",
     "johnpbloch/wordpress": "~4.9",
     "wpackagist-plugin/akismet": "4.0.1",
-    "wp-premium/gravityforms": "*"
+    "wp-premium/gravityforms": "*",
+    "wpackagist-plugin/buddypress": "2.9.2"
   },
   "extra": {
     "wordpress-install-dir": "wp",
