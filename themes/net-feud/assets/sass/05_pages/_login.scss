@@ -61,11 +61,22 @@
 
 @media screen and (min-width: 935px) {
 	.login-page__container {
-		width: 50%;
-		border: 1px solid black;
-		margin: 120px auto;
+		width: 40%;
+    border: 1px solid black;
+    margin: 97px auto;
+    margin-bottom: 0px;
 	}
+
+	.login-page__container .login-page__logo {
+	  transform: scale(2);
+    position: relative;
+    top: 6rem;
+  }
+
+  .login-page__container .login-username {
+  	padding-top: 6rem;
+  }
+
 }
 
-@media screen and (min-width: 1258px) {
-}
+

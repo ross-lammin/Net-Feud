@@ -26,7 +26,8 @@
     "johnpbloch/wordpress": "~4.9",
     "wpackagist-plugin/akismet": "4.0.1",
     "wp-premium/gravityforms": "*",
-    "wpackagist-plugin/buddypress": "2.9.2"
+    "wpackagist-plugin/buddypress": "2.9.2",
+    "wpackagist-plugin/wp-mail-smtp": "1.2.2"
   },
   "extra": {
     "wordpress-install-dir": "wp",

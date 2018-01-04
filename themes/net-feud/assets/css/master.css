@@ -2199,30 +2199,201 @@ label {
 
 @media screen and (min-width: 935px) {
   .login-page__container {
-    width: 50%;
+    width: 40%;
     border: 1px solid black;
-    margin: 120px auto;
+    margin: 97px auto;
+    margin-bottom: 0px;
+  }
+  .login-page__container .login-page__logo {
+    transform: scale(2);
+    position: relative;
+    top: 6rem;
+  }
+  .login-page__container .login-username {
+    padding-top: 6rem;
   }
 }
 
-#buddypress .standard-form#signup_form input[type="text"],
-#buddypress .standard-form#signup_form input[type="email"],
-#buddypress .standard-form#signup_form input[type="password"] {
+#buddypress .signup__details--container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#buddypress .signup__details--container p {
+  width: 100%;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#buddypress .signup__details--container ul {
+  width: 75%;
+  list-style-type: circle;
+  margin: 0 auto;
+  max-width: 475px;
+}
+
+#buddypress .signup__details--container ul li {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#buddypress h2 {
+  padding: 0;
+  Text-align: center;
+}
+
+#buddypress .standard-form#signup_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20%;
+}
+
+#buddypress .standard-form#signup_form #basic-details-section {
+  order: 2;
+}
+
+#buddypress .standard-form#signup_form #profile-details-section {
+  order: 1;
+}
+
+#buddypress .standard-form#signup_form #profile-details-section legend {
+  display: none;
+}
+
+#buddypress .standard-form#signup_form .submit {
+  order: 3;
+  align-self: center;
+}
+
+#buddypress .standard-form#signup_form .submit input {
+  background-color: #7ED321;
+  color: black;
+  border: 1px solid black;
+}
+
+#buddypress .standard-form#signup_form .register-section {
+  width: 100%;
+}
+
+#buddypress .standard-form#signup_form .register-section h2 {
+  display: none;
+}
+
+#buddypress .standard-form#signup_form .register-section label {
+  text-align: left;
+}
+
+#buddypress .standard-form#signup_form .register-section label span {
+  position: relative;
+  top: -3px;
+}
+
+#buddypress .standard-form#signup_form .register-section input[type="text"],
+#buddypress .standard-form#signup_form .register-section input[type="email"],
+#buddypress .standard-form#signup_form .register-section input[type="password"] {
   height: 1em;
-  width: 10rem;
+  width: 100%;
   font-size: 1em;
-  padding: 0.9em 0;
+  padding: 1.2em 0;
   text-indent: 0.5em;
   border: 1px solid black;
   background-color: #D8D8D8;
 }
 
-#buddypress .standard-form #basic-details-section,
-#buddypress .standard-form #profile-details-section {
-  width: 100%;
+#buddypress .standard-form#signup_form .register-section .input-options.datebox-selects::before {
+  content: "D.O.B";
+  margin-right: 10px;
+  font-weight: 700;
 }
 
-#buddypress .standard-form #basic-details-section label,
-#buddypress .standard-form #profile-details-section label {
-  text-align: left;
+#buddypress .standard-form#signup_form .register-section .field-visibility-settings-toggle {
+  visibility: hidden;
+}
+
+#buddypress .standard-form#signup_form .register-section .field-visibility-settings-notoggle {
+  visibility: hidden;
+}
+
+#buddypress .standard-form#signup_form .register-section .bp-required-field-label {
+  font-size: 2rem;
+}
+
+#buddypress select {
+  height: 2rem;
+}
+
+@media screen and (min-width: 806px) {
+  #buddypress .standard-form#signup_form fieldset {
+    padding-left: 10%;
+  }
+  #buddypress .standard-form#signup_form .editfield {
+    width: 33%;
+    float: left;
+  }
+  #buddypress .standard-form#signup_form .field_gender select {
+    font-size: 1rem;
+    height: 2.7rem;
+    width: 100%;
+  }
+  #buddypress .standard-form#signup_form .field_date-of-birth {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  #buddypress .standard-form#signup_form .field_date-of-birth .input-options.datebox-selects {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #buddypress .standard-form#signup_form .field_date-of-birth .input-options.datebox-selects::before {
+    content: "D.O.B";
+    margin-right: 10px;
+    font-weight: 700;
+    margin-left: -15%;
+  }
+  #buddypress .standard-form#signup_form .field_date-of-birth .input-options.datebox-selects select {
+    height: 2.7rem;
+  }
+  #buddypress .standard-form#signup_form .field_date-of-birth .input-options.datebox-selects > select#field_2_day {
+    min-width: 50px;
+  }
+  #buddypress .standard-form#signup_form .field_date-of-birth .input-options.datebox-selects > select#field_2_month {
+    min-width: 126px;
+    margin-left: 3%;
+  }
+  #buddypress .standard-form#signup_form .field_date-of-birth .input-options.datebox-selects > select#field_2_year {
+    min-width: 79px;
+    margin-left: 3%;
+  }
+  #buddypress .standard-form#signup_form #basic-details-section {
+    margin-top: 2rem;
+  }
+  #buddypress .standard-form#signup_form #basic-details-section label {
+    width: 45%;
+    display: table;
+    float: left;
+    clear: both;
+    text-align: right;
+    max-width: 223px;
+  }
+  #buddypress .standard-form#signup_form #basic-details-section label span {
+    margin-left: -5px;
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+  }
+  #buddypress .standard-form#signup_form #basic-details-section input[type="text"],
+  #buddypress .standard-form#signup_form #basic-details-section input[type="email"],
+  #buddypress .standard-form#signup_form #basic-details-section input[type="password"] {
+    width: 55%;
+    display: table;
+    float: left;
+    margin-bottom: 2rem;
+  }
+  #buddypress .standard-form#signup_form .submit input {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
 }

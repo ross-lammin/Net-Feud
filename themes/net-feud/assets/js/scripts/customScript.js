@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  if (document.getElementById('field_1')) {
+    document.getElementById('field_1').placeholder = 'First name...';
+  }
+  if (document.getElementById('field_10')) {
+    document.getElementById('field_10').placeholder = 'Last name...';
+  }
+
   var burgerMenu = document.querySelector('.header__burger-menu--container');
   var navBarLi = document.querySelector('.menu-logged-in-container');
   var navBarLo = document.querySelector('.menu-logged-out-container');
@@ -8,8 +15,15 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Script for opening and closing the top nav bar */
   burgerMenu.addEventListener('click', function () {
     burgerMenu.classList.toggle('header__burger-menu--change');
-    navBarLi.classList.toggle('display-block');
-    navBarLo.classList.toggle('display-block');
+
+    if (document.querySelector('.menu-logged-in-container')) {
+      navBarLi.classList.toggle('display-block');
+    } 
+
+    if (document.querySelector('.menu-logged-out-container')) {
+      navBarLo.classList.toggle('display-block');
+    }
+
     homeLogo.classList.toggle('display-block');
   });
 
@@ -35,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var contactButton = document.querySelector('.contact__details--button');
   var contactDetails = document.querySelector('.contact__details');
 
-  if ( contactButton ) {
+  if (contactButton) {
     contactButton.addEventListener('click', function () {
       contactDetails.classList.toggle('contact__details--open');
       contactDetails.classList.toggle('display-none');
