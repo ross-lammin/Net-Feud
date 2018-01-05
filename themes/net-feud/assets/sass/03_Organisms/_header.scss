@@ -3,7 +3,7 @@
 /////////////////////////////////////
 .header__burger-menu--container {
 	position: fixed;
-	top: 0;
+	top: 2px;
 	right: 0;
 	display: inline;
   cursor: pointer;
@@ -55,6 +55,8 @@
 	z-index: 1000000000;
 	transform: translateY(-8em);
 	transition: .4s;
+	height: 40px;
+  line-height: 70px;
 
 	& a:hover {color: darken($color__continue--button, 10%);}
 	& a {
@@ -63,13 +65,11 @@
 		.header__home--text{
 			padding: 0;
 			margin: 0;
-			line-height: 5px;
-		}
-
-		.header__home--text::before {
-			position: relative;
-			left: 5px;
-			content: url("../svgs/logo-icon.svg");
+			height: 40px;
+			width: 30px;
+    	line-height: 70px;
+    	background: url("../svgs/login-icon.svg") no-repeat top center;
+			background-size: 25px 25px;
 		}
 
 	}
@@ -84,23 +84,56 @@
 	left: 0;
 	right: 0;
 	background-color: $color__background--primary-menu;
-	height: 8em;
+	height: 45px;
 	transform: translateY(-8em);
 	transition: .4s;
 	z-index: 100;
 
 	.nav-bar__primary--list,
 	.menu {
-		padding-right: 30px;
+		padding-right: 50px;
 		float: right;
+		margin: 2.5px 0;
+
+		.menu-item {
+			height: 40px;
+    	line-height: 70px;
+
+    	& a {
+    		display: block;
+    		height: 40px;
+    		width: 30px;
+    		text-align: center;
+    	}
+		}
+
+		.bp-register-nav {
+			& a{
+				background: url("../svgs/signup-icon.svg") no-repeat top center;
+				background-size: 25px 25px;
+			}
+		}
+
+		.nav-bar__primary--login {
+			& a{
+				background: url("../svgs/login-icon.svg") no-repeat top center;
+				background-size: 25px 25px;
+			}
+		}
+		.nav-bar__primary--search {
+			& a{
+				background: url("../svgs/search-icon.svg") no-repeat top center;
+				background-size: 25px 25px;
+			}
+		}
+
 
 		.menu-item {
 			display: inline-block;
-			margin-right: 20px;
-			margin-top: 40px;
 
 			& a {
 				color: black;
+				width: 30px;
 			}
 
 			& a:hover {
@@ -138,7 +171,7 @@
 }
 .header__searchbar--container {
 	position: fixed;
-	top: 80px;
+	top: 45px;
 	right: 33px;
 	background-color: $color__background--primary-menu;
 	width: 59.40625rem;
@@ -218,15 +251,12 @@
 		height: 5em;
 		transform: translateY(0);
 	}
+
 	.header__burger-menu--container {
 		display: none;
 	}
-	.menu-primary-container {
-	.nav-bar__primary--list {
-		.menu-item {
-			margin-top: 40px;
 
-}}}}
+}
 
 @media screen and ( max-width: 1013px ) {
 	.header__searchbar--dropdown {

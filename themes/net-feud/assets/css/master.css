@@ -1437,7 +1437,7 @@ label {
 
 .header__burger-menu--container {
   position: fixed;
-  top: 0;
+  top: 2px;
   right: 0;
   display: inline;
   cursor: pointer;
@@ -1486,6 +1486,8 @@ label {
   z-index: 1000000000;
   transform: translateY(-8em);
   transition: .4s;
+  height: 40px;
+  line-height: 70px;
 }
 
 .header__home--container a:hover {
@@ -1499,13 +1501,11 @@ label {
 .header__home--container a .header__home--text {
   padding: 0;
   margin: 0;
-  line-height: 5px;
-}
-
-.header__home--container a .header__home--text::before {
-  position: relative;
-  left: 5px;
-  content: url("../svgs/logo-icon.svg");
+  height: 40px;
+  width: 30px;
+  line-height: 70px;
+  background: url("../svgs/login-icon.svg") no-repeat top center;
+  background-size: 25px 25px;
 }
 
 .menu-primary-container,
@@ -1517,7 +1517,7 @@ label {
   left: 0;
   right: 0;
   background-color: rgba(250, 250, 250, 0.66);
-  height: 8em;
+  height: 45px;
   transform: translateY(-8em);
   transition: .4s;
   z-index: 100;
@@ -1529,8 +1529,61 @@ label {
 .menu-logged-in-container .menu,
 .menu-logged-out-container .nav-bar__primary--list,
 .menu-logged-out-container .menu {
-  padding-right: 30px;
+  padding-right: 50px;
   float: right;
+  margin: 2.5px 0;
+}
+
+.menu-primary-container .nav-bar__primary--list .menu-item,
+.menu-primary-container .menu .menu-item,
+.menu-logged-in-container .nav-bar__primary--list .menu-item,
+.menu-logged-in-container .menu .menu-item,
+.menu-logged-out-container .nav-bar__primary--list .menu-item,
+.menu-logged-out-container .menu .menu-item {
+  height: 40px;
+  line-height: 70px;
+}
+
+.menu-primary-container .nav-bar__primary--list .menu-item a,
+.menu-primary-container .menu .menu-item a,
+.menu-logged-in-container .nav-bar__primary--list .menu-item a,
+.menu-logged-in-container .menu .menu-item a,
+.menu-logged-out-container .nav-bar__primary--list .menu-item a,
+.menu-logged-out-container .menu .menu-item a {
+  display: block;
+  height: 40px;
+  width: 30px;
+  text-align: center;
+}
+
+.menu-primary-container .nav-bar__primary--list .bp-register-nav a,
+.menu-primary-container .menu .bp-register-nav a,
+.menu-logged-in-container .nav-bar__primary--list .bp-register-nav a,
+.menu-logged-in-container .menu .bp-register-nav a,
+.menu-logged-out-container .nav-bar__primary--list .bp-register-nav a,
+.menu-logged-out-container .menu .bp-register-nav a {
+  background: url("../svgs/signup-icon.svg") no-repeat top center;
+  background-size: 25px 25px;
+}
+
+.menu-primary-container .nav-bar__primary--list .nav-bar__primary--login a,
+.menu-primary-container .menu .nav-bar__primary--login a,
+.menu-logged-in-container .nav-bar__primary--list .nav-bar__primary--login a,
+.menu-logged-in-container .menu .nav-bar__primary--login a,
+.menu-logged-out-container .nav-bar__primary--list .nav-bar__primary--login a,
+.menu-logged-out-container .menu .nav-bar__primary--login a {
+  background: url("../svgs/login-icon.svg") no-repeat top center;
+  background-size: 25px 25px;
+}
+
+.menu-primary-container .nav-bar__primary--list .nav-bar__primary--search a,
+.menu-primary-container .menu .nav-bar__primary--search a,
+.menu-logged-in-container .nav-bar__primary--list .nav-bar__primary--search a,
+.menu-logged-in-container .menu .nav-bar__primary--search a,
+.menu-logged-out-container .nav-bar__primary--list .nav-bar__primary--search a,
+.menu-logged-out-container .menu .nav-bar__primary--search a {
+  background: url("../svgs/search-icon.svg") no-repeat top center;
+  background-size: 25px 25px;
 }
 
 .menu-primary-container .nav-bar__primary--list .menu-item,
@@ -1540,8 +1593,6 @@ label {
 .menu-logged-out-container .nav-bar__primary--list .menu-item,
 .menu-logged-out-container .menu .menu-item {
   display: inline-block;
-  margin-right: 20px;
-  margin-top: 40px;
 }
 
 .menu-primary-container .nav-bar__primary--list .menu-item a,
@@ -1551,6 +1602,7 @@ label {
 .menu-logged-out-container .nav-bar__primary--list .menu-item a,
 .menu-logged-out-container .menu .menu-item a {
   color: black;
+  width: 30px;
 }
 
 .menu-primary-container .nav-bar__primary--list .menu-item a:hover,
@@ -1584,7 +1636,7 @@ label {
 
 .header__searchbar--container {
   position: fixed;
-  top: 80px;
+  top: 45px;
   right: 33px;
   background-color: rgba(250, 250, 250, 0.66);
   width: 59.40625rem;
@@ -1670,9 +1722,6 @@ label {
   }
   .header__burger-menu--container {
     display: none;
-  }
-  .menu-primary-container .nav-bar__primary--list .menu-item {
-    margin-top: 40px;
   }
 }
 
