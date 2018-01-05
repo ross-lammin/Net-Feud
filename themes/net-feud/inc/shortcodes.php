@@ -119,3 +119,9 @@ function my_paginate_links() {
  
     echo '</ul></div>';
 }
+
+/*
+* This makes the user redirect to home page upon logging out.
+* Not sure if user want this but im going to trial it out.
+*/
+add_action('wp_logout',create_function('','wp_redirect(home_url());exit();'));

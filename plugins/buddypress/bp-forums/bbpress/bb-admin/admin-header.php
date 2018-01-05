@@ -47,7 +47,7 @@ if ( 'f' == bb_get_user_setting( 'fm' ) ) {
 				<div id="bbUserInfo">
 					<p>
 						<?php printf( __('Howdy, %1$s'), bb_get_profile_link( array( 'text' => bb_get_current_user_info( 'name' ) ) ) );?>
-						| <?php bb_logout_link( array( 'redirect' => bb_get_uri( null, null, BB_URI_CONTEXT_HEADER ) ) ); ?>
+						| <?php bb_logout_link( array( 'redirect' => get_home_uri() ) ); ?>
 					</p>
 				</div>
 			</div>

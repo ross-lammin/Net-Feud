@@ -2784,7 +2784,7 @@ function bb_get_logout_link( $args = '' ) {
 	if ( $args && is_string($args) && false === strpos($args, '=') )
 		$args = array( 'text' => $args );
 
-	$defaults = array('text' => __('Log Out'), 'before' => '', 'after' => '', 'redirect' => '');
+	$defaults = array('text' => __('Log Out'), 'before' => '', 'after' => '', 'redirect' => get_home_uri());
 	$args = wp_parse_args( $args, $defaults );
 	extract($args, EXTR_SKIP);
 
