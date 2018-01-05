@@ -66,10 +66,10 @@
 			padding: 0;
 			margin: 0;
 			height: 40px;
-			width: 30px;
+			width: 35px;
     	line-height: 70px;
-    	background: url("../svgs/login-icon.svg") no-repeat top center;
-			background-size: 25px 25px;
+    	background: url("../svgs/logo-icon.svg") no-repeat 6px 5px;
+			background-size: 25px;
 		}
 
 	}
@@ -78,7 +78,6 @@
 .menu-primary-container,
 .menu-logged-in-container,
 .menu-logged-out-container{
-	display: absolute;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -102,28 +101,28 @@
     	& a {
     		display: block;
     		height: 40px;
-    		width: 30px;
+    		width: 35px;
     		text-align: center;
     	}
 		}
 
 		.bp-register-nav {
 			& a{
-				background: url("../svgs/signup-icon.svg") no-repeat top center;
-				background-size: 25px 25px;
+				background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
+				background-size: 25px;
 			}
 		}
 
 		.nav-bar__primary--login {
 			& a{
-				background: url("../svgs/login-icon.svg") no-repeat top center;
-				background-size: 25px 25px;
+				background: url("../svgs/login-icon.svg") no-repeat 50% 3px;
+				background-size: 25px;
 			}
 		}
 		.nav-bar__primary--search {
 			& a{
-				background: url("../svgs/search-icon.svg") no-repeat top center;
-				background-size: 25px 25px;
+				background: url("../svgs/search-icon.svg") no-repeat 50% 3px;
+				background-size: 25px;
 			}
 		}
 
@@ -207,7 +206,7 @@
 	top: 20px;
 	right: 255px;
 	background: $color__background--input url("../svgs/search-bar-x.svg") no-repeat center right;
-	background-size: 50px 50px;
+	background-size: 50px;
 	height: 60px;
 	width: 50px;
 	z-index: 10000;
@@ -247,10 +246,38 @@
 	.header__home--container,
 	.menu-primary-container,
 	.menu-logged-in-container,
-	.menu-logged-out-container {
-		height: 5em;
+	.menu-logged-out-container{
+		height: 70px;
 		transform: translateY(0);
+
+		a{
+			height: 70px;
+
+			.header__home--text {
+				height: 70px;
+				width: 50px;
+				line-height: 110px;
+				background: url("../svgs/logo-icon.svg") no-repeat 50% 5px;
+				background-size: 45px;
+			}
+		}
+
+		.menu {
+			padding-right: 10px;
+
+			.menu-item {
+				line-height: 110px;
+
+				a {
+					width: 50px;
+					height: 67px;
+					background-size: 40px;
+				}
+
+			}
+		}
 	}
+
 
 	.header__burger-menu--container {
 		display: none;

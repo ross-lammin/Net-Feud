@@ -1502,16 +1502,15 @@ label {
   padding: 0;
   margin: 0;
   height: 40px;
-  width: 30px;
+  width: 35px;
   line-height: 70px;
-  background: url("../svgs/login-icon.svg") no-repeat top center;
-  background-size: 25px 25px;
+  background: url("../svgs/logo-icon.svg") no-repeat 6px 5px;
+  background-size: 25px;
 }
 
 .menu-primary-container,
 .menu-logged-in-container,
 .menu-logged-out-container {
-  display: absolute;
   position: fixed;
   top: 0;
   left: 0;
@@ -1552,7 +1551,7 @@ label {
 .menu-logged-out-container .menu .menu-item a {
   display: block;
   height: 40px;
-  width: 30px;
+  width: 35px;
   text-align: center;
 }
 
@@ -1562,8 +1561,8 @@ label {
 .menu-logged-in-container .menu .bp-register-nav a,
 .menu-logged-out-container .nav-bar__primary--list .bp-register-nav a,
 .menu-logged-out-container .menu .bp-register-nav a {
-  background: url("../svgs/signup-icon.svg") no-repeat top center;
-  background-size: 25px 25px;
+  background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
+  background-size: 25px;
 }
 
 .menu-primary-container .nav-bar__primary--list .nav-bar__primary--login a,
@@ -1572,8 +1571,8 @@ label {
 .menu-logged-in-container .menu .nav-bar__primary--login a,
 .menu-logged-out-container .nav-bar__primary--list .nav-bar__primary--login a,
 .menu-logged-out-container .menu .nav-bar__primary--login a {
-  background: url("../svgs/login-icon.svg") no-repeat top center;
-  background-size: 25px 25px;
+  background: url("../svgs/login-icon.svg") no-repeat 50% 3px;
+  background-size: 25px;
 }
 
 .menu-primary-container .nav-bar__primary--list .nav-bar__primary--search a,
@@ -1582,8 +1581,8 @@ label {
 .menu-logged-in-container .menu .nav-bar__primary--search a,
 .menu-logged-out-container .nav-bar__primary--list .nav-bar__primary--search a,
 .menu-logged-out-container .menu .nav-bar__primary--search a {
-  background: url("../svgs/search-icon.svg") no-repeat top center;
-  background-size: 25px 25px;
+  background: url("../svgs/search-icon.svg") no-repeat 50% 3px;
+  background-size: 25px;
 }
 
 .menu-primary-container .nav-bar__primary--list .menu-item,
@@ -1676,7 +1675,7 @@ label {
   top: 20px;
   right: 255px;
   background: #D8D8D8 url("../svgs/search-bar-x.svg") no-repeat center right;
-  background-size: 50px 50px;
+  background-size: 50px;
   height: 60px;
   width: 50px;
   z-index: 10000;
@@ -1717,8 +1716,44 @@ label {
   .menu-primary-container,
   .menu-logged-in-container,
   .menu-logged-out-container {
-    height: 5em;
+    height: 70px;
     transform: translateY(0);
+  }
+  .header__home--container a,
+  .menu-primary-container a,
+  .menu-logged-in-container a,
+  .menu-logged-out-container a {
+    height: 70px;
+  }
+  .header__home--container a .header__home--text,
+  .menu-primary-container a .header__home--text,
+  .menu-logged-in-container a .header__home--text,
+  .menu-logged-out-container a .header__home--text {
+    height: 70px;
+    width: 50px;
+    line-height: 110px;
+    background: url("../svgs/logo-icon.svg") no-repeat 50% 5px;
+    background-size: 45px;
+  }
+  .header__home--container .menu,
+  .menu-primary-container .menu,
+  .menu-logged-in-container .menu,
+  .menu-logged-out-container .menu {
+    padding-right: 10px;
+  }
+  .header__home--container .menu .menu-item,
+  .menu-primary-container .menu .menu-item,
+  .menu-logged-in-container .menu .menu-item,
+  .menu-logged-out-container .menu .menu-item {
+    line-height: 110px;
+  }
+  .header__home--container .menu .menu-item a,
+  .menu-primary-container .menu .menu-item a,
+  .menu-logged-in-container .menu .menu-item a,
+  .menu-logged-out-container .menu .menu-item a {
+    width: 50px;
+    height: 67px;
+    background-size: 40px;
   }
   .header__burger-menu--container {
     display: none;
