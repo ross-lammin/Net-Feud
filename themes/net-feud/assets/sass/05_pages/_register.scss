@@ -34,7 +34,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 0 20%;
+		padding: 0 10%;
 
 		#basic-details-section {
 			order: 2;
@@ -54,8 +54,8 @@
 				background-color: $color__continue--button;
 				color: black;
 				border: 1px solid black;
+			}
 		}
-	}
 
 		.register-section {
 			width: 100%;

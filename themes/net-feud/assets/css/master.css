@@ -2247,7 +2247,7 @@ label {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 20%;
+  padding: 0 10%;
 }
 
 #buddypress .standard-form#signup_form #basic-details-section {
@@ -2431,4 +2431,8 @@ label {
   #buddypress .page input[type="submit"] {
     margin-bottom: 3rem;
   }
+}
+
+.bp_members .entry-header {
+  display: none;
 }
