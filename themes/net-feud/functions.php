@@ -6,6 +6,12 @@
  *
  * @package first10
  */
+
+ /*
+ * Disallow admin far for all users while viewing the site.
+ */
+show_admin_bar(false);
+
 if ( ! function_exists( 'f10_theme_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
