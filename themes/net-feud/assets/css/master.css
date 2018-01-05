@@ -2215,7 +2215,7 @@ label {
 }
 
 #buddypress .signup__details--container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -2227,7 +2227,7 @@ label {
 }
 
 #buddypress .signup__details--container ul {
-  width: 75%;
+  width: 100%;
   list-style-type: circle;
   margin: 0 auto;
   max-width: 475px;
@@ -2395,5 +2395,40 @@ label {
   #buddypress .standard-form#signup_form .submit input {
     margin-bottom: 2rem;
     font-size: 2rem;
+  }
+}
+
+#buddypress .page .activate__error-message {
+  margin-bottom: 0rem;
+}
+
+#buddypress .page .activation__form--key {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#buddypress .page .activation__form--key input[type="text"] {
+  width: 60%;
+  display: inline-block;
+  height: 2rem;
+}
+
+#buddypress .page .activation__form--key input[type="submit"] {
+  background-color: #7ED321;
+  border-radius: 10px;
+  color: black;
+}
+
+#buddypress .page .activation__form--key label {
+  width: 40%;
+  display: inline;
+}
+
+@media screen and (min-width: 805px) {
+  #buddypress .page .activate__error-message {
+    margin-bottom: 3rem;
+  }
+  #buddypress .page input[type="submit"] {
+    margin-bottom: 3rem;
   }
 }

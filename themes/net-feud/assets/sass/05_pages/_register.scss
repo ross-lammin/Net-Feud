@@ -1,7 +1,7 @@
 #buddypress {
 
 	.signup__details--container {
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		text-align: center;
 
@@ -12,7 +12,7 @@
 		}
 
 		& ul {
-			width: 75%;
+			width: 100%;
 	    list-style-type: circle;
 	    margin: 0 auto;
 	    max-width: 475px;
@@ -207,12 +207,50 @@
 	}
 }
 
-// .signup__varification--overlay {
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	background-color: rgba(0,0,0,.5);
-// 	z-index: 1000;
-// }
+#buddypress{
+	.page{
+
+		.activate__error-message {
+			margin-bottom: 0rem;
+		}
+
+		.activation__form--key {
+		  width: 60%;
+		  margin: 0 auto;
+
+		  & input[type="text"] {
+		  	width: 60%;
+		    display: inline-block;
+		    height: 2rem;
+		  }
+
+		  & input[type="submit"] {
+		  	background-color: #7ED321;
+		    border-radius: 10px;
+		    color: black;
+		  }
+
+		  & label {
+		  	width: 40%;
+		    display: inline;
+		  }
+
+		}
+	}
+}
+
+@media screen and ( min-width: 805px ) {
+	#buddypress{
+		.page{
+
+			.activate__error-message {
+				margin-bottom: 3rem;
+			}
+
+			& input[type="submit"] {
+		  	margin-bottom: 3rem;
+		  }
+
+		}
+	}
+}
