@@ -41,9 +41,7 @@
 		<?php if ( bp_account_was_activated() ) : ?>
 
 			<?php if ( isset( $_GET['e'] ) ) : ?>
-				<p><?php _e( 'Congrats! Your account was successfully activated. You can get right into the action at <a href="get_home_url()">home page</a> or you can<a href="%s">log in</a> with the username and password you provided when you signed up.', 'buddypress' ); ?></p>
-			<?php else : ?>
-				<p><?php printf( __( 'Congrats! Your account was successfully activated. You can get right into the action at <a href="get_home_url()">home page</a> or you can<a href="%s">log in</a> with the username and password you provided when you signed up.', 'buddypress' ), wp_login_url( bp_get_root_domain() ) ); ?></p>
+				<p><?php echo 'Congrats! Your account was successfully activated. You can get right into the action at <a href="' . get_home_url() . '">home page</a> or you can <a href="' . get_home_url() . '/login">log in</a> with the username and password you provided when you signed up.'; ?></p>
 			<?php endif; ?>
 
 		<?php else : ?>
