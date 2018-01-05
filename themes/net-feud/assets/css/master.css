@@ -1539,6 +1539,7 @@ label {
 .menu-logged-in-container .menu .menu-item,
 .menu-logged-out-container .nav-bar__primary--list .menu-item,
 .menu-logged-out-container .menu .menu-item {
+  display: inline-block;
   height: 40px;
   line-height: 70px;
 }
@@ -1552,7 +1553,17 @@ label {
   display: block;
   height: 40px;
   width: 35px;
+  color: black;
   text-align: center;
+}
+
+.menu-primary-container .nav-bar__primary--list .menu-item a:hover,
+.menu-primary-container .menu .menu-item a:hover,
+.menu-logged-in-container .nav-bar__primary--list .menu-item a:hover,
+.menu-logged-in-container .menu .menu-item a:hover,
+.menu-logged-out-container .nav-bar__primary--list .menu-item a:hover,
+.menu-logged-out-container .menu .menu-item a:hover {
+  color: green;
 }
 
 .menu-primary-container .nav-bar__primary--list .bp-register-nav a,
@@ -1583,34 +1594,6 @@ label {
 .menu-logged-out-container .menu .nav-bar__primary--search a {
   background: url("../svgs/search-icon.svg") no-repeat 50% 3px;
   background-size: 25px;
-}
-
-.menu-primary-container .nav-bar__primary--list .menu-item,
-.menu-primary-container .menu .menu-item,
-.menu-logged-in-container .nav-bar__primary--list .menu-item,
-.menu-logged-in-container .menu .menu-item,
-.menu-logged-out-container .nav-bar__primary--list .menu-item,
-.menu-logged-out-container .menu .menu-item {
-  display: inline-block;
-}
-
-.menu-primary-container .nav-bar__primary--list .menu-item a,
-.menu-primary-container .menu .menu-item a,
-.menu-logged-in-container .nav-bar__primary--list .menu-item a,
-.menu-logged-in-container .menu .menu-item a,
-.menu-logged-out-container .nav-bar__primary--list .menu-item a,
-.menu-logged-out-container .menu .menu-item a {
-  color: black;
-  width: 30px;
-}
-
-.menu-primary-container .nav-bar__primary--list .menu-item a:hover,
-.menu-primary-container .menu .menu-item a:hover,
-.menu-logged-in-container .nav-bar__primary--list .menu-item a:hover,
-.menu-logged-in-container .menu .menu-item a:hover,
-.menu-logged-out-container .nav-bar__primary--list .menu-item a:hover,
-.menu-logged-out-container .menu .menu-item a:hover {
-  color: green;
 }
 
 .menu-primary-container .nav-bar__primary--search-color a,

@@ -95,6 +95,7 @@
 		margin: 2.5px 0;
 
 		.menu-item {
+			display: inline-block;
 			height: 40px;
     	line-height: 70px;
 
@@ -102,8 +103,14 @@
     		display: block;
     		height: 40px;
     		width: 35px;
+    		color: black;
     		text-align: center;
     	}
+
+    	& a:hover {
+				color: green;
+			}
+
 		}
 
 		.bp-register-nav {
@@ -125,23 +132,6 @@
 				background-size: 25px;
 			}
 		}
-
-
-		.menu-item {
-			display: inline-block;
-
-			& a {
-				color: black;
-				width: 30px;
-			}
-
-			& a:hover {
-				color: green;
-			}
-
-		}
-
-	}
 
 .nav-bar__primary--search-color {
 	a {
