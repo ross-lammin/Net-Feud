@@ -113,6 +113,23 @@
 
 		}
 
+		.bp-profile-nav{
+			& a {
+				width: auto;
+				background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
+				background-size: 25px;
+			}
+		}
+
+		.bp-logout-nav {
+			& a {
+				width: auto;
+				background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
+				background-size: 25px;
+			}
+
+		}
+
 		.bp-register-nav {
 			& a{
 				background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
@@ -138,7 +155,7 @@
 		color: darken($color__continue--button, 10%);
 	}
 }
-
+}
 
 }
 .display-block {
@@ -260,7 +277,8 @@
 				height: 67px;
 
 				a {
-					width: 50px;
+					width: auto;
+					min-width: 50px;
 					height: 67px;
 					background-size: 40px;
 				}

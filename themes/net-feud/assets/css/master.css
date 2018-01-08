@@ -1566,6 +1566,28 @@ label {
   color: green;
 }
 
+.menu-primary-container .nav-bar__primary--list .bp-profile-nav a,
+.menu-primary-container .menu .bp-profile-nav a,
+.menu-logged-in-container .nav-bar__primary--list .bp-profile-nav a,
+.menu-logged-in-container .menu .bp-profile-nav a,
+.menu-logged-out-container .nav-bar__primary--list .bp-profile-nav a,
+.menu-logged-out-container .menu .bp-profile-nav a {
+  width: auto;
+  background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
+  background-size: 25px;
+}
+
+.menu-primary-container .nav-bar__primary--list .bp-logout-nav a,
+.menu-primary-container .menu .bp-logout-nav a,
+.menu-logged-in-container .nav-bar__primary--list .bp-logout-nav a,
+.menu-logged-in-container .menu .bp-logout-nav a,
+.menu-logged-out-container .nav-bar__primary--list .bp-logout-nav a,
+.menu-logged-out-container .menu .bp-logout-nav a {
+  width: auto;
+  background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
+  background-size: 25px;
+}
+
 .menu-primary-container .nav-bar__primary--list .bp-register-nav a,
 .menu-primary-container .menu .bp-register-nav a,
 .menu-logged-in-container .nav-bar__primary--list .bp-register-nav a,
@@ -1596,9 +1618,12 @@ label {
   background-size: 25px;
 }
 
-.menu-primary-container .nav-bar__primary--search-color a,
-.menu-logged-in-container .nav-bar__primary--search-color a,
-.menu-logged-out-container .nav-bar__primary--search-color a {
+.menu-primary-container .nav-bar__primary--list .nav-bar__primary--search-color a,
+.menu-primary-container .menu .nav-bar__primary--search-color a,
+.menu-logged-in-container .nav-bar__primary--list .nav-bar__primary--search-color a,
+.menu-logged-in-container .menu .nav-bar__primary--search-color a,
+.menu-logged-out-container .nav-bar__primary--list .nav-bar__primary--search-color a,
+.menu-logged-out-container .menu .nav-bar__primary--search-color a {
   color: #64a71a;
 }
 
@@ -1735,7 +1760,8 @@ label {
   .menu-primary-container .menu .menu-item a,
   .menu-logged-in-container .menu .menu-item a,
   .menu-logged-out-container .menu .menu-item a {
-    width: 50px;
+    width: auto;
+    min-width: 50px;
     height: 67px;
     background-size: 40px;
   }
