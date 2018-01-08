@@ -1508,6 +1508,10 @@ label {
   background-size: 25px;
 }
 
+.main-navigation {
+  height: 0;
+}
+
 .menu-primary-container,
 .menu-logged-in-container,
 .menu-logged-out-container {
@@ -1573,8 +1577,6 @@ label {
 .menu-logged-out-container .nav-bar__primary--list .bp-profile-nav a,
 .menu-logged-out-container .menu .bp-profile-nav a {
   width: auto;
-  background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
-  background-size: 25px;
 }
 
 .menu-primary-container .nav-bar__primary--list .bp-logout-nav a,
@@ -1625,6 +1627,26 @@ label {
 .menu-logged-out-container .nav-bar__primary--list .nav-bar__primary--search-color a,
 .menu-logged-out-container .menu .nav-bar__primary--search-color a {
   color: #64a71a;
+}
+
+.header--avatar__display {
+  position: fixed;
+  display: block;
+  z-index: 101;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  right: 128px;
+  top: 6px;
+  transform: translateY(-8em);
+  pointer-events: none;
+}
+
+.header--avatar__display img {
+  z-index: 101;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
 }
 
 .display-block {
@@ -1764,6 +1786,15 @@ label {
     min-width: 50px;
     height: 67px;
     background-size: 40px;
+  }
+  .header--avatar__display {
+    width: 40px;
+    height: 40px;
+    transform: translateY(0);
+  }
+  .header--avatar__display img {
+    width: 40px;
+    height: 40px;
   }
   .header__burger-menu--container {
     display: none;

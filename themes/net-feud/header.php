@@ -38,13 +38,6 @@
 	</a>
 </div>
 
-
-	<?php 
-	
-
-
-	?>
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php 
 				if( is_user_logged_in() ) { 
@@ -53,7 +46,10 @@
 				    wp_nav_menu( array( 'menu' => 'logged-out' ) );
 				}
 			?>
+			<div class="header--avatar__display"><?php bp_loggedin_user_avatar(); ?></div>;
 		</nav><!-- #site-navigation -->
+
+
 
 		<div class="header__searchbar--container">
 	<div class="header__searchbar--inner-container">

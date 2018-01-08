@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var navBarLi = document.querySelector('.menu-logged-in-container');
   var navBarLo = document.querySelector('.menu-logged-out-container');
   var homeLogo = document.querySelector('.header__home--container');
+  var navAvatar = document.querySelector('.header--avatar__display');
 
   /* Script for opening and closing the top nav bar */
   burgerMenu.addEventListener('click', function () {
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     homeLogo.classList.toggle('display-block');
+    navAvatar.classList.toggle('display-block');
   });
 
   var search = document.querySelector('.nav-bar__primary--search');
