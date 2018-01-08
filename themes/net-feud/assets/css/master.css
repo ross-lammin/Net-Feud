@@ -2559,6 +2559,59 @@ label {
   }
 }
 
-.bp_members .entry-header {
+.bp_members .entry-title {
   display: none;
+}
+
+.bp_members .entry-content {
+  padding: 0 1rem;
+}
+
+.bp_members .entry-content #buddypress #item-header #cover-image-container {
+  margin-top: 60px;
+}
+
+.bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar {
+  width: 150px;
+  margin-top: 60px;
+  margin-left: 5px;
+}
+
+.bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar a {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+}
+
+.bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar a img {
+  width: 150px;
+  height: 150px;
+}
+
+.bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content {
+  margin: 0;
+  position: relative;
+  width: 122px;
+  left: 160px;
+  top: -60px;
+  text-align: center;
+}
+
+.bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content .user-nicename {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 806px) {
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content {
+    height: 30px;
+    top: -80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar {
+    float: none;
+    margin: 0 auto;
+  }
 }
