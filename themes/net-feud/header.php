@@ -46,7 +46,7 @@
 				    wp_nav_menu( array( 'menu' => 'logged-out' ) );
 				}
 			?>
-			<div class="header--avatar__display"><?php bp_loggedin_user_avatar(); ?></div>
+			<!-- <div class="header--avatar__display"><?php bp_loggedin_user_avatar(); ?></div> -->
 		</nav><!-- #site-navigation -->
 
 
