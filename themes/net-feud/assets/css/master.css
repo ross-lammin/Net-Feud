@@ -436,6 +436,11 @@ button {
   clear: both;
 }
 
+.page__wrapper article.page {
+  position: relative;
+  top: -32px;
+}
+
 .page__wrapper h1 {
   text-align: center;
   padding: 2rem;
