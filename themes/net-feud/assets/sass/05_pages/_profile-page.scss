@@ -41,13 +41,44 @@
 					    left: 160px;
 					    top: -60px;
 					    text-align: center;
+					    pointer-events: none;
 
 					    .user-nicename {
 					    	font-size: 3rem;
 					    	margin-bottom: 0;
+					    	color: lighten( $color__primary--background, 60% );
+					    	font-weight: 400;
 					    }
 						}
 
+					}
+				}
+			}
+
+			#item-nav {
+				z-index: 10;
+				.item-list-tabs {
+					z-index: 10;
+					ul {
+						z-index: 10;
+						li {
+							z-index: 10;
+							padding-top: 1rem;
+
+							a {
+								z-index: 10;
+								padding: 5px 8px;
+								position: relative;
+
+								span {
+									position: absolute;
+							    top: -2px;
+							    z-index: -1;
+							    right: -2px;
+								}
+							}
+
+						}
 					}
 				}
 			}
@@ -70,26 +101,52 @@
 		.entry-content{
 			#buddypress {
 				#item-header{
+
 					#cover-image-container {
+						 height: 600px;
+
+						#header-cover-image {
+							height: 400px;
+						}
+						
 						#item-header-cover-image {
+							top: 250px;
+							pointer-events: none;
+
 							#item-header-avatar{
 								float: none;
-								margin: 0 auto;
+						    margin: 0 auto;
+						    width: 250px;
+						    height: 250px;
 
 								a {
+									display: inline-block;
+							    height: auto;
+							    width: auto;
+
 									img {
+										margin: 0;
+								    width: 250px;
+								    height: 250px;
+								    border-radius: 50%;
 									}
+
 								}
 							}
+
 							#item-header-content {
-						    .user-nicename {
-						    }
+								height: auto;
+								width: auto;
+								float: none;
+								margin: 0 auto;
+								top: 0;
+								position: static;
 							}
+
 						}
 					}
 				}
 			}
 		}
 	}
-
 }

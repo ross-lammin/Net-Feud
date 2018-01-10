@@ -2595,11 +2595,44 @@ label {
   left: 160px;
   top: -60px;
   text-align: center;
+  pointer-events: none;
 }
 
 .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content .user-nicename {
   font-size: 3rem;
   margin-bottom: 0;
+  color: #e2e2e2;
+  font-weight: 400;
+}
+
+.bp_members .entry-content #buddypress #item-nav {
+  z-index: 10;
+}
+
+.bp_members .entry-content #buddypress #item-nav .item-list-tabs {
+  z-index: 10;
+}
+
+.bp_members .entry-content #buddypress #item-nav .item-list-tabs ul {
+  z-index: 10;
+}
+
+.bp_members .entry-content #buddypress #item-nav .item-list-tabs ul li {
+  z-index: 10;
+  padding-top: 1rem;
+}
+
+.bp_members .entry-content #buddypress #item-nav .item-list-tabs ul li a {
+  z-index: 10;
+  padding: 5px 8px;
+  position: relative;
+}
+
+.bp_members .entry-content #buddypress #item-nav .item-list-tabs ul li a span {
+  position: absolute;
+  top: -2px;
+  z-index: -1;
+  right: -2px;
 }
 
 @media screen and (min-width: 806px) {
@@ -2610,8 +2643,39 @@ label {
 }
 
 @media screen and (min-width: 1000px) {
+  .bp_members .entry-content #buddypress #item-header #cover-image-container {
+    height: 600px;
+  }
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #header-cover-image {
+    height: 400px;
+  }
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image {
+    top: 250px;
+    pointer-events: none;
+  }
   .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar {
     float: none;
     margin: 0 auto;
+    width: 250px;
+    height: 250px;
+  }
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar a {
+    display: inline-block;
+    height: auto;
+    width: auto;
+  }
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar a img {
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content {
+    height: auto;
+    width: auto;
+    float: none;
+    margin: 0 auto;
+    top: 0;
+    position: static;
   }
 }
