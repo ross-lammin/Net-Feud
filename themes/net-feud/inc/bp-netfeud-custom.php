@@ -13,3 +13,26 @@
 	 }
 	}
 	add_action( 'template_redirect', 'bp_redirect_pages' );
+
+
+/**
+ * Reorder BuddyPress profile tabs/navigation.
+ */
+function buddydev_reorder_buddypress_profile_tabs() {
+    $nav = buddypress()->members->nav;
+ 
+    // it's a map of nav items for user profile.
+    // mapping component slug to their position.
+    $nav_items = array(
+    		'activity' => 10,
+    		'profile'  => 20,
+        'settings' => 30,
+        'messages' => 40,
+        'friends'  => 50
+      );
+ 
+    foreach ( $nav_items as $nav_item => $position ) {
+        $nav->edit_nav( array( 'position' => $position ), $nav_item );
+    }
+}
+add_action( 'bp_setup_nav', 'buddydev_reorder_buddypress_profile_tabs', 999 );

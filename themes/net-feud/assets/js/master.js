@@ -76,9 +76,21 @@ document.addEventListener('DOMContentLoaded', function () {
     personalEditTitle[1].innerHTML = 'Edit Profile';
   }
 
+  /* 
+  * This function removes the links for the single conversation for for 
+  * preperation to create the popup window with single convo with comments.
+  */
+  var singleActivityLink = document.getElementsByClassName('activity-time-since');
+  var linkDisable = document.querySelector('.time-since');
 
-    var tableTextEdit = document.querySelector('#activity-notification-settings-mentions').childNodes;
-    tableTextEdit[2].innerHTML = 'hello';
-  
+  function removeConversationLinks() {
+    var i;
+
+    for (i = 0; i < singleActivityLink.length; i++) {
+      singleActivityLink[i].removeAttribute('href');
+    }
+
+  }
+  removeConversationLinks();
 
 });

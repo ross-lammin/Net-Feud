@@ -201,7 +201,7 @@
 }
 .header__searchbar--container {
 	position: fixed;
-	top: 70px;
+	top: 43px;
 	right: 33px;
 	background-color: $color__background--primary-menu;
 	width: 59.40625rem;
@@ -326,6 +326,11 @@
 
 	.header__burger-menu--container {
 		display: none;
+	}
+
+
+	.header__searchbar--container {
+		top: 70px;
 	}
 
 }
