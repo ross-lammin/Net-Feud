@@ -47,7 +47,14 @@
 				    wp_nav_menu( array( 'menu' => 'logged-out' ) );
 				}
 			?>
+
+			<?php if ( is_user_logged_in() ) { ?>
 			<div class="header--avatar__display"><?php bp_loggedin_user_avatar(); ?></div>
+			<?php
+			} else {
+				'';
+			} ?>
+
 		</nav><!-- #site-navigation -->
 		<div class="header__searchbar--container">
 	<div class="header__searchbar--inner-container">

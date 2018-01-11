@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  if (document.getElementById('field_1')) {
-    document.getElementById('field_1').placeholder = 'First name...';
+  if (document.querySelector('#field_1')) {
+    document.querySelector('#field_1').placeholder = 'First name...';
   }
-  if (document.getElementById('field_10')) {
-    document.getElementById('field_10').placeholder = 'Last name...';
+  if (document.querySelector('#field_10')) {
+    document.querySelector('#field_10').placeholder = 'Last name...';
   }
 
   var burgerMenu = document.querySelector('.header__burger-menu--container');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (document.querySelector('.menu-logged-in-container')) {
       navBarLi.classList.toggle('display-block');
-    } 
+    }
 
     if (document.querySelector('.menu-logged-out-container')) {
       navBarLo.classList.toggle('display-block');
@@ -57,5 +57,28 @@ document.addEventListener('DOMContentLoaded', function () {
       contactDetails.classList.toggle('display-none');
     });
   }
+
+  if (document.querySelector('.activity-greeting')) {
+    document.querySelector('.activity-greeting').innerHTML = 'Update Your Status';
+  }
+
+  if (document.querySelector('#aw-whats-new-submit')) {
+    document.querySelector('#aw-whats-new-submit').value = 'Post Status';
+  }
+
+  if (document.querySelector('.members.friends')) {
+    var friendsMessage = document.querySelector('#message').childNodes;
+    friendsMessage[1].innerHTML = 'You have no friends! Don’t be a loner send someone a request';
+  }
+
+  if (document.querySelector('#profile-edit-form')) {
+    var personalEditTitle = document.querySelector('#profile-edit-form').childNodes;
+    personalEditTitle[1].innerHTML = 'Edit Profile';
+  }
+
+
+    var tableTextEdit = document.querySelector('#activity-notification-settings-mentions').childNodes;
+    tableTextEdit[2].innerHTML = 'hello';
+  
 
 });
