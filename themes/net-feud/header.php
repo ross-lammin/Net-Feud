@@ -8,7 +8,6 @@
  *
  * @package first10
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -37,14 +36,9 @@
 		<p class="header__home--text">Home</p>
 	</a>
 </div>
-
-
 	<?php 
 	
-
-
 	?>
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php 
 				if( is_user_logged_in() ) { 
@@ -53,8 +47,15 @@
 				    wp_nav_menu( array( 'menu' => 'logged-out' ) );
 				}
 			?>
-		</nav><!-- #site-navigation -->
 
+			<?php if ( is_user_logged_in() ) { ?>
+			<div class="header--avatar__display"><?php bp_loggedin_user_avatar(); ?></div>
+			<?php
+			} else {
+				'';
+			} ?>
+
+		</nav><!-- #site-navigation -->
 		<div class="header__searchbar--container">
 	<div class="header__searchbar--inner-container">
 		<button class="button__search-bar action-button__bg--medium header__button--search-bar"></button>
@@ -64,7 +65,4 @@
 		</div>
 	</div>
 </div>
-
 </header><!-- #masthead -->
-
-	<div id="content" class="site-content">

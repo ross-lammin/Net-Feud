@@ -1,0 +1,390 @@
+.bp_members {
+
+	.entry-title {
+		display: none;
+	}
+
+	.entry-content{
+		padding: 0 1rem;
+
+		#buddypress div.item-list-tabs#subnav ul li.last {
+			margin-top: 20px;
+		}
+
+		#buddypress {
+
+			#item-header{
+				height: 225px;
+
+				#cover-image-container {
+					margin-top: 60px;
+
+					#item-header-cover-image {
+
+						#item-header-avatar{
+							width: 150px;
+    					margin-top: 60px;
+    					margin-left: 5px;
+
+							a {
+							  display: inline-block;
+						    height: 150px;
+						    width: 150px;
+
+								img {
+									width: 150px;
+    							height: 150px;
+								}
+
+							}
+						}
+
+						#item-header-content {
+							margin: 0;
+					    position: relative;
+					    width: 122px;
+					    left: 160px;
+					    top: -60px;
+					    text-align: center;
+					    pointer-events: none;
+
+					    .user-nicename {
+					    	font-size: 2rem;
+					    	margin-bottom: 0;
+					    	color: lighten( $color__primary--background, 60% );
+					    	font-weight: 400;
+					    }
+					    #item-meta {
+					    	display: none;
+					    }
+						}
+
+					}
+				}
+			}
+
+			#item-nav {
+				z-index: 10;
+				position: absolute;
+				.item-list-tabs {
+					z-index: 10;
+
+					#notifications-personal-li {
+						display: none;
+					}
+
+					ul {
+						z-index: 10;
+						li {
+							z-index: 10;
+							padding-top: 1rem;
+
+							.last {
+						margin-top: 40px;
+					}
+
+							a {
+								z-index: 10;
+								padding: 5px 8px;
+								position: relative;
+
+								span {
+									display: none;
+								}
+							}
+
+						}
+					}
+				}
+			}
+
+			#item-body {
+				.profile {
+					.standard-form {
+						.editfield {
+							fieldset {
+
+								.field-visibility-settings-toggle {
+									display: none;
+								}
+
+								.field-visibility-settings-notoggle {
+										display: none;
+								}
+
+								legend {
+									display: inline-block;
+									width: 40%;
+									margin: 0;
+									float: left;
+									text-align: right;
+
+									.bp-required-field-label {
+										display: none;
+									}
+
+								}
+
+								input {
+									width: 30%;
+									margin-left: 10px;
+									padding: 1rem 0;
+									font-size: 1.2rem;
+								}
+
+								select {
+									margin-left: 10px;
+								}
+
+								.datebox-selects {
+									select {
+										margin-left: 10px;
+									}
+								}
+
+							}
+						}
+					}
+					.submit {
+						input {
+							display: block;
+    					margin: 0 auto;
+    					background-color: $color__continue--button;
+    					color: black;
+						}
+					}
+				}
+			}
+
+			form#whats-new-form {
+				p.activity-greeting {
+					margin: 0 auto
+					;
+				}
+
+				a {
+
+					img{
+				    height: 50px;
+				    width: 50px;
+				    border-radius:  50%;
+				    position:  relative;
+				    top: 20px;
+			  	}
+
+				}
+			}
+			.activity {
+				.activity-avatar{
+							a {
+								img {
+									height: 20px;
+							    margin-left: 30px;
+							    width: 20px;
+								}
+							}
+						}
+				.activity-list {
+					.activity_update {
+						padding-bottom: 40px;
+						.activity-avatar{
+							a {
+								img {
+									height: 20px;
+							    margin-left: 30px;
+							    width: 20px;
+								}
+							}
+						}
+					}
+					.activity-content {
+						.activity-inner {
+							p {
+							 	padding: 0;
+						    text-align: left;
+						    width: 100%;
+							}
+						}
+					}
+					.activity-header {
+						p {
+							padding: 0;
+					    text-align: left;
+					    width: 100%;
+					    a{
+					    		&::after {
+					    			
+					    		}
+					    	span {
+					    	}
+					    }
+
+						}
+					}
+				}
+				.activity-comments {
+							ul {
+								margin-top: 10px;
+								li {
+									.acomment-avatar {
+										a {
+											img {
+												border-radius: 50%;
+												width: 20px;
+												height: 20px;
+											}
+										}
+									}
+									.acomment-meta {
+										margin-top: 5px;
+									}
+									.acomment-content {
+										font-size: 1rem;
+										p {
+											text-align: left;
+										}
+									}
+								}
+							}
+						}
+			}
+		}
+	}
+}
+
+@media screen and ( min-width: 806px ) {
+
+	.bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content {
+		height: 30px;
+		top: -80px;
+	}
+
+	div.item-list-tabs#subnav {
+		padding-top: 50px;
+	}
+
+}
+
+@media screen and ( min-width: 880px ) {
+	#item-body {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and ( min-width: 1000px ) {
+
+	.bp_members {
+		.entry-content{
+			#buddypress {
+				#item-header{
+					height: auto;
+
+					#cover-image-container {
+						 height: 600px;
+
+						#header-cover-image {
+							height: 400px;
+						}
+						
+						#item-header-cover-image {
+							top: 250px;
+
+							#item-header-avatar{
+								float: none;
+						    margin: 0 auto;
+						    width: 250px;
+						    height: 250px;
+
+								a {
+									display: inline-block;
+							    height: auto;
+							    width: auto;
+
+									img {
+										margin: 0;
+								    width: 250px;
+								    height: 250px;
+								    border-radius: 50%;
+									}
+
+								}
+							}
+
+							#item-header-content {
+								height: auto;
+								width: auto;
+								float: none;
+								margin: 0 auto;
+								top: 0;
+								position: static;
+							}
+
+						}
+					}
+				}
+
+				#item-nav {
+					position: static;
+					margin-left: 0;
+
+    			.item-list-tabs {
+    				width: fit-content;
+    				margin: 0 auto;
+    				ul {
+    					li {
+    						a{
+    							padding: 5px 20px;
+    							font-size: 1.5rem;
+    						}
+    					}
+    				}
+    			}
+				}
+
+				#item-body {
+					div#subnav {
+						padding: 20px 0;
+						
+						ul {
+							height: 40px;
+					    display: block;
+					    margin: 0 auto;
+					    width: fit-content;
+
+    					li {
+    						font-size: 1.2rem;
+
+    						a{
+    						}
+    					}
+
+    					#members-order-select,
+    					#activity-filter-select {
+    						position: absolute;
+    						right: 15px;
+    						select {
+    							position: relative;
+    							top: -6px;
+    						}
+    					}
+
+    				}
+					}
+				}
+
+				div#message p {
+					margin-top: 80px;
+					background-color: $color__continue--button;
+					border: 1px solid darken( $color__continue--button, 20% );
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+@media screen and ( min-width: 1444px ) {
+	#item-body {
+		margin-bottom: 100px;
+	}
+}

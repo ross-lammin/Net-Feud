@@ -145,3 +145,7 @@ require get_template_directory() . '/inc/shortcodes.php';
  * My arcade api
  */
 require get_template_directory() . '/inc/myarcade_api.php';
+/**
+ * buddypress custom functions
+ */
+require get_template_directory() . '/inc/bp-netfeud-custom.php';

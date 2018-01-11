@@ -75,6 +75,10 @@
 	}
 }
 
+.main-navigation {
+	height: 0;
+}
+
 .menu-primary-container,
 .menu-logged-in-container,
 .menu-logged-out-container{
@@ -116,8 +120,6 @@
 		.bp-profile-nav{
 			& a {
 				width: auto;
-				background: url("../svgs/signup-icon.svg") no-repeat 50% 3px;
-				background-size: 25px;
 			}
 		}
 
@@ -158,6 +160,28 @@
 }
 
 }
+.header--avatar__display {
+    position: fixed;
+    display: block;
+    z-index: 101;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    right: 128px;
+    top: 6px;
+    transform: translateY(-8em);
+    pointer-events: none;
+
+	img {
+		position: fixed;
+		z-index: 101;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+	}
+
+}
+
 .display-block {
 	transition: .4s;
 	-ms-transform: translateY(0);
@@ -177,7 +201,7 @@
 }
 .header__searchbar--container {
 	position: fixed;
-	top: 45px;
+	top: 43px;
 	right: 33px;
 	background-color: $color__background--primary-menu;
 	width: 59.40625rem;
@@ -249,6 +273,8 @@
 	padding-left: 7px;
 }
 
+
+
 @media screen and ( min-width: 805px ) {
 	.header__home--container,
 	.menu-primary-container,
@@ -287,9 +313,24 @@
 		}
 	}
 
+	.header--avatar__display {
+    width: 40px;
+    height: 40px;
+    transform: translateY(0);
+
+		img {
+	    width: 40px;
+	    height: 40px;
+		}
+	}
 
 	.header__burger-menu--container {
 		display: none;
+	}
+
+
+	.header__searchbar--container {
+		top: 70px;
 	}
 
 }
