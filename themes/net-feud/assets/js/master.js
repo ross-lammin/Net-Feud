@@ -93,4 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   removeConversationLinks();
 
+  var personalEditTitle = document.querySelector('#profile-edit-form');
+
 });
