@@ -41,12 +41,11 @@ get_header(); ?>
 			$my_query = null;
 			$my_query = new WP_Query($args);
 
-			if( $my_query->have_posts() ) {
 			while ($my_query->have_posts()) : $my_query->the_post(); 
 				?>
 
 		<div class="category__container--game">
-			<?php echo '<a href="' . get_permalink() . '">';?>
+			<a href="<?php get_permalink(); ?>">
 				<article id="games-cards post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<h1 class="category__container--title">
@@ -66,7 +65,6 @@ get_header(); ?>
 
 			<?php
 			endwhile;
-			}
 			wp_reset_query();
 		?>
 
