@@ -7,8 +7,7 @@
  * @package first10
  */
 ?>
-
-
+<div class="game-page__wrapper">
 
 	<h1><?php the_title(); ?></h1>
 	<div class="game-page__screen">
@@ -31,19 +30,26 @@
 	<div class="category__wrapper--game">
 		<?php
 
+
+			$current_game_category = get_the_category();
+			 
+			if ( ! empty( $current_game_category ) ) {
+			    $current_category = esc_html( $current_game_category[0]->name );
+			}
+
 			$args = array(
-			'cat' => 1,
+			'category_name' => $current_category,
 			'orderby' => 'rand',
 			'post_type' => 'post',
 			'post_status' => 'publish',
 			'posts_per_page' => 3
 			);
 
-			$my_query = null;
+			$my_query;
 			$my_query = new WP_Query($args);
 
 			if( $my_query->have_posts() ) {
-			while ($my_query->have_posts()) : $my_query->the_post(); 
+			while ($my_query->have_posts()) : $my_query->the_post();
 				?>
 
 		<div class="category__container--game">
@@ -72,3 +78,4 @@
 		?>
 
 	</div>
+</div>
