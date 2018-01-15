@@ -12,9 +12,8 @@ get_header(); ?>
 		<main id="main" class="site-main page__wrapper" role="main">
 			
 		<?php
-		while ( have_posts() ) : the_post(); 
+		while ( have_posts() ) : the_post();
 			?>
-
 			<div class="game-page__wrapper">
 
 	<h1><?php the_title(); ?></h1>
@@ -43,23 +42,22 @@ get_header(); ?>
 			$my_query = new WP_Query($args);
 
 			if( $my_query->have_posts() ) {
-			while ($my_query->have_posts()) : $my_query->the_post(); ?>
+			while ($my_query->have_posts()) : $my_query->the_post(); 
+				?>
 
 		<div class="category__container--game">
 			<?php echo '<a href="' . get_permalink() . '">';?>
 				<article id="games-cards post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					<?php
-					echo '<h1 class="category__container--title">' ;
-					echo myarcade_title();
-					echo '</h1>';
-					echo myarcade_thumbnail();
-					echo '<div>';
-					echo '<p>';
-					echo myarcade_excerpt( 100 );
-					echo '</p>';
-					echo '</div';
-					?>
+					<h1 class="category__container--title">
+					<?php myarcade_title() ?>
+					</h1>
+					<?php myarcade_thumbnail(); ?>
+					<div>
+					<p>
+					<?php myarcade_excerpt( 100 ); ?>
+					</p>
+					</div>
 
 				</article><!-- #post-## -->
 			</a>
@@ -69,12 +67,12 @@ get_header(); ?>
 			<?php
 			endwhile;
 			}
-			wp_reset_query();  // Restore global post data stomped by the_post().
+			wp_reset_query();
 		?>
 
 	</div>
 </div>
-<?php
+<?php 
 		endwhile; // End of the loop.
 		?>
 	
