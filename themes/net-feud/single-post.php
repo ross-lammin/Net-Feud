@@ -13,9 +13,11 @@ get_header(); ?>
 			
 		<?php
 		while ( have_posts() ) : the_post();
-			
-			get_template_part('template-parts/content', 'game_page');
-
+		?>
+			<div class="game-page__wrapper">
+			<?php get_template_part('template-parts/content', 'game_page');?>
+			</div>
+		<?php 
 		endwhile; // End of the loop.
 		?>
 	

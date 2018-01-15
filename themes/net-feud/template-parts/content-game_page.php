@@ -8,7 +8,7 @@
  */
 ?>
 
-<div class="game-page__wrapper">
+
 
 	<h1><?php the_title(); ?></h1>
 	<div class="game-page__screen">
@@ -72,4 +72,3 @@
 		?>
 
 	</div>
-</div>
