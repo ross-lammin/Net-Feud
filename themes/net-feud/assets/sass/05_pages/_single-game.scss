@@ -1,9 +1,16 @@
 .game-page__wrapper {
 
 	.game-page__screen{
+		.game-page__game-wrapper--full {
+			margin-bottom: 10px;
 
-		& iframe {
-			width: 100%;
+			& iframe {
+				width: 100%;
+			}
+
+			& .rw-rating-table {
+				float: right;
+			}
 		}
 
 		.single-game__details--container{

@@ -2192,8 +2192,16 @@ label {
   margin: 10px;
 }
 
-.game-page__wrapper .game-page__screen iframe {
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--full {
+  margin-bottom: 10px;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--full iframe {
   width: 100%;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--full .rw-rating-table {
+  float: right;
 }
 
 .game-page__wrapper .game-page__screen .single-game__details--container {
