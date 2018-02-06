@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
   * preperation to create the popup window with single convo with comments.
   */
   var singleActivityLink = document.getElementsByClassName('activity-time-since');
-  var linkDisable = document.querySelector('.time-since');
 
   function removeConversationLinks() {
     var i;
@@ -93,6 +92,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   removeConversationLinks();
 
-  var personalEditTitle = document.querySelector('#profile-edit-form');
+  /*
+  * The fav container
+  */
+  var favoritesContainer = document.querySelector('.favourite__single-game--container');
+  var favouritesPagesContainer = document.querySelector('#item-body');
+
+  if (favoritesContainer) {
+    favouritesPagesContainer.appendChild(favoritesContainer);
+  }
 
 });
+

@@ -13,9 +13,9 @@ get_header(); ?>
 		<main id="main" class="site-main page__wrapper" role="main">
 			<h1><?php The_title(); ?></h1>
 			<?php
-			while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post(); 
 
-				my_list_categories_shortcode();
+				the_content();
 
 			endwhile; // End of the loop.
 			?>

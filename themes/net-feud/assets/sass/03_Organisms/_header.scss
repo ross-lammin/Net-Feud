@@ -58,9 +58,12 @@
 	height: 40px;
   line-height: 70px;
 
-	& a:hover {color: darken($color__continue--button, 10%);}
 	& a {
 		color: black;
+
+		&:hover {
+			color: $color__header-search--active;
+		}
 
 		.header__home--text{
 			padding: 0;
@@ -109,11 +112,13 @@
     		width: 35px;
     		color: black;
     		text-align: center;
+
+    		&:hover {
+    			color: $color__header-search--active;
+    		}
     	}
 
-    	& a:hover {
-				color: green;
-			}
+
 
 		}
 

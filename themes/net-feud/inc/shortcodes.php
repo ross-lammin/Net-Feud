@@ -41,8 +41,6 @@ function my_list_categories_shortcode() {
 	$markup .= '</div>';
 	echo $markup;
 }
-
-
 /**
  * This creates the [my_pag_link] shortcode and calls the
  * my_paginate_links() function.
@@ -119,9 +117,13 @@ function my_paginate_links() {
  
     echo '</ul></div>';
 }
-
 /*
 * This makes the user redirect to home page upon logging out.
 * Not sure if user want this but im going to trial it out.
 */
 add_action('wp_logout',create_function('','wp_redirect(home_url());exit();'));
+
+add_action('wp_login_failed', 'redirect_login_failedd');
+function redirect_login_failedd() {
+    wp_redirect( home_url() . '/login/' );
+}

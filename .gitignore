@@ -20,3 +20,5 @@ wp-config.php
 themes/side-project/*
 .lando.yml
 plugins/wp-mail-smtp
+*.sublime-project
+*.sublime-workspace

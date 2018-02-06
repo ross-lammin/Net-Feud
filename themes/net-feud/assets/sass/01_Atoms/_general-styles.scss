@@ -75,10 +75,11 @@ a{
 	color: $color__continue--button;
 	text-decoration: none;
 	cursor: pointer;
-}
 
-a:hover {
-	color: darken($color__continue--button, 10%);
+	&:hover {
+		text-decoration: underline;
+		color: $color__header-search--active;
+	}
 }
 
 img {

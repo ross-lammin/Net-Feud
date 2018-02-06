@@ -1,15 +1,58 @@
 .game-page__wrapper {
 
 	.game-page__screen{
-		.game-page__game-wrapper--full {
-			margin-bottom: 10px;
 
-			& iframe {
+		& iframe {
 				width: 100%;
+		}
+
+		.game-page__game-wrapper--meta {
+			display: flex;
+
+			.game-page__meta-box--play-count {
+				display: flex;
+				width: 33.3%;
+				padding-top: 4px;
 			}
 
-			& .rw-rating-table {
-				float: right;
+			.add-favorite-game__table {
+				width: 33.3%;
+		    display: flex;
+		    justify-content: flex-end;
+
+				& input {
+    			width: auto;
+    			height: 25px;
+    			padding-top: 2px;
+    			background: url();
+    			border: none;
+    			font-size: 1rem;
+
+    			&:hover {
+    				cursor: pointer;
+    				color: $color__header-search--active;
+    				text-decoration: underline;
+    			}
+
+				}
+			}
+
+			.rw-rating-table {
+				width: 33.3% !important;
+				margin-top: 1px;
+
+				.rw-ui-info-container {
+					display: none !important;
+				}
+
+				.rw-report-link {
+					display: none !important;
+				}
+
+				tbody {
+					margin: 0 auto;
+				}
+
 			}
 		}
 
@@ -32,43 +75,66 @@
 		}
 	}
 
-	.related-posts {
-		width: 80%;
-		margin: 0 auto;
-		display: table;
-
-		.related-posts-title {
-			text-align: center;
-		}
-
-		.related-list {
-			padding-left: 0px;
-
-			& h3 {
-					text-align: center;
-				}
-
-			.related-list-img {
-
-				& img {
-					margin: 0 auto;
-				}
-
+	.category__wrapper--game {
+		.category__container--game{
+			& a {
+				width: 100%;
 			}
-
-			p {
-				margin: 0 auto;
-				width: 80%;
-			}
-
 		}
 	}
+	
 
 }
 
 @media screen and ( min-width: 806px ) {
 
 	.game-page__wrapper {
+
+		.game-page__screen{
+
+			.game-page__game-wrapper--meta {
+				position: relative;
+				padding-top: 10px;
+
+				.add-favorite-game__table {
+
+					& input{
+						width: 200px;
+						background-image: url("../imgs/icon-favorites.png");
+						background-position: 100% 3px;
+						background-repeat: no-repeat;
+						background-size: 25px;
+	    			}
+
+					}
+				
+
+				.rw-rating-table {
+					width: 33.3% !important;
+					margin-top: 1px;
+
+					tbody {
+						margin: 0 auto;
+
+						.rw-ui-info-container {
+							display: inline !important;
+						}
+
+					}
+				}
+
+				.favourite__error-message {
+  				position: absolute;
+			    right: 0;
+			    top: 35px;
+			    background-color: lawngreen;
+			    border: 1px solid black;
+			    border-radius: 5px;
+			    padding: 1rem;
+  			}
+
+			}
+		}
 
 		.related-posts {
 			margin: 0 auto;

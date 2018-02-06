@@ -48,3 +48,9 @@ hooks:
       mkdir -p wp/wp-content/plugins
       cp -r plugins/* wp/wp-content/plugins/
       cp -r themes/* wp/wp-content/themes/
+
+# Installs the WordPress command line and its dependencies
+dependencies:
+  php:
+    wp-cli/wp-cli: "^1.4.0"
+    psy/psysh: "^0.8.13"

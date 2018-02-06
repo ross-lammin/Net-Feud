@@ -11,12 +11,18 @@
 
 	<h1><?php the_title(); ?></h1>
 	<div class="game-page__screen">
-		<div class="game-page__game-wrapper--full">
+		
 		<?php echo get_game(); ?>
-		<?php 
-			echo 'Times played:' . MyArcade_Stats::get_plays( 'total');
-			rw_the_post_rating($postID = false, $class = 'blog-post', $schema = false);
-		?>
+
+		<div class="game-page__game-wrapper--meta">
+			
+				<div class="game-page__meta-box--play-count"><?php echo 'Times played: ' . MyArcade_Stats::get_plays( 'total' ); ?></div>
+
+				<?php
+					rw_the_post_rating($postID = false, $class = 'blog-post', $schema = false);
+						do_shortcode( '[fav_form_submit]' );
+				?>
+
 		</div>
 		<div class="single-game__details--container">
 			<h3 class="single-game__title">Instructions</h3>
@@ -38,22 +44,22 @@
 			}
 
 			$args = array(
-			'category_name' => $current_category,
-			'orderby' => 'rand',
-			'post_type' => 'post',
-			'post_status' => 'publish',
-			'posts_per_page' => 3
+				'category_name' => $current_category,
+				'orderby' => 'rand',
+				'post_type' => 'post',
+				'post_status' => 'publish',
+				'posts_per_page' => 3
 			);
 
-			$my_query;
-			$my_query = new WP_Query($args);
+			$my_fav_query;
+			$my_fav_query = new WP_Query($args);
 
-			if( $my_query->have_posts() ) {
-			while ($my_query->have_posts()) : $my_query->the_post();
+			if( $my_fav_query->have_posts() ) {
+			while ($my_fav_query->have_posts()) : $my_fav_query->the_post();
 				?>
 
 		<div class="category__container--game">
-			<a href="<?php get_permalink(); ?>">
+			<a href="<?php echo get_permalink(); ?>">
 				<article id="games-cards post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<h1 class="category__container--title">

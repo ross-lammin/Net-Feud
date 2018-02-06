@@ -303,7 +303,8 @@ a {
 }
 
 a:hover {
-  color: #64a71a;
+  text-decoration: underline;
+  color: #1f8e55;
 }
 
 img {
@@ -1495,12 +1496,12 @@ label {
   line-height: 70px;
 }
 
-.header__home--container a:hover {
-  color: #64a71a;
-}
-
 .header__home--container a {
   color: black;
+}
+
+.header__home--container a:hover {
+  color: #1f8e55;
 }
 
 .header__home--container a .header__home--text {
@@ -1572,7 +1573,7 @@ label {
 .menu-logged-in-container .menu .menu-item a:hover,
 .menu-logged-out-container .nav-bar__primary--list .menu-item a:hover,
 .menu-logged-out-container .menu .menu-item a:hover {
-  color: green;
+  color: #1f8e55;
 }
 
 .menu-primary-container .nav-bar__primary--list .bp-profile-nav a,
@@ -2031,6 +2032,143 @@ label {
   }
 }
 
+#item-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#item-body .item-list-tabs ul {
+  order: 1;
+}
+
+#item-body .favourite__single-game--container {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+#item-body .favourite__single-game--container h3 {
+  text-align: center;
+}
+
+#item-body .favourite__single-game--container .favourite__container--group {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+#item-body .favourite__single-game--container .favourite__single-game--single-container {
+  width: 20%;
+  float: left;
+}
+
+#item-body .favourite__single-game--container .favourite__single-game--single-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 130px;
+}
+
+#item-body .favourite__single-game--container .favourite__single-game--single-container a .favourite__single-game--header {
+  width: 100%;
+  text-align: center;
+}
+
+#item-body .favourite__single-game--container .favourite__single-game--single-container a .favourite__single-game--thumbnail {
+  display: flex;
+  justify-self: flex-end;
+  width: 100%;
+}
+
+#item-body .favourite__single-game--container .favourite__single-game--single-container a .favourite__single-game--thumbnail .favourite__single-game--image {
+  margin: 0 auto;
+}
+
+#item-body .favourite__single-game--container .favorite-remove-game__table {
+  width: 100px;
+  margin: 0 auto;
+}
+
+#item-body .favourite__single-game--container .favorite-remove-game__table .favourite__remove-favourite--link {
+  color: red;
+  font-style: italic;
+  border: none;
+  float: right;
+}
+
+#item-body .favourite__single-game--container .favorite-remove-game__table .favourite__remove-favourite--link:hover {
+  border: none;
+  background-color: transparent;
+}
+
+#item-body .activity {
+  order: 3;
+}
+
+@media screen and (max-width: 600px) {
+  #item-body .favourite__single-game--container h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  #item-body .favourite__single-game--container .favourite__container--group {
+    justify-content: center;
+  }
+  #item-body .favourite__single-game--container .favourite__container--group .favourite__single-game--single-container {
+    width: auto;
+    margin: 0 9px;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  .favourite__single-game--image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+.favorites #buddypress .favourite__categories-grid--container {
+  background-color: #494949;
+}
+
+.favorites #buddypress .favourite__categories-grid--games-container {
+  display: flex;
+}
+
+.favorites #buddypress .favourite__categories-grid--header-li {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+.favorites #buddypress .favourite__categories-grid--header-li form {
+  margin: 0;
+}
+
+.favorites #buddypress .favourite__categories-grid--header-li form .favourite__submit-remove--input {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  color: #D0021B;
+  margin: 0 auto;
+}
+
+.favorites #buddypress .favourite__categories-grid--header-li form .favourite__submit-remove--input:hover {
+  background-color: transparent;
+  border: 0;
+  color: #fd223c;
+}
+
+.favorites #buddypress .favourite__single-game--single-container {
+  margin: 30px 0;
+}
+
+.favorites #buddypress .favorite-categories__table {
+  margin: 30px auto;
+}
+
 .category__content--wrapper .categories__sub-header {
   max-width: 100%;
   font-size: 3rem;
@@ -2192,16 +2330,56 @@ label {
   margin: 10px;
 }
 
-.game-page__wrapper .game-page__screen .game-page__game-wrapper--full {
-  margin-bottom: 10px;
-}
-
-.game-page__wrapper .game-page__screen .game-page__game-wrapper--full iframe {
+.game-page__wrapper .game-page__screen iframe {
   width: 100%;
 }
 
-.game-page__wrapper .game-page__screen .game-page__game-wrapper--full .rw-rating-table {
-  float: right;
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta {
+  display: flex;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .game-page__meta-box--play-count {
+  display: flex;
+  width: 33.3%;
+  padding-top: 4px;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .add-favorite-game__table {
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .add-favorite-game__table input {
+  width: auto;
+  height: 25px;
+  padding-top: 2px;
+  background: url();
+  border: none;
+  font-size: 1rem;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .add-favorite-game__table input:hover {
+  cursor: pointer;
+  color: #1f8e55;
+  text-decoration: underline;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .rw-rating-table {
+  width: 33.3% !important;
+  margin-top: 1px;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .rw-rating-table .rw-ui-info-container {
+  display: none !important;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .rw-rating-table .rw-report-link {
+  display: none !important;
+}
+
+.game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .rw-rating-table tbody {
+  margin: 0 auto;
 }
 
 .game-page__wrapper .game-page__screen .single-game__details--container {
@@ -2221,34 +2399,41 @@ label {
   width: 80%;
 }
 
-.game-page__wrapper .related-posts {
-  width: 80%;
-  margin: 0 auto;
-  display: table;
-}
-
-.game-page__wrapper .related-posts .related-posts-title {
-  text-align: center;
-}
-
-.game-page__wrapper .related-posts .related-list {
-  padding-left: 0px;
-}
-
-.game-page__wrapper .related-posts .related-list h3 {
-  text-align: center;
-}
-
-.game-page__wrapper .related-posts .related-list .related-list-img img {
-  margin: 0 auto;
-}
-
-.game-page__wrapper .related-posts .related-list p {
-  margin: 0 auto;
-  width: 80%;
+.game-page__wrapper .category__wrapper--game .category__container--game a {
+  width: 100%;
 }
 
 @media screen and (min-width: 806px) {
+  .game-page__wrapper .game-page__screen .game-page__game-wrapper--meta {
+    position: relative;
+    padding-top: 10px;
+  }
+  .game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .add-favorite-game__table input {
+    width: 200px;
+    background-image: url("../imgs/icon-favorites.png");
+    background-position: 100% 3px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+  }
+  .game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .rw-rating-table {
+    width: 33.3% !important;
+    margin-top: 1px;
+  }
+  .game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .rw-rating-table tbody {
+    margin: 0 auto;
+  }
+  .game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .rw-rating-table tbody .rw-ui-info-container {
+    display: inline !important;
+  }
+  .game-page__wrapper .game-page__screen .game-page__game-wrapper--meta .favourite__error-message {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    background-color: lawngreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+  }
   .game-page__wrapper .related-posts {
     margin: 0 auto;
   }
@@ -2585,7 +2770,7 @@ label {
 }
 
 .bp_members .entry-content #buddypress div.item-list-tabs#subnav ul li.last {
-  margin-top: 20px;
+  display: none;
 }
 
 .bp_members .entry-content #buddypress #item-header {
@@ -2597,28 +2782,27 @@ label {
 }
 
 .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar {
-  width: 150px;
-  margin-top: 60px;
-  margin-left: 5px;
+  width: 100px;
+  margin-top: 110px;
 }
 
 .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar a {
   display: inline-block;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar a img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content {
   margin: 0;
-  position: relative;
+  position: absolute;
   width: 122px;
-  left: 160px;
-  top: -60px;
+  left: 110px;
+  top: 170px;
   text-align: center;
   pointer-events: none;
 }
@@ -2636,7 +2820,6 @@ label {
 
 .bp_members .entry-content #buddypress #item-nav {
   z-index: 10;
-  position: absolute;
 }
 
 .bp_members .entry-content #buddypress #item-nav .item-list-tabs {
@@ -2654,10 +2837,6 @@ label {
 .bp_members .entry-content #buddypress #item-nav .item-list-tabs ul li {
   z-index: 10;
   padding-top: 1rem;
-}
-
-.bp_members .entry-content #buddypress #item-nav .item-list-tabs ul li .last {
-  margin-top: 40px;
 }
 
 .bp_members .entry-content #buddypress #item-nav .item-list-tabs ul li a {
@@ -2705,10 +2884,31 @@ label {
   margin-left: 10px;
 }
 
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .wp-editor-tools, .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .mce-toolbar-grp, .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .mce-path {
+  display: none;
+}
+
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .mce-statusbar {
+  border: none;
+}
+
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .wp-editor-wrap {
+  position: relative;
+  width: 50%;
+  float: left;
+  margin-left: 10px;
+}
+
 .bp_members .entry-content #buddypress #item-body .profile .submit input {
   display: block;
   margin: 0 auto;
   background-color: #7ED321;
+  color: black;
+}
+
+.bp_members .entry-content #buddypress #item-body .profile .personal-details .profile-fields .field_gender a {
+  pointer-events: none;
+  text-decoration: none;
   color: black;
 }
 
@@ -2725,9 +2925,10 @@ label {
 }
 
 .bp_members .entry-content #buddypress .activity .activity-avatar a img {
-  height: 20px;
+  height: 30px;
   margin-left: 30px;
-  width: 20px;
+  width: 30px;
+  border-radius: 50px;
 }
 
 .bp_members .entry-content #buddypress .activity .activity-list .activity_update {
@@ -2735,9 +2936,10 @@ label {
 }
 
 .bp_members .entry-content #buddypress .activity .activity-list .activity_update .activity-avatar a img {
-  height: 20px;
+  height: 30px;
   margin-left: 30px;
-  width: 20px;
+  width: 30px;
+  border-radius: 50px;
 }
 
 .bp_members .entry-content #buddypress .activity .activity-list .activity-content .activity-inner p {
@@ -2750,6 +2952,15 @@ label {
   padding: 0;
   text-align: left;
   width: 100%;
+}
+
+.bp_members .entry-content #buddypress .activity .activity-list .activity-header p a.view::after {
+  display: none;
+}
+
+.bp_members .entry-content #buddypress .activity .activity-list .activity-header p a.view:hover {
+  text-decoration: none;
+  cursor: auto;
 }
 
 .bp_members .entry-content #buddypress .activity .activity-comments ul {
@@ -2774,13 +2985,29 @@ label {
   text-align: left;
 }
 
+.bp_members .entry-content #buddypress .activity .rw-ui-container.rw-halign-right {
+  margin-top: inherit;
+}
+
+.profile-edit form ul {
+  display: none;
+}
+
+@media screen and (min-width: 471px) {
+  .bp_members .entry-content #buddypress .activity .rw-ui-container.rw-halign-right {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 806px) {
   .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content {
-    height: 30px;
-    top: -80px;
+    left: 120px;
+    top: 160px;
   }
-  div.item-list-tabs#subnav {
-    padding-top: 50px;
+  .bp_members #buddypress div.item-list-tabs#subnav {
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2795,7 +3022,7 @@ label {
     height: auto;
   }
   .bp_members .entry-content #buddypress #item-header #cover-image-container {
-    height: 600px;
+    height: 550px;
   }
   .bp_members .entry-content #buddypress #item-header #cover-image-container #header-cover-image {
     height: 400px;
@@ -2804,10 +3031,12 @@ label {
     top: 250px;
   }
   .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar {
-    float: none;
-    margin: 0 auto;
-    width: 250px;
-    height: 250px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    margin-left: -125px;
   }
   .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-avatar a {
     display: inline-block;
@@ -2825,8 +3054,12 @@ label {
     width: auto;
     float: none;
     margin: 0 auto;
-    top: 0;
-    position: static;
+    top: 220px;
+    position: relative;
+    left: 0;
+  }
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content .activity {
+    margin-top: 10px;
   }
   .bp_members .entry-content #buddypress #item-nav {
     position: static;
@@ -2852,13 +3085,12 @@ label {
   .bp_members .entry-content #buddypress #item-body div#subnav ul li {
     font-size: 1.2rem;
   }
-  .bp_members .entry-content #buddypress #item-body div#subnav ul #members-order-select,
-  .bp_members .entry-content #buddypress #item-body div#subnav ul #activity-filter-select {
+  .bp_members .entry-content #buddypress #item-body div#subnav ul #members-order-select {
     position: absolute;
     right: 15px;
+    margin-top: 0;
   }
-  .bp_members .entry-content #buddypress #item-body div#subnav ul #members-order-select select,
-  .bp_members .entry-content #buddypress #item-body div#subnav ul #activity-filter-select select {
+  .bp_members .entry-content #buddypress #item-body div#subnav ul #members-order-select select {
     position: relative;
     top: -6px;
   }
@@ -2867,6 +3099,27 @@ label {
     background-color: #7ED321;
     border: 1px solid #497b13;
     color: black;
+  }
+  .favorites .entry-content #buddypress #item-body .activity {
+    padding: 0 10px;
+  }
+  .favorites .entry-content #buddypress #item-body .activity .activity-avatar a img {
+    margin: 5px;
+  }
+  .favorites .entry-content #buddypress #item-body .activity .activity-list {
+    display: flex;
+    border: 1px solid #eaeaea;
+    padding: 5px 0;
+  }
+  .favorites .entry-content #buddypress #item-body .activity .activity-list .activity {
+    width: 50%;
+    border: none;
+  }
+  .favorites .entry-content #buddypress #item-body .activity .activity-list .activity .activity-content {
+    margin-left: 40px;
+  }
+  .favorites .entry-content #buddypress #item-body .activity .activity-list .activity .activity-content .activity-meta .rw-ui-container {
+    margin-top: 10px;
   }
 }
 

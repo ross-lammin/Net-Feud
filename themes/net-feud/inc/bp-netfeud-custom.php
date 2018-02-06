@@ -24,8 +24,8 @@ function buddydev_reorder_buddypress_profile_tabs() {
     // it's a map of nav items for user profile.
     // mapping component slug to their position.
     $nav_items = array(
-    		'activity' => 10,
-    		'profile'  => 20,
+        'profile'  => 10,
+		'activity' => 20,
         'settings' => 30,
         'messages' => 40,
         'friends'  => 50
