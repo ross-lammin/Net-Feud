@@ -2804,7 +2804,6 @@ label {
   left: 110px;
   top: 170px;
   text-align: center;
-  pointer-events: none;
 }
 
 .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content .user-nicename {
