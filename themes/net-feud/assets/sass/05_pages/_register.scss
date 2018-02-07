@@ -112,6 +112,46 @@
 
 }
 
+
+.registration {
+	#buddypress .standard-form#signup_form #profile-details-section {
+
+		.field_bio {
+			width: 100%;
+
+			fieldset {
+				padding: 0;
+
+				legend {
+					display: block;
+					width: 10%;
+					font-size: 0.8rem;
+					text-align: left;
+					float: left;
+				}
+
+				.wp-editor-tools,.mce-toolbar-grp,.mce-path {
+					display: none;
+				}
+				.mce-statusbar {
+					border: none;
+				}
+				.wp-editor-wrap {
+			    width: 100%;
+			    float: left;
+				}
+
+				iframe {
+					height: 80px !important;
+				}
+
+			}
+		}
+	}
+}
+
+
+
 @media screen and ( min-width: 806px ) {
 	#buddypress {
 
@@ -206,6 +246,44 @@
 
 		}
 	}
+
+.registration {
+	#buddypress .standard-form#signup_form #profile-details-section {
+
+		.field_bio {
+			width: 100%;
+
+			fieldset {
+				padding: 0;
+
+				legend {
+					font-size: 1.5em;
+			    text-align: right;
+			    float: left;
+			    padding-right: 20px;
+			    margin-top: 0;
+			    width: 223px;
+				}
+
+				.wp-editor-tools,.mce-toolbar-grp,.mce-path {
+					display: none;
+				}
+				.mce-statusbar {
+					border: none;
+				}
+				.wp-editor-wrap {
+			    width: 55%;
+			    float: left;
+			    display: inline-block;
+				}
+
+				iframe {
+					height: 80px !important;
+				}
+
+			}
+		}
+	}
 }
 
 #buddypress{
@@ -238,6 +316,7 @@
 
 		}
 	}
+}
 }
 
 @media screen and ( min-width: 805px ) {

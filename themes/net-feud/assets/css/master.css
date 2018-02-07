@@ -2652,6 +2652,39 @@ label {
   height: 2rem;
 }
 
+.registration #buddypress .standard-form#signup_form #profile-details-section .field_bio {
+  width: 100%;
+}
+
+.registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset {
+  padding: 0;
+}
+
+.registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset legend {
+  display: block;
+  width: 10%;
+  font-size: 0.8rem;
+  text-align: left;
+  float: left;
+}
+
+.registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .wp-editor-tools, .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .mce-toolbar-grp, .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .mce-path {
+  display: none;
+}
+
+.registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .mce-statusbar {
+  border: none;
+}
+
+.registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .wp-editor-wrap {
+  width: 100%;
+  float: left;
+}
+
+.registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset iframe {
+  height: 80px !important;
+}
+
 @media screen and (min-width: 806px) {
   #buddypress .standard-form#signup_form fieldset {
     padding-left: 10%;
@@ -2724,32 +2757,55 @@ label {
     margin-bottom: 2rem;
     font-size: 2rem;
   }
-}
-
-#buddypress .page .activate__error-message {
-  margin-bottom: 0rem;
-}
-
-#buddypress .page .activation__form--key {
-  width: 60%;
-  margin: 0 auto;
-}
-
-#buddypress .page .activation__form--key input[type="text"] {
-  width: 60%;
-  display: inline-block;
-  height: 2rem;
-}
-
-#buddypress .page .activation__form--key input[type="submit"] {
-  background-color: #7ED321;
-  border-radius: 10px;
-  color: black;
-}
-
-#buddypress .page .activation__form--key label {
-  width: 40%;
-  display: inline;
+  .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio {
+    width: 100%;
+  }
+  .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset {
+    padding: 0;
+  }
+  .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset legend {
+    font-size: 1.5em;
+    text-align: right;
+    float: left;
+    padding-right: 20px;
+    margin-top: 0;
+    width: 223px;
+  }
+  .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .wp-editor-tools, .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .mce-toolbar-grp, .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .mce-path {
+    display: none;
+  }
+  .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .mce-statusbar {
+    border: none;
+  }
+  .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset .wp-editor-wrap {
+    width: 55%;
+    float: left;
+    display: inline-block;
+  }
+  .registration #buddypress .standard-form#signup_form #profile-details-section .field_bio fieldset iframe {
+    height: 80px !important;
+  }
+  #buddypress .page .activate__error-message {
+    margin-bottom: 0rem;
+  }
+  #buddypress .page .activation__form--key {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #buddypress .page .activation__form--key input[type="text"] {
+    width: 60%;
+    display: inline-block;
+    height: 2rem;
+  }
+  #buddypress .page .activation__form--key input[type="submit"] {
+    background-color: #7ED321;
+    border-radius: 10px;
+    color: black;
+  }
+  #buddypress .page .activation__form--key label {
+    width: 40%;
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 805px) {
@@ -2813,6 +2869,10 @@ label {
   font-weight: 400;
 }
 
+.bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content .item-buttons {
+  position: absolute;
+}
+
 .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content #item-meta {
   display: none;
 }
@@ -2848,11 +2908,8 @@ label {
   display: none;
 }
 
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .field-visibility-settings-notoggle,
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .field-visibility-settings-toggle {
-  display: none;
-}
-
-.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .field-visibility-settings-notoggle {
   display: none;
 }
 
@@ -2868,6 +2925,7 @@ label {
   display: none;
 }
 
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset textarea,
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset input {
   width: 30%;
   margin-left: 10px;
@@ -2893,7 +2951,7 @@ label {
 
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .wp-editor-wrap {
   position: relative;
-  width: 50%;
+  width: 30%;
   float: left;
   margin-left: 10px;
 }
@@ -2992,6 +3050,136 @@ label {
   display: none;
 }
 
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back {
+  position: relative;
+  width: 20%;
+  overflow: hidden;
+  float: left;
+  margin: 10px 0;
+  padding: 0;
+  margin: 0;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__members--background {
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .item-avatar, .friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .item-title, .friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .item-meta {
+  z-index: 2;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__single-members--information {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.6);
+  transform: translateY(100%);
+  transition: .8s;
+  border-radius: 10px;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__single-members--information .friendship-button a {
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: .5rem;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__single-members--information .activity-read-more {
+  display: none;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__single-members--information .second_tab_list {
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  order: 4;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__single-members--information .action {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  order: 4;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__single-members--information .action a {
+  color: #7ED321;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp__single-members--information .action a:hover {
+  color: #1f8e55;
+  text-decoration: underline;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-avatar,
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-meta,
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-title {
+  padding-bottom: 10px;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-title {
+  padding-right: 10px;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-avatar {
+  order: 2;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-avatar img {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-meta {
+  order: 3;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-meta .activity {
+  width: 100%;
+  text-align: center;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back .bp-single-member .item-title {
+  order: 1;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back:hover .bp__single-members--information {
+  transform: translateY(0%);
+  transition: .8s;
+  z-index: 4;
+}
+
+.friends.my-friends .bp_members #item-body .members.friends #members-list .bp__single-member--back::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media screen and (min-width: 471px) {
   .bp_members .entry-content #buddypress .activity .rw-ui-container.rw-halign-right {
     margin-top: 0;
@@ -3056,6 +3244,11 @@ label {
     top: 220px;
     position: relative;
     left: 0;
+  }
+  .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content #item-buttons {
+    position: absolute;
+    top: 260px;
+    right: 0;
   }
   .bp_members .entry-content #buddypress #item-header #cover-image-container #item-header-cover-image #item-header-content .activity {
     margin-top: 10px;

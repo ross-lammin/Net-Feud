@@ -109,7 +109,7 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 
 	<input type="hidden" name="field_ids" id="field_ids" value="<?php bp_the_profile_field_ids(); ?>" />
 
-	<?php wp_nonce_field( 'bp_xprofile_edit' ); ?>
+	<?php wp_nonce_field( 'bp_xprofile_edit' );?>
 
 </form>
 
@@ -123,3 +123,4 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
  * @since 1.1.0
  */
 do_action( 'bp_after_profile_edit_content' );
+

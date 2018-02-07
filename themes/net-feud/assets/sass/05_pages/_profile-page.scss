@@ -52,6 +52,11 @@
 					    	color: lighten( $color__primary--background, 60% );
 					    	font-weight: 400;
 					    }
+
+					    .item-buttons {
+					    	position: absolute;
+					    }
+
 					    #item-meta {
 					    	display: none;
 					    }
@@ -97,12 +102,9 @@
 						.editfield {
 							fieldset {
 
+								.field-visibility-settings-notoggle,
 								.field-visibility-settings-toggle {
 									display: none;
-								}
-
-								.field-visibility-settings-notoggle {
-										display: none;
 								}
 
 								legend {
@@ -118,6 +120,7 @@
 
 								}
 
+								textarea,
 								input {
 									width: 30%;
 									margin-left: 10px;
@@ -133,6 +136,7 @@
 									select {
 										margin-left: 10px;
 									}
+									
 								}
 								.wp-editor-tools,.mce-toolbar-grp,.mce-path {
 									display: none;
@@ -142,7 +146,7 @@
 								}
 								.wp-editor-wrap {
 							    position: relative;
-							    width: 50%;
+							    width: 30%;
 							    float: left;
 							    margin-left: 10px;
 								}
@@ -296,6 +300,149 @@
 	}
 }
 
+.friends.my-friends {
+	.bp_members {
+		#item-body {
+			.members.friends {
+				#members-list {
+					.bp__single-member--back{
+						position: relative;
+						width: 20%;
+						overflow: hidden;
+						float: left;
+						margin: 10px 0;
+						padding: 0;
+						margin: 0;
+
+						.bp__members--background{
+							position: absolute;
+							border-radius: 10px;
+							width: 100%;
+					    height: 100%;
+					    z-index: 1;
+						}
+
+						.item-avatar, .item-title, .item-meta {
+							z-index: 2
+						}
+
+						.bp__single-members--information {
+							position: absolute;
+					    top: 0;
+					    bottom: 0;
+					    width: 100%;
+					    height: 100%;
+					    background-color: rgba(250,250,250,0.6);
+					    transform: translateY(100%);
+					    transition: .8s;
+					    border-radius: 10px;
+
+					    .friendship-button {
+					    	a {
+					    		background-color:green;
+					    		border: 1px solid black;
+					    		border-radius: 10px;
+					    		padding: .5rem
+					    	}
+					    }
+
+					    .activity-read-more {
+					    	display:none;
+					   	}
+
+					   	.second_tab_list {
+					   		right: 0;
+					   		position: absolute;
+					    	bottom: 0;
+						    text-align: center;
+						    order: 4;
+					   	}
+
+					    .action {
+					    	left: 0;
+					    	position: absolute;
+					    	bottom: 0;
+						    text-align: center;
+						    order: 4;
+						    a {
+						   		color: $color__continue--button;
+
+						   		&:hover {
+						   			color: $color__header-search--active;
+						   			text-decoration: underline;
+						   		}
+						  	}
+					    }
+						}
+
+						.bp-single-member {
+							width: 100%;
+					    display: flex;
+					    flex-direction: column;
+					    border-radius: 10px;
+					    padding: 0;
+
+					    .item-avatar,
+					    .item-meta,
+					    .item-title {
+					    	padding-bottom: 10px;
+					    }
+
+					    .item-title {
+					    	padding-right: 10px;
+					    }
+
+					    .item-avatar {
+					    	order: 2;
+						    margin: 0 auto;
+						    border-radius: 50%;
+
+						    img {
+							    border-radius: 50px;
+							    width: 100px;
+							    height: 100px;
+							    margin: 0;
+							    border: 1px solid black;
+					    	}
+					  	}
+
+					  	.item-meta {
+					  		order: 3;
+
+					  		.activity {
+					  			width: 100%;
+	    						text-align: center;
+					  		}
+
+					  	}
+
+					    .item-title {
+					    	order: 1;
+						    text-align: center;
+						    width: 100%;
+						    font-size: 1.2rem;
+						  }
+					    
+						}
+
+						&:hover {
+							.bp__single-members--information {
+						    transform: translateY(0%);
+						    transition: .8s;
+						    z-index: 4;
+							}
+						}
+						
+					  &::after {
+					  	@include clearfix;
+					  }
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and ( min-width: 471px ) {
 
 	.bp_members .entry-content #buddypress .activity .rw-ui-container.rw-halign-right {
@@ -374,6 +521,12 @@
 						    top: 220px;
 						    position: relative;
 						    left: 0;
+
+						    #item-buttons {
+						    	position: absolute;
+							    top: 260px;
+							    right: 0;
+						    }
 
 						    .activity {
 						    	margin-top: 10px;
