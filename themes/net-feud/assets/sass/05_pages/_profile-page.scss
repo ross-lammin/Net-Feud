@@ -120,6 +120,13 @@
 
 								}
 
+								textarea {
+									width: 100%;
+							    padding: 0px;
+							    margin: 0px;
+							    height: 152px;
+								}
+
 								textarea,
 								input {
 									width: 30%;
@@ -138,7 +145,7 @@
 									}
 									
 								}
-								.wp-editor-tools,.mce-toolbar-grp,.mce-path {
+								.wp-editor-tools,.mce-toolbar-grp,.mce-path,.quicktags-toolbar {
 									display: none;
 								}
 								.mce-statusbar {

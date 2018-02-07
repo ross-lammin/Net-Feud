@@ -2925,6 +2925,13 @@ label {
   display: none;
 }
 
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset textarea {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: 152px;
+}
+
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset textarea,
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset input {
   width: 30%;
@@ -2941,7 +2948,7 @@ label {
   margin-left: 10px;
 }
 
-.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .wp-editor-tools, .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .mce-toolbar-grp, .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .mce-path {
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .wp-editor-tools, .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .mce-toolbar-grp, .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .mce-path, .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset .quicktags-toolbar {
   display: none;
 }
 
