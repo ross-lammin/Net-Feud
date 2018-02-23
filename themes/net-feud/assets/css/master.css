@@ -2934,10 +2934,13 @@ label {
 
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset textarea,
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset input {
-  width: 30%;
   margin-left: 10px;
   padding: 1rem 0;
   font-size: 1.2rem;
+}
+
+.bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset input {
+  width: 30%;
 }
 
 .bp_members .entry-content #buddypress #item-body .profile .standard-form .editfield fieldset select {
