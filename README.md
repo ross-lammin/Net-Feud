@@ -1,19 +1,28 @@
-# WordPress template for Platform.sh
+#Net-Feud
 
-This project provides a starter kit for WordPress projects hosted on Platform.sh. It is primarily an example, although could be used as the starting point for a real project.  It is built using Composer, via the popular <a href="https://github.com/johnpbloch/wordpress">johnpbloch/wordpress</a> script.
+Hi there everyone this is Net-Feud;
 
-## Starting a new project
+An apprenticeship project that have been working on for a little under a year.
 
-To start a new project based on this template, follow these 3 simple steps:
+The site is not yet ready for the world to embrace so is therefore not live.
 
-1. Clone this repository locally.  You may optionally remove the `origin` remote or remove the `.git` directory and re-init the project if you want a clean history.
+I update and develop on a regular basis so keep checking back for further
+information.
 
-2. Create a new project through the Platform.sh user interface and select "Import an existing project" when prompted.
+Net-Feud Is likely to be at beta stage in the summer 2018.
 
-3. Run the provided Git commands to add a Platform.sh remote and push the code to the Platform.sh repository.
+Thanks every for your patience.
 
-That's it!  You now have a working "hello world" level project you can build on.
-
-## Using as a reference
-
-You can also use this repository as a reference for your own projects, and borrow whatever code is needed. The most important parts are the `.platform.app.yaml` file and the `.platform` directory.
+////////////////////////////////////////////////////////////////////////////////
+/////////////           //////////      /////                         //////////
+/////////////            /////////      /////                         //////////
+/////////////      /      ////////      /////                         //////////
+/////////////      //      ///////      /////          /////////////////////////
+/////////////      ///      //////      /////          /////////////////////////
+/////////////      ////      /////      /////          /////////////////////////
+/////////////      /////      ////      /////                    ///////////////
+/////////////      //////      ///      /////                    ///////////////
+/////////////      ///////      //      /////          /////////////////////////
+/////////////      ////////      /      /////          /////////////////////////
+/////////////      /////////            /////          /////////////////////////
+////////////////////////////////////////////////////////////////////////////////
