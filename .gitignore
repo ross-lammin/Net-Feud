@@ -12,13 +12,7 @@ Thumbs.db
 *.rar
 *.tar
 *.zip
-wp/
 node_modules/
 vendor/
-local.wp-config.php
-wp-config.php
-themes/side-project/*
+wp/local.wp-config.php
 .lando.yml
-plugins/wp-mail-smtp
-*.sublime-project
-*.sublime-workspace
